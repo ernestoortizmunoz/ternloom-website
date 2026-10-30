@@ -5,6 +5,14 @@ import ActionLink from './ActionLink.astro';
 interface Props { project: ProjectDefinition; detailed?: boolean; headingLevel?: 2 | 3 }
 const { project, detailed = false, headingLevel = 3 } = Astro.props;
 const Heading = headingLevel === 2 ? 'h2' : 'h3';
+const roleLabels: Record<ProjectDefinition['role'], string> = {
+  'technology-provider': 'Technology provider',
+  'own-product': 'Our own product',
+};
+const statusLabels: Record<ProjectDefinition['status'], string> = {
+  'business-website': 'Public website',
+  'application-in-development': 'application in development',
+};
 const relatedServices = services.filter((service) => project.serviceIds.includes(service.id));
 ---
 <article class:list={['project-summary', { detailed }]} data-project={project.id} aria-labelledby={`${project.id}-title`}>
@@ -13,7 +21,7 @@ const relatedServices = services.filter((service) => project.serviceIds.includes
     <figcaption>{project.image.caption}</figcaption>
   </figure>}
   <div class="project-copy">
-    <p class="project-role">{project.role}{project.status !== 'Public website' && <> — {project.status}</>}</p>
+    <p class="project-role">{roleLabels[project.role]}{project.status !== 'business-website' && <> — {statusLabels[project.status]}</>}</p>
     <Heading id={`${project.id}-title`}>{project.name}</Heading>
     <p class="project-description">{project.summary}</p>
     {detailed && <div class="project-detail flow">
