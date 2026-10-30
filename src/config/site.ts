@@ -29,7 +29,7 @@ export const site: SiteConfig = {
   privacy: { enquiryRetentionMonths: 12 },
   readiness: {
     contactConfirmed: true,
-    contactFormReady: false,
+    contactFormReady: true,
     privacyNoticeApproved: true,
     projectCopyApproved: false,
     projectAssetsApproved: false,

@@ -18,11 +18,11 @@ Supporting capability: **cloud deployment and hosting with simple infrastructure
 
 The approved Working Weave website is implemented locally: homepage, three service pages, projects, about, contact, owner-approved privacy notice and a designed 404. It uses static Astro, TypeScript, plain CSS, local fonts, the accepted original brand mark and directory output with trailing slashes. Essential content and navigation are static HTML. Only contact embeds Tally and its official sizing script; no analytics or runtime backend is included.
 
-Public contact/privacy email is confirmed as `info@ternloom.com`. The owner reported a successful submission/inbox test and selected 12-month active enquiry retention with ongoing-project/required-record exceptions. The final website contact copy and privacy notice are prepared locally. Tally's provider-managed button/test paragraph/thank-you copy still need the owner's edits; its notifications can fire during local testing. [Operator instructions](docs/contact-form-operations.md) cover those edits and manual retention on Free.
+Public contact/privacy email is confirmed as `info@ternloom.com`. The owner approved the privacy wording and confirmed the final Tally copy plus submission/inbox test, including a screenshot of the new completion message in the local embed. The selected policy is 12-month active enquiry retention with ongoing-project/required-record exceptions. Notifications can fire during local testing. [Operator instructions](docs/contact-form-operations.md) preserve the final copy and manual retention process on Free.
 
-`contactConfirmed` and `privacyNoticeApproved` are true after explicit owner confirmation; `contactFormReady` and both portfolio readiness flags remain false. Bonita Nights and Wood Dust Creations copy still needs final approval; Turnory’s summary is approved and remains explicitly in development. All project screenshot approvals remain false. An approved explicit release includes the production form context and omits local preview notices.
+`contactConfirmed`, `contactFormReady` and `privacyNoticeApproved` are true after explicit owner confirmation; both portfolio readiness flags remain false. Bonita Nights and Wood Dust Creations copy still needs final approval; Turnory’s summary is approved and remains explicitly in development. All project screenshot approvals remain false. An approved explicit release includes the production form context and omits local preview notices.
 
-**Release: parked — waiting on final Tally copy, project copy/assets approval and authorized launch.** Nothing has been pushed or deployed; no provider account or DNS changes were made. Cloudflare Pages remains the intended hosting target.
+**Release: parked — waiting on project copy/assets approval and authorized launch.** Nothing has been pushed or deployed; no provider account or DNS changes were made. Cloudflare Pages remains the intended hosting target.
 
 ## Local commands
 
