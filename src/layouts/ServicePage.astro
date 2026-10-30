@@ -1,0 +1,114 @@
+---
+import SiteLayout from './SiteLayout.astro';
+import ActionLink from '../components/ActionLink.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import ProjectSummary from '../components/ProjectSummary.astro';
+import ContactInvitation from '../components/ContactInvitation.astro';
+import type { ServiceDefinition } from '../data/services';
+import { projects } from '../data/projects';
+
+interface Props { service: ServiceDefinition }
+const { service } = Astro.props;
+const relevantProjects = service.projectIds.map((id) => {
+  const project = projects.find((entry) => entry.id === id);
+  if (!project) throw new Error(`Unknown project ${id} for service ${service.id}`);
+  return project;
+});
+const steps = [
+  { title: 'Understand the need', detail: 'Start with your business, the people who will use the work and the problem you want to solve. Existing tools and constraints are part of the conversation.' },
+  { title: 'Agree the scope', detail: 'Define the useful first version, responsibilities and costs. Decide what belongs in the project and what can wait before committing to the build.' },
+  { title: 'Build and review', detail: 'Review the work against the agreed scope, refine the details and prepare for handover. Deployment and any ongoing support are discussed explicitly.' },
+];
+---
+<SiteLayout
+  title={`${service.name} for Small Businesses — Ternloom`}
+  description={service.summary}
+  pathname={service.path}
+  serviceId={service.id}
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: service.name, path: service.path }]}
+>
+  <section class="container service-intro" aria-labelledby="service-title">
+    <p class="eyebrow">For small businesses in Ottawa and across Canada</p>
+    <h1 id="service-title">{service.name}</h1>
+    <p class="service-lead">{service.summary}</p>
+    <div class="intro-actions">
+      <ActionLink href="/contact/">Discuss your project</ActionLink>
+      <ActionLink href="#service-evidence" variant="text">Explore relevant work</ActionLink>
+    </div>
+  </section>
+
+  <section class="container section service-fit" aria-labelledby="service-fit">
+    <SectionHeading id="service-fit" eyebrow="Is this a fit?">When this service can help</SectionHeading>
+    <ul class="fit-list">{service.problems.map((problem) => <li>{problem}</li>)}</ul>
+  </section>
+
+  <section class="scope-region section" aria-labelledby="service-deliverables">
+    <div class="container scope-columns">
+      <div>
+        <SectionHeading id="service-deliverables" eyebrow="Potential deliverables">What we can build together</SectionHeading>
+        <p class="section-intro">The right scope depends on your business. A project could include:</p>
+        <ul class="deliverable-list">{service.deliverables.map((deliverable) => <li>{deliverable}</li>)}</ul>
+      </div>
+      <aside class="scope-boundaries" aria-labelledby="service-boundaries">
+        <h2 id="service-boundaries">Clear boundaries from the start</h2>
+        <div class="flow">{service.scopeNotes.map((note) => <p>{note}</p>)}</div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="container section" aria-labelledby="service-evidence">
+    <div class="evidence-heading">
+      <SectionHeading id="service-evidence" eyebrow="Selected projects">See the work in context</SectionHeading>
+      <ActionLink href="/projects/" variant="text">View all selected projects</ActionLink>
+    </div>
+    <div class="project-list">{relevantProjects.map((project) => <ProjectSummary project={project} detailed />)}</div>
+  </section>
+
+  <section class="container section process-section" aria-labelledby="service-process">
+    <SectionHeading id="service-process" eyebrow="Working together">Start with the problem to solve</SectionHeading>
+    <ol class="process-list">{steps.map((step) => <li><h3>{step.title}</h3><p>{step.detail}</p></li>)}</ol>
+  </section>
+
+  <section class="container section questions-section" aria-labelledby="service-questions">
+    <SectionHeading id="service-questions" eyebrow="Before you begin">Useful questions</SectionHeading>
+    <div class="questions-list">{service.questions.map(({ question, answer }) => <div class="question"><h3>{question}</h3><p>{answer}</p></div>)}</div>
+  </section>
+
+  <ContactInvitation />
+</SiteLayout>
+
+<style>
+  .service-intro { padding-block: var(--space-6) var(--section-space); }
+  .service-intro h1 { max-width: var(--reading-width); margin-block: var(--space-3); }
+  .service-lead { max-width: var(--reading-width); color: var(--color-muted); }
+  .intro-actions { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); margin-block-start: var(--space-4); }
+  .service-fit { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); border-block-start: var(--border-width) solid var(--color-line); }
+  .fit-list { list-style: none; padding: 0; }
+  .fit-list li { padding-block: var(--space-3); border-block-end: var(--border-width) solid var(--color-line); }
+  .fit-list li:first-child { padding-block-start: 0; }
+  .scope-region { background: var(--color-sage); }
+  .scope-columns { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); align-items: start; }
+  .section-intro { margin-block: var(--space-3); }
+  .deliverable-list { padding-inline-start: var(--space-3); }
+  .deliverable-list li + li { margin-block-start: var(--space-2); }
+  .scope-boundaries { padding-inline-start: var(--space-4); border-inline-start: var(--border-width) solid var(--color-muted); }
+  .scope-boundaries h2 { margin-block-end: var(--space-3); }
+  .scope-boundaries p { font-size: var(--text-support); line-height: var(--leading-body); }
+  .evidence-heading { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: var(--space-3); }
+  .project-list { display: grid; gap: var(--space-8); margin-block-start: var(--space-6); }
+  .process-section { border-block-start: var(--border-width) solid var(--color-line); }
+  .process-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-block-start: var(--space-6); padding-inline-start: var(--space-3); }
+  .process-list li { padding-inline-start: var(--space-1); }
+  .process-list li::marker { color: var(--color-pine); font-weight: var(--weight-semibold); }
+  .process-list h3 { margin-block-end: var(--space-2); }
+  .process-list p, .question p { color: var(--color-muted); }
+  .questions-section { display: grid; grid-template-columns: 1fr 2fr; gap: var(--space-6); padding-block-start: var(--space-4); }
+  .question { padding-block: var(--space-3); border-block-start: var(--border-width) solid var(--color-line); }
+  .question h3 { margin-block-end: var(--space-2); }
+  @media (max-width: 48rem) {
+    .service-fit, .scope-columns, .process-list, .questions-section { grid-template-columns: 1fr; }
+    .scope-columns { gap: var(--space-6); }
+    .scope-boundaries { padding-inline-start: 0; padding-block-start: var(--space-4); border-inline-start: 0; border-block-start: var(--border-width) solid var(--color-muted); }
+    .process-list { gap: var(--space-4); }
+  }
+</style>
