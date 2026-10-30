@@ -1,0 +1,16 @@
+---
+import { site } from '../config/site';
+interface Props { title: string; pathname: string }
+const { title, pathname } = Astro.props;
+---
+<!doctype html>
+<html lang={site.locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} | {site.name}</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href={new URL(pathname, site.origin).href} />
+  </head>
+  <body><main><slot /></main></body>
+</html>

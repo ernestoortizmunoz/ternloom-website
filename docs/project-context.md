@@ -45,9 +45,9 @@ October 30 execution authorization: the owner instructed “build everything loc
 
 - Starting point: existing Git repository on `main`, containing a generic `.gitignore`.
 - Prepared: `AGENTS.md`, `README.md`, this context, the configuration brief and the approved website design brief. The combined implementation plan is saved outside the working copy, as required by the UI planning workflow.
-- Not implemented: package manifest, Astro configuration, dependencies, source routes, SEO output, Cloudflare project, DNS or production website.
+- Implemented foundation: exact runtime/dependency pins, npm lockfile, static Astro configuration, typed site/service data, publication guard, unfinished noindex setup and 404 fixtures, diagnostics and focused output validation. Designed pages, Cloudflare project, DNS and production publication remain unimplemented.
 - Existing uncommitted `.gitignore` changes predate this planning pass; preserve them during scoped Astro setup. The design/planning work has not modified that file.
-- Configuration brief approval and owner review of the implementation plan precede technical scaffolding. No publication is implied.
+- The owner approved the configuration and implementation plan for local execution. No publication is implied.
 
 ## Inputs needed later
 
@@ -72,7 +72,7 @@ These do not block documentation preparation or a local configuration plan:
 - The complete [Working Weave website design brief](superpowers/specs/2026-10-30-website-design.md) is owner-approved. It covers seven content routes, shared components and theme entries, an email-first enquiry flow pending contact confirmation, project evidence boundaries, and SEO/AI discovery requirements.
 - A fresh GPT Astra builder check requested a durable reference for the accepted lockup. Appendix A resolved this by preserving its original source and text settings; the follow-up review reported “nothing important left.” This is planning feedback, not owner approval.
 - The [combined implementation plan](/Users/dev-zero/.codex/visualizations/2026/10/30/01a18b06-d02d-78b1-ab76-ae279c2d4c2c/ternloom-working-weave-implementation-plan.md) is prepared and self-reviewed. It contains a distinct technical-foundation stage, approved shared pieces/theme, one task per page and focused output/publication checks. It preserves the owner's fresh GPT Astra implementation/review method and forbids unrequested Git/account changes.
-- Next step: owner reviews the plan and approves the separate configuration brief before Astro scaffolding or dependency installation. The approved design does not substitute for either gate. After that, execute the foundation before designed pages. No dependencies or application code were added during planning.
+- Planning is complete and local execution is approved. The foundation is implemented; the next stage is the designed website, subject to its remaining publication gates.
 
 ## Verification
 
@@ -85,3 +85,13 @@ The later mockup pass created only a local visual-companion artifact outside the
 After design approval and implementation planning, whitespace and local-link validation passed for six repository Markdown files plus the external plan, covering 17 local links; `git diff --check` passed. The plan contains 12 tasks. No package manifest or `node_modules` exists. No website build or application tests were run because implementation has not started.
 
 The initial read-only builder check of the configuration brief and this context reported “nothing important left.” Initial local validation passed for four Markdown files and five repository-local links. October 30 adds the owner-nominated project reference brief; its documentation validation is reported at handoff. The independent review does not approve the brief on the owner's behalf. Owner approval remains pending.
+
+
+## Local foundation implementation — October 30
+
+- Runtime pinned to Node 24.22.2 and bundled npm 11.19.1. Exact dependencies: Astro 7.4.4, `@astrojs/check` 0.9.12 and TypeScript 6.0.3. Official npm metadata requires Node >=22.23.4 for this Astro version; diagnostics supports TypeScript 5/6, so TypeScript 7 was not selected. Node 24 remains supported LTS. Verification used the official Node distribution in temporary storage, without changing the system runtime.
+- Public configuration keeps contact null and all three readiness approvals false. Default output stays noindex. Explicit release requests fail before output generation unless contact, contact confirmation, project copy and project assets are approved. Both setup fixtures remain noindex independently, and no sitemap, form or active email destination exists at this stage.
+- Local proof: clean `npm ci` succeeded with zero reported vulnerabilities; diagnostics passed for 10 files with zero errors, warnings or hints; seven publication tests passed; static build produced two pages; setup output checks passed for noindex, canonical host, exactly three service names, and absence of active enquiry or client JavaScript. `TERNLOOM_RELEASE=1 npm run build` exited 1 with all four missing prerequisites named.
+- Guard tests were written first and failed meaningfully against temporary constant-return stubs (six failures in each of two RED runs); implementation then passed all seven tests. The synthetic ready contact is test-only and does not change owner approval state.
+- npm 11.19.1 reported one unapproved optional macOS watcher install script (`fsevents@2.3.3`) during clean install. Build and diagnostics succeeded without approving it. This remains an install warning, not an application diagnostic.
+- This is local foundation verification only. No browser, accessibility, hosted-header, deployment or DNS verification is claimed. The controller performs the browser review before continuing.

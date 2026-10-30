@@ -1,0 +1,12 @@
+---
+import SetupLayout from '../layouts/SetupLayout.astro';
+import { services } from '../data/services';
+---
+<SetupLayout title="Unfinished local setup" pathname="/">
+  <h1>Ternloom Technologies — unfinished local setup</h1>
+  <p>This page verifies the static website foundation. The website is not ready for publication.</p>
+  <ul>
+    {services.map((service) => <li data-service={service.id}>{service.name}</li>)}
+  </ul>
+  <p>Public contact details are awaiting confirmation.</p>
+</SetupLayout>
