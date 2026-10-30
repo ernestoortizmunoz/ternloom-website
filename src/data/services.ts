@@ -59,7 +59,43 @@ export const services: ServiceDefinition[] = [
     name: 'Custom Business Software',
     path: '/services/custom-business-software/',
     summary: "Software built around a business's own workflows.",
-    problems: [], deliverables: [], scopeNotes: [], projectIds: [], questions: [],
+    problems: [
+      'Important work is spread across spreadsheets, email and handwritten notes, making it hard to see what needs attention.',
+      'An off-the-shelf product forces awkward workarounds or cannot represent the way your business handles a job.',
+      'Staff or customers need a clearer way to submit information, follow progress or find the records relevant to them.',
+    ],
+    deliverables: [
+      'An internal tool for tracking jobs, requests or approvals through the steps your business actually uses.',
+      'A customer or staff portal with access to the information and actions each person needs.',
+      'A dashboard that brings agreed business information into one place for review.',
+      'A quoting tool built around your pricing rules, review steps and required inputs.',
+      'Connections to existing systems where their access, data and integration options support the workflow.',
+    ],
+    scopeNotes: [
+      'These are examples of possible tools, not a list of completed client projects. The first version is defined around a specific business need and the people who will use it.',
+      'Data access, permissions, privacy needs and any migration from existing records are agreed before building. Connections depend on what each existing system permits.',
+      'Hosting, backups, third-party fees and ongoing maintenance need their own scope. Running a business application has different requirements from hosting a static website.',
+      'Ownership, handover, documentation and future changes are discussed explicitly. Cost and timing depend on the agreed workflow and technical requirements.',
+    ],
+    projectIds: ['turnory'],
+    questions: [
+      {
+        question: 'Should we use an existing product or build custom software?',
+        answer: 'We first consider whether an existing tool can meet the need with reasonable configuration. Custom software may make sense when the workflow has requirements that available products cannot accommodate well. The decision includes ongoing running and maintenance costs, not just the initial build.',
+      },
+      {
+        question: 'Can we start with one part of the workflow?',
+        answer: 'Yes. A useful first version can focus on one process, a defined group of users and a small set of tasks. We agree what success looks like and review that version before deciding whether to extend it.',
+      },
+      {
+        question: 'Can existing spreadsheets and systems be part of the project?',
+        answer: 'They can be a starting point for understanding the work. We review the structure and quality of the records, the rules behind them and the access each system allows. Data cleanup, migration and integrations are included only when agreed in the scope.',
+      },
+      {
+        question: 'What should we bring to the first conversation?',
+        answer: 'Describe one task that is difficult today: who does it, what information they use, where it gets stuck and what a better outcome would look like. A sample workflow with sensitive information removed is enough to begin; a full technical specification is not required.',
+      },
+    ],
   },
   {
     id: 'business-automation-integrations',
