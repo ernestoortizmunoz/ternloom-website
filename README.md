@@ -16,9 +16,9 @@ Supporting capability: **cloud deployment and hosting with simple infrastructure
 
 ## Current state
 
-The approved Working Weave website is implemented locally: homepage, three service pages, projects, about, contact and a designed 404. It uses static Astro, TypeScript, plain CSS, local fonts, the accepted original brand mark and directory output with trailing slashes. Essential content and navigation are static HTML; no executable client JavaScript, form, analytics or runtime backend is included.
+The approved Working Weave website is implemented locally: homepage, three service pages, projects, about, contact and a designed 404. It uses static Astro, TypeScript, plain CSS, local fonts, the accepted original brand mark and directory output with trailing slashes. Essential content and navigation are static HTML. The contact page includes a local-test Tally iframe and its official sizing script; no analytics or runtime backend is included.
 
-Contact is unset. Bonita Nights and Wood Dust Creations copy still needs final approval; Turnory’s summary is approved and remains explicitly in development. All project screenshots are public-site captures selected for local preview only, with image approvals false. Global publication readiness remains false. The contact form is deferred.
+Email contact is unset. Bonita Nights and Wood Dust Creations copy still needs final approval; Turnory’s summary is approved and remains explicitly in development. All project screenshots are public-site captures selected for local preview only, with image approvals false. Global publication readiness remains false. The owner's Tally form is available for local testing with dummy details; configured Tally notifications may still fire. Mailbox destination and delivery remain unverified. Explicit release output excludes the test form and preserves the existing confirmed-email contact path.
 
 **Release: parked — waiting on owner-confirmed contact, approved project copy/assets and authorized launch.** Nothing has been pushed or deployed; no provider account or DNS changes were made. Cloudflare Pages remains the intended hosting target.
 
@@ -43,9 +43,11 @@ Development and preview bind to `127.0.0.1`. Preview serves the most recent `dis
 
 Default builds stay noindex, emit a preview `robots.txt` that disallows crawling, and omit the production sitemap. `TERNLOOM_RELEASE=1 npm run build` fails until the public contact and global readiness in `src/config/site.ts`, plus each project’s copy/image approvals in `src/data/projects.ts`, are resolved. A ready release generates only the seven canonical indexable content routes in `sitemap.xml`; 404 remains noindex and excluded. Search/training crawler policy and actual hosted controls need a separate launch review.
 
-`npm run check:output` defaults to the complete `website` stage (`-- --stage website` is equivalent). It checks all eight HTML files, unique metadata, factual schema, local links and fragments, images, the 1200×630 social PNG, noindex and absence of executable client JavaScript or active draft enquiries. Historical `setup` and `home` stages remain available. The release fixture changes only temporary copies and never approves real source data.
+`npm run check:output` defaults to the complete `website` stage (`-- --stage website` is equivalent). It checks all eight HTML files, unique metadata, factual schema, local links and fragments, images, the 1200×630 social PNG and noindex. Only the contact page may contain the configured Tally test iframe and official sizing script; other pages retain the no-script/no-iframe contract. Historical `setup` and `home` stages remain available. The release fixture changes only temporary copies, never approves real source data, and verifies the local test integration is excluded.
 
 Local proof on October 30: clean install, diagnostics, 13 unit tests, contact/release fixtures, eight-page build and website output checks passed. The clean install reported one unapproved optional `fsevents@2.3.3` script; diagnostics/build worked without approving it. Controller measured all eight pages at 375, 768, 1024 and 1440px: no horizontal overflow, one H1 and one main. Browser keyboard traversal, 200% zoom and an explicitly JavaScript-disabled browser were not available; this is not a full accessibility or performance audit. No hosted indexing or AI visibility result is claimed.
+
+The subsequent [local contact-form verification](docs/verification/2026-10-30-contact-form.md) reran diagnostics, unit/output/contact/release checks and inspected the loaded Tally form at desktop and 375px mobile widths. No submission or email-delivery claim follows from that check.
 
 ## Read first
 

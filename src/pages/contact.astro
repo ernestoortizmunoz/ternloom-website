@@ -2,8 +2,10 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import ContactDetails from '../components/ContactDetails.astro';
+import ContactForm from '../components/ContactForm.astro';
 import { site } from '../config/site';
 import { services } from '../data/services';
+const localTestForm = import.meta.env.TERNLOOM_RELEASE === '1' ? null : site.localTestForm;
 ---
 <SiteLayout
   title="Discuss Your Project — Ternloom Technologies"
@@ -19,8 +21,15 @@ import { services } from '../data/services';
       <p>Whether you need a clearer website, a tool built around your work or a better connection between systems, start with the problem you want to solve.</p>
       <p class="audience">For small businesses in Ottawa and across Canada.</p>
     </div>
-    <ContactDetails contact={site.contact} confirmed={site.readiness.contactConfirmed} />
+    <ContactDetails contact={site.contact} confirmed={site.readiness.contactConfirmed} localTest={Boolean(localTestForm)} />
   </section>
+
+  {localTestForm && (
+    <section class="container contact-section" aria-labelledby="form-title">
+      <SectionHeading id="form-title" eyebrow="Local preview">Try the project enquiry form</SectionHeading>
+      <ContactForm tallyId={localTestForm.tallyId} />
+    </section>
+  )}
 
   <section class="container contact-section" aria-labelledby="include-title">
     <SectionHeading id="include-title" eyebrow="Before the conversation">What to include</SectionHeading>
@@ -34,7 +43,7 @@ import { services } from '../data/services';
 
   <section class="container contact-section next-step" aria-labelledby="next-title">
     <SectionHeading id="next-title" eyebrow="Working together">What happens next</SectionHeading>
-    <p>{site.contact && site.readiness.contactConfirmed ? 'An initial conversation' : 'Once contact is available, an initial conversation'} can clarify the problem, the people involved and whether the work is a fit. Scope, deliverables and next steps are agreed before a project begins.</p>
+    <p>{!localTestForm && site.contact && site.readiness.contactConfirmed ? 'An initial conversation' : 'Once contact is available, an initial conversation'} can clarify the problem, the people involved and whether the work is a fit. Scope, deliverables and next steps are agreed before a project begins.</p>
   </section>
 
   <section class="container contact-section" aria-labelledby="services-title">

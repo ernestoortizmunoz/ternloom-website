@@ -2,11 +2,19 @@
 interface Props {
   contact: { email: string } | null;
   confirmed: boolean;
+  localTest?: boolean;
 }
-const { contact, confirmed } = Astro.props;
+const { contact, confirmed, localTest = false } = Astro.props;
 ---
 <section class="contact-details" aria-labelledby="contact-details-title">
-  {contact && confirmed ? (
+  {localTest ? (
+    <>
+      <p class="contact-label">Local form preview</p>
+      <h2 id="contact-details-title">Try the test form below</h2>
+      <p>Use dummy details to explore the project enquiry form. Real project enquiries are not enabled on this local preview.</p>
+      <p class="contact-note">The form is hosted by Tally. Submitting may trigger the Tally account's configured emails.</p>
+    </>
+  ) : contact && confirmed ? (
     <>
       <p class="contact-label">Start a conversation</p>
       <h2 id="contact-details-title">Email us about your project</h2>

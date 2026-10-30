@@ -6,6 +6,7 @@ export interface SiteConfig {
   serviceArea: string;
   experienceStatement: string;
   contact: { email: string } | null;
+  localTestForm: { tallyId: string } | null;
   readiness: {
     contactConfirmed: boolean;
     projectCopyApproved: boolean;
@@ -21,6 +22,7 @@ export const site: SiteConfig = {
   serviceArea: 'Canada',
   experienceStatement: 'Built on more than 15 years of experience in IT and software development.',
   contact: null,
+  localTestForm: { tallyId: 'dbEbrd' },
   readiness: {
     contactConfirmed: false,
     projectCopyApproved: false,

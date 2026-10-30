@@ -1,0 +1,21 @@
+---
+interface Props { tallyId: string }
+const { tallyId } = Astro.props;
+const context = 'source=ternloom-website&environment=local-test';
+const embedUrl = `https://tally.so/embed/${encodeURIComponent(tallyId)}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&${context}`;
+const directUrl = `https://tally.so/r/${encodeURIComponent(tallyId)}?${context}`;
+---
+<div class="contact-form">
+  <p><strong>Test form — please use dummy details only.</strong></p>
+  <p class="form-note">Submissions go to Tally and may trigger emails configured in the Tally account. This form is for local testing, not real project enquiries.</p>
+  <p><a href={directUrl}>Open the test form directly in Tally</a> if the embedded form does not load or is difficult to use.</p>
+  <iframe src={embedUrl} title="Ternloom project enquiry — test form"></iframe>
+</div>
+<script is:inline defer src="https://tally.so/widgets/embed.js"></script>
+<style>
+  .contact-form { margin-block-start: var(--space-3); }
+  .contact-form > p { max-width: var(--reading-width); }
+  .contact-form > p + p { margin-block-start: var(--space-2); }
+  .form-note { color: var(--color-muted); }
+  iframe { display: block; width: 100%; height: var(--contact-form-initial-height); border: 0; margin-block-start: var(--space-4); }
+</style>

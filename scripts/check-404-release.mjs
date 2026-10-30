@@ -42,6 +42,7 @@ try {
   for (const path of contentPaths) {
     const html = await readFile(join(fixture, 'dist', path.slice(1), 'index.html'), 'utf8');
     assert.doesNotMatch(html, /<meta name="robots" content="noindex/);
+    assert.doesNotMatch(html, /dbEbrd|tally\.so\/widgets\/embed\.js|<iframe\b|local-test/, 'Local test integration must not leak into explicit release');
   }
   const missing = await readFile(join(fixture, 'dist/404.html'), 'utf8');
   const home = await readFile(join(fixture, 'dist/index.html'), 'utf8');

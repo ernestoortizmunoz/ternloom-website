@@ -24,9 +24,20 @@ for (const [file, html] of contents) {
   const canonical = html.match(/<link rel="canonical" href="([^"]+)"/);
   const pathname = file === '404.html' ? '/404/' : `/${file.replace(/index\.html$/, '')}`;
   assert.equal(canonical?.[1], `${site.origin}${pathname}`, `${file}: exact canonical`);
-  assert.doesNotMatch(html, /<form\b/i, `${file}: form is deferred`);
+  assert.doesNotMatch(html, /<form\b/i, `${file}: submission handling stays with Tally`);
   if (!site.contact || !site.readiness.contactConfirmed) assert.doesNotMatch(html, /mailto:/i, `${file}: contact actions are not approved`);
-  assert.doesNotMatch(html, /<script\b(?![^>]*type="application\/ld\+json")/i, `${file}: static pages need no client JavaScript`);
+  const clientScripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)].filter(([tag]) => !tag.includes('type="application/ld+json"'));
+  const frames = [...html.matchAll(/<iframe\b[^>]*>/g)];
+  if (file === 'contact/index.html' && site.localTestForm) {
+    assert.equal(clientScripts.length, 1, `${file}: only the official sizing script`);
+    assert.equal(attributes(clientScripts[0][0]).src, 'https://tally.so/widgets/embed.js');
+    assert.equal(clientScripts[0][2].trim(), '', `${file}: no inline executable code`);
+    assert.equal(frames.length, 1, `${file}: one local test iframe`);
+    assert.equal(new URL(attributes(frames[0][0]).src).pathname, `/embed/${site.localTestForm.tallyId}`);
+  } else {
+    assert.equal(clientScripts.length, 0, `${file}: no executable client JavaScript`);
+    assert.equal(frames.length, 0, `${file}: no third-party iframe`);
+  }
   assert.doesNotMatch(html, /\bon\w+\s*=|javascript:/i, `${file}: no executable inline handlers`);
   if (stage === 'setup' && file === 'index.html') assert.match(html, /unfinished local setup/);
   if (stage !== 'website') continue;
@@ -103,4 +114,4 @@ if (stage === 'website') {
 if (stage === 'home' || stage === 'website') {
   for (const check of ['home', 'shell', 'website-service', 'software-service', 'automation-service', 'projects', 'about', 'contact', '404']) await import(`./check-${check}.mjs`);
 }
-console.log(`Output checks passed: ${stage} (${files.length} noindex pages, exact canonical paths, no active enquiry or client JavaScript${stage === 'website' ? ', unique metadata, factual schema, all local links/fragments/assets, reserved images and social PNG' : ''}).`);
+console.log(`Output checks passed: ${stage} (${files.length} noindex pages, exact canonical paths, contact-only Tally test exception${stage === 'website' ? ', unique metadata, factual schema, all local links/fragments/assets, reserved images and social PNG' : ''}).`);
