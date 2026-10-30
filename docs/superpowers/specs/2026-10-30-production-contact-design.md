@@ -12,7 +12,7 @@ The final contact and privacy experience is prepared locally, with default noind
 
 - `site.contact.email = info@ternloom.com`; `readiness.contactConfirmed = true` follows the explicit owner confirmation and reported inbox test.
 - `site.contactForm.tallyId = dbEbrd` and `site.privacy.enquiryRetentionMonths = 12`.
-- New `readiness.contactFormReady` and `readiness.privacyNoticeApproved` remain false until the owner confirms final provider wording and reviews the privacy notice. Existing project readiness/asset approvals remain false.
+- `readiness.privacyNoticeApproved` became true after the owner's explicit October 30 wording approval. `readiness.contactFormReady` remains false until the owner confirms final provider wording. Existing project readiness/asset approvals remain false.
 - Release requires a configured form, positive integer retention period, public email, all readiness flags and the existing per-project approvals. Synthetic fixtures may approve copies only.
 - Retention describes an owner policy, not automatic deletion. Free Tally requires manual deletion; email and exported copies need matching handling. Tally trash/backups may persist after active deletion. The operator checklist must explain this without promising instant erasure.
 

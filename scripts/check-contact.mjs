@@ -9,7 +9,7 @@ const html = await readFile(new URL('../dist/contact/index.html', import.meta.ur
 assert.equal(site.contact?.email, 'info@ternloom.com', 'Owner-confirmed public email');
 assert.equal(site.readiness.contactConfirmed, true);
 assert.equal(site.readiness.contactFormReady, false, 'Provider copy remains owner-managed');
-assert.equal(site.readiness.privacyNoticeApproved, false, 'Privacy notice awaits owner review');
+assert.equal(site.readiness.privacyNoticeApproved, true, 'Owner approved the privacy notice wording');
 assert.equal(site.contactForm?.tallyId, 'dbEbrd', 'Use the Ternloom form');
 const main = html.match(/<main\b[\s\S]*?<\/main>/)?.[0];
 assert.ok(main);
@@ -43,4 +43,4 @@ assert.match(html, /<meta name="robots" content="noindex, nofollow"/);
 assert.match(html, /<header\b/);
 assert.match(html, /<footer\b/);
 assert.doesNotMatch(html, /<form\b|<button\b/i);
-console.log('Contact output checks passed: confirmed email, Ternloom form, privacy link, preview context, static fallback and pending form/privacy release approvals.');
+console.log('Contact output checks passed: confirmed email, Ternloom form, approved privacy link, preview context, static fallback and pending provider-copy approval.');

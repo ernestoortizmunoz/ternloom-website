@@ -2,6 +2,8 @@
 
 Prepared locally October 30, 2026. Form: `https://tally.so/r/dbEbrd`. Public contact/privacy inbox: `info@ternloom.com`, confirmed by the owner. No account settings were changed by the agent.
 
+The owner approved the website privacy-notice wording on October 30. This copy approval does not authorize deployment or replace the remaining Tally editor/final verification steps below.
+
 ## Final Tally editor wording
 
 Keep the existing title and introductory paragraph:

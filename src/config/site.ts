@@ -30,7 +30,7 @@ export const site: SiteConfig = {
   readiness: {
     contactConfirmed: true,
     contactFormReady: false,
-    privacyNoticeApproved: false,
+    privacyNoticeApproved: true,
     projectCopyApproved: false,
     projectAssetsApproved: false,
   },
