@@ -1,0 +1,20 @@
+---
+interface Props { iconOnly?: boolean; monochrome?: boolean }
+const { iconOnly = false, monochrome = false } = Astro.props;
+---
+<span class:list={['brand', { 'brand--mono': monochrome }]}>
+  <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true" focusable="false">
+    <path d="M4 7h23v8H13v18H5V7Z" fill="currentColor" />
+    <path d="M18 7h17v27H18v-8h9V15h-9Z" fill="currentColor" opacity={monochrome ? '1' : '.45'} />
+  </svg>
+  {iconOnly ? <span class="visually-hidden">Ternloom Technologies</span> :
+    <span class="brand-text"><span class="brand-name">ternloom</span><span class="brand-descriptor">TECHNOLOGIES</span></span>}
+</span>
+<style>
+  .brand { display: inline-flex; align-items: center; gap: var(--brand-gap); color: var(--color-ink); flex-shrink: 0; }
+  .brand--mono { color: inherit; }
+  .brand svg { width: var(--brand-symbol-size); height: var(--brand-symbol-size); flex-shrink: 0; }
+  .brand-text { display: flex; flex-direction: column; font-family: var(--font-brand); line-height: var(--brand-leading); }
+  .brand-name { font-size: var(--brand-name-size); font-weight: var(--brand-name-weight); letter-spacing: var(--brand-name-tracking); }
+  .brand-descriptor { margin-block-start: var(--brand-descriptor-gap); font-size: var(--brand-descriptor-size); font-weight: var(--brand-descriptor-weight); letter-spacing: var(--brand-descriptor-tracking); }
+</style>

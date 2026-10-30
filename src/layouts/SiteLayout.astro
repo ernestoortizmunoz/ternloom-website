@@ -1,0 +1,54 @@
+---
+import '../styles/global.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { site } from '../config/site';
+import { getPageMetadata, type Breadcrumb } from '../config/seo';
+interface Props {
+  title: string;
+  description: string;
+  pathname: string;
+  noindex?: boolean;
+  breadcrumbs?: Breadcrumb[];
+  serviceId?: string;
+}
+const { pathname, breadcrumbs = [] } = Astro.props;
+const metadata = getPageMetadata(Astro.props, import.meta.env.TERNLOOM_RELEASE === '1');
+---
+<!doctype html>
+<html lang={site.locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{metadata.title}</title>
+    <meta name="description" content={metadata.description} />
+    {metadata.noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={metadata.canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={metadata.title} />
+    <meta property="og:description" content={metadata.description} />
+    <meta property="og:url" content={metadata.canonical} />
+    <meta property="og:locale" content={site.locale.replace('-', '_')} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={metadata.title} />
+    <meta name="twitter:description" content={metadata.description} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <SiteHeader pathname={pathname} />
+    <main id="main-content" tabindex="-1">
+      {breadcrumbs.length > 0 && <nav class="container breadcrumbs" aria-label="Breadcrumb"><ol>{breadcrumbs.map((crumb, index) => <li>{index === breadcrumbs.length - 1 ? <span aria-current="page">{crumb.name}</span> : <a href={crumb.path}>{crumb.name}</a>}</li>)}</ol></nav>}
+      <slot />
+    </main>
+    <SiteFooter />
+  </body>
+</html>
+<style>
+  .breadcrumbs { padding-block-start: var(--space-4); font-size: var(--text-support); line-height: var(--leading-support); color: var(--color-muted); }
+  .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: var(--space-1); list-style: none; padding: 0; }
+  .breadcrumbs li { display: flex; align-items: center; gap: var(--space-1); }
+  .breadcrumbs li + li::before { content: '/'; }
+</style>

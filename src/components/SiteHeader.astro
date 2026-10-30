@@ -1,0 +1,30 @@
+---
+import Brand from './Brand.astro';
+import ActionLink from './ActionLink.astro';
+import { services } from '../data/services';
+interface Props { pathname: string }
+const { pathname } = Astro.props;
+const serviceLabels: Record<string, string> = { 'website-development': 'Websites', 'custom-business-software': 'Custom software', 'business-automation-integrations': 'Automation & integrations' };
+const links = [...services.map(({ id, path }) => ({ href: path, label: serviceLabels[id] })), { href: '/projects/', label: 'Selected work' }, { href: '/about/', label: 'About' }];
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="home-link" href="/" aria-label="Ternloom Technologies — home"><Brand /></a>
+    <nav aria-label="Primary"><ul>{links.map(({ href, label }) => <li><a href={href} aria-current={pathname === href ? 'page' : undefined}>{label}</a></li>)}</ul></nav>
+    <div class="header-contact"><ActionLink href="/contact/">Contact</ActionLink></div>
+  </div>
+</header>
+<style>
+  .site-header { border-block-end: var(--border-width) solid var(--color-line); }
+  .header-inner { display: flex; align-items: center; flex-wrap: wrap; column-gap: var(--space-4); row-gap: var(--space-2); padding-block: var(--space-3); }
+  .home-link { display: inline-flex; text-decoration: none; flex-shrink: 0; }
+  nav { margin-inline-start: auto; }
+  nav ul { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-3); padding: 0; list-style: none; }
+  nav a { display: flex; align-items: center; min-height: var(--control-height); font-size: var(--text-support); font-weight: var(--weight-medium); line-height: var(--leading-support); text-decoration: none; }
+  nav a:hover, nav a[aria-current='page'] { text-decoration: underline; text-underline-offset: var(--space-1); }
+  .header-contact { flex-shrink: 0; }
+  @media (max-width: 70rem) {
+    nav { order: 3; width: 100%; margin: 0; }
+    .header-contact { margin-inline-start: auto; }
+  }
+</style>

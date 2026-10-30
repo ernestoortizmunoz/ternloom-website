@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 40" width="164" height="40" color="#1C302B" role="img" aria-labelledby="title">
+  <title id="title">Ternloom Technologies</title>
+  <svg x="0" y="3" width="34" height="34" viewBox="0 0 40 40">
+    <path d="M4 7h23v8H13v18H5V7Z" fill="currentColor" />
+    <path d="M18 7h17v27H18v-8h9V15h-9Z" fill="currentColor" opacity=".45" />
+  </svg>
+  <g fill="currentColor" font-family="Arial, sans-serif">
+    <text x="46" y="22" font-size="24" font-weight="650" letter-spacing="-0.045em">ternloom</text>
+    <text x="46" y="37" font-size="10" font-weight="500" letter-spacing="0.14em">TECHNOLOGIES</text>
+  </g>
+</svg>

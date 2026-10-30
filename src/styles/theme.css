@@ -1,0 +1,63 @@
+:root {
+  --color-paper: #f7f5ef;
+  --color-ink: #1c302b;
+  --color-muted: #56655f;
+  --color-pine: #204d42;
+  --color-sage: #dbe5db;
+  --color-sand: #d8c5a8;
+  --color-rust: #90452e;
+  --color-line: #cbd2c9;
+  --color-white: #ffffff;
+
+  --font-body: 'DM Sans', Arial, sans-serif;
+  --font-editorial: Georgia, serif;
+  --font-brand: Arial, sans-serif;
+  --text-body: 1.0625rem;
+  --text-support: 0.875rem;
+  --text-label: 0.8125rem;
+  --text-section: clamp(1.75rem, 3vw, 2.25rem);
+  --text-hero: clamp(2.75rem, 6vw, 4.25rem);
+  --leading-body: 1.65;
+  --leading-support: 1.5;
+  --leading-heading: 1.15;
+  --leading-hero: 1.05;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --tracking-heading: -0.035em;
+  --tracking-label: 0.08em;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+  --space-10: 5rem;
+  --content-width: 72rem;
+  --reading-width: 42rem;
+  --page-gutter: 3rem;
+  --section-space: 4rem;
+  --control-height: 3rem;
+  --radius-action: 0.25rem;
+  --border-width: 1px;
+  --focus-width: 3px;
+  --focus-offset: 4px;
+  --icon-size: 1.125rem;
+
+  /* Accepted lockup: these values stay independent of the body typeface. */
+  --brand-symbol-size: 34px;
+  --brand-gap: 12px;
+  --brand-name-size: 24px;
+  --brand-name-weight: 650;
+  --brand-leading: 1.1;
+  --brand-name-tracking: -0.045em;
+  --brand-descriptor-size: 10px;
+  --brand-descriptor-weight: 500;
+  --brand-descriptor-tracking: 0.14em;
+  --brand-descriptor-gap: 5px;
+}
+
+@media (max-width: 48rem) {
+  :root { --page-gutter: 1.5rem; --section-space: 3rem; }
+}

@@ -95,3 +95,10 @@ The initial read-only builder check of the configuration brief and this context 
 - Guard tests were written first and failed meaningfully against temporary constant-return stubs (six failures in each of two RED runs); implementation then passed all seven tests. The synthetic ready contact is test-only and does not change owner approval state.
 - npm 11.19.1 reported one unapproved optional macOS watcher install script (`fsevents@2.3.3`) during clean install. Build and diagnostics succeeded without approving it. This remains an install warning, not an application diagnostic.
 - This is local foundation verification only. No browser, accessibility, hosted-header, deployment or DNS verification is claimed. The controller performs the browser review before continuing.
+
+## Shared shell implementation — October 30
+
+- Added the Working Weave theme, licensed local DM Sans, accepted interlocking mark and independent Arial wordmark, wrapping static navigation, footer, accessible skip target, shared action/heading/contact components and page metadata. The homepage remains an explicitly unfinished noindex fixture; the 404 is still the foundation fixture until its page task. Header/footer links target the approved routes, which subsequent page tasks must implement.
+- The layout combines publication state with page-level noindex so a page cannot weaken the local publication guard. Contact invitations only link to `/contact/`; no email address or form is active. Structured data is reserved for the later SEO task.
+- Local proof: the new shell output check first failed on the missing skip link. After implementation, Astro diagnostics passed for 19 files with zero errors, warnings or hints; all seven publication tests, the static two-page build, setup output checks, shell output checks and whitespace checks passed. Calculated contrast: ink/paper 12.78:1, muted/paper 5.63:1, white/pine 9.54:1 and paper/pine 8.75:1.
+- Browser viewport, keyboard, zoom and small-mark visual checks remain separate controller verification; no browser or full accessibility claim is made by these source/build checks. No push, deployment or external account change occurred.

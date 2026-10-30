@@ -1,0 +1,18 @@
+---
+import ActionLink from './ActionLink.astro';
+interface Props { heading?: string }
+const { heading = 'What would make your work easier?' } = Astro.props;
+---
+<section class="contact-invitation" aria-label="Discuss your project">
+  <div class="container invitation-inner">
+    <div class="invitation-copy"><p class="invitation-label">Start a conversation</p><h2>{heading}</h2><p>Tell us about your business, the tools you use and what you would like to change.</p></div>
+    <ActionLink href="/contact/">Discuss your project</ActionLink>
+  </div>
+</section>
+<style>
+  .contact-invitation { padding-block: var(--section-space); background: var(--color-pine); color: var(--color-white); --action-background: var(--color-paper); --action-foreground: var(--color-pine); --action-focus: var(--color-paper); }
+  .invitation-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4) var(--space-6); }
+  .invitation-copy { max-width: var(--reading-width); flex: 1 1 25rem; }
+  .invitation-label { margin-block-end: var(--space-2); font-size: var(--text-label); font-weight: var(--weight-medium); letter-spacing: var(--tracking-label); text-transform: uppercase; }
+  h2 + p { margin-block-start: var(--space-3); max-width: 50ch; }
+</style>
