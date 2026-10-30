@@ -1,0 +1,47 @@
+---
+import type { ProjectDefinition } from '../data/projects';
+import { services } from '../data/services';
+import ActionLink from './ActionLink.astro';
+interface Props { project: ProjectDefinition; detailed?: boolean; headingLevel?: 2 | 3 }
+const { project, detailed = false, headingLevel = 3 } = Astro.props;
+const Heading = headingLevel === 2 ? 'h2' : 'h3';
+const relatedServices = services.filter((service) => project.serviceIds.includes(service.id));
+---
+<article class:list={['project-summary', { detailed }]} data-project={project.id} aria-labelledby={`${project.id}-title`}>
+  {project.image && <figure class="project-preview">
+    <img src={project.image.src} alt={project.image.alt} width={project.image.width} height={project.image.height} loading="lazy" decoding="async" />
+    <figcaption>{project.image.caption}</figcaption>
+  </figure>}
+  <div class="project-copy">
+    <p class="project-role">{project.role}{project.status !== 'Public website' && <> — {project.status}</>}</p>
+    <Heading id={`${project.id}-title`}>{project.name}</Heading>
+    <p class="project-description">{project.summary}</p>
+    {detailed && <div class="project-detail flow">
+      <p>{project.businessNeed}</p>
+      <ul>{project.capabilities.map((capability) => <li>{capability}</li>)}</ul>
+      {project.scopeNotes.map((note) => <p class="scope-note">{note}</p>)}
+      <ul class="project-services" aria-label={`Services related to ${project.name}`}>
+        {relatedServices.map((service) => <li><a href={service.path}>{service.name}</a></li>)}
+      </ul>
+    </div>}
+    <ActionLink href={project.url} variant="text">Visit {project.name}</ActionLink>
+  </div>
+</article>
+<style>
+  .project-summary { min-width: 0; }
+  .project-preview { margin: 0 0 var(--space-3); }
+  .project-preview img { width: 100%; border: var(--border-width) solid var(--color-line); }
+  figcaption { margin-block-start: var(--space-1); color: var(--color-muted); font-size: var(--text-label); line-height: var(--leading-support); }
+  .project-role { padding-block-start: var(--space-3); border-block-start: var(--border-width) solid var(--color-line); margin-block-end: var(--space-1); color: var(--color-muted); font-size: var(--text-support); line-height: var(--leading-support); }
+  h2, h3 { margin-block-end: var(--space-2); }
+  .project-description { color: var(--color-muted); }
+  .project-copy > :global(.action-link) { margin-block-start: var(--space-2); }
+  .project-detail { margin-block-start: var(--space-3); }
+  .project-detail ul { padding-inline-start: var(--space-3); }
+  .scope-note { font-size: var(--text-support); color: var(--color-muted); }
+  .project-detail .project-services { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); list-style: none; padding: 0; font-size: var(--text-support); }
+  .project-services a { display: inline-flex; align-items: center; min-height: var(--control-height); }
+  .detailed { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); align-items: start; }
+  .detailed .project-preview { margin: 0; }
+  @media (max-width: 48rem) { .detailed { grid-template-columns: 1fr; gap: var(--space-3); } }
+</style>

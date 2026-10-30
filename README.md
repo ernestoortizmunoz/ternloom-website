@@ -16,7 +16,7 @@ Supporting capability: **cloud deployment and hosting with simple infrastructure
 
 ## Current state
 
-The owner approved the configuration and local Working Weave implementation. The static Astro foundation is implemented with unfinished noindex setup and 404 fixtures. Designed pages are the next stage. Contact is unset, all publication readiness flags are false, and the contact form is deferred. Nothing has been deployed.
+The owner approved the configuration and local Working Weave implementation. The static Astro foundation, shared Working Weave shell and homepage are implemented. The remaining content routes and designed 404 are next; the 404 is still a setup fixture. Contact is unset, all publication readiness flags are false, and the contact form is deferred. Nothing has been deployed.
 
 The project uses static Astro, TypeScript, plain CSS, directory output and trailing slashes. It builds independently of sibling repositories. Cloudflare Pages remains the intended hosting target, with no provider account or DNS changes made.
 
@@ -30,14 +30,14 @@ npm run check
 npm test
 npm run test:publication
 npm run build
-npm run check:output -- --stage setup
+npm run check:output
 npm run dev
 npm run preview
 ```
 
 Development and preview bind to `127.0.0.1`. Preview serves the most recent `dist` build. Publication tests use Node's built-in TypeScript stripping; `npm run check` performs type checking separately.
 
-Default builds stay noindex. `TERNLOOM_RELEASE=1 npm run build` fails until public contact, contact confirmation, project copy and project assets are approved in `src/config/site.ts`. The setup fixtures remain noindex even with release approval. The 404 must remain noindex in the designed site too. A successful local build does not authorize publication or prove hosted behavior.
+Default builds stay noindex. `TERNLOOM_RELEASE=1 npm run build` fails until public contact, contact confirmation, project copy and project assets are approved in `src/config/site.ts`. The 404 remains noindex independently. Output checks default to the homepage stage; the historical `--stage setup` check deliberately rejects the designed homepage. A successful local build does not authorize publication or prove hosted behavior.
 
 ## Read first
 

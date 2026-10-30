@@ -1,0 +1,29 @@
+<div class="working-weave" aria-hidden="true">
+  <svg data-working-weave viewBox="0 0 520 460" aria-hidden="true" focusable="false">
+    <defs>
+      <pattern id="weave-dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" class="dot" /></pattern>
+    </defs>
+    <rect x="2" y="2" width="516" height="456" fill="url(#weave-dots)" />
+    <path class="strand sage" d="M50 58H142V314Q142 366 194 366H478" />
+    <path class="strand pine" d="M28 158H316Q368 158 368 210V430" />
+    <path class="strand sand" d="M258 28V238Q258 286 210 286H28" />
+    <path class="strand sage" d="M142 242V314Q142 366 194 366H478" />
+    <path class="strand pine" d="M28 158H188" />
+    <path class="thread" d="M454 42V276" />
+    <circle class="thread-end" cx="454" cy="42" r="5" />
+    <path class="thread" d="M448 270L454 276L460 270" />
+  </svg>
+  <p>Different needs. Thoughtfully connected.</p>
+</div>
+<style>
+  .working-weave { width: 100%; }
+  svg { width: 100%; height: auto; overflow: visible; }
+  .dot { fill: var(--color-line); }
+  .strand { fill: none; stroke-width: 76; }
+  .sage { stroke: var(--color-sage); }
+  .pine { stroke: var(--color-pine); }
+  .sand { stroke: var(--color-sand); }
+  .thread { fill: none; stroke: var(--color-rust); stroke-width: 2; }
+  .thread-end { fill: var(--color-rust); }
+  p { margin-block-start: var(--space-2); text-align: right; color: var(--color-muted); font-size: var(--text-label); }
+</style>

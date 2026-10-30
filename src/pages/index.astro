@@ -1,14 +1,157 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
+import ActionLink from '../components/ActionLink.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import ProjectSummary from '../components/ProjectSummary.astro';
+import ContactInvitation from '../components/ContactInvitation.astro';
+import WorkingWeave from '../components/home/WorkingWeave.astro';
 import { services } from '../data/services';
+import { projects } from '../data/projects';
+import { site } from '../config/site';
+const serviceIntroductions = [
+  {
+    need: 'Be easier to find and contact',
+    description: 'When customers need to understand your business, your website should make the next step clear. Bring your services, products and enquiry paths together in one considered place.',
+    scope: 'A project could include a new business website, a redesign, a product catalogue or a clearer route to an enquiry.',
+    action: 'Explore website development',
+  },
+  {
+    need: 'Make room for the way you work',
+    description: 'Sometimes the tools available do not quite fit the job. Custom software starts with the work itself: what people need to do, what information they need and where things get difficult.',
+    scope: 'Potential work includes a focused internal tool, a purpose-built application or a clearer way to manage a business workflow.',
+    action: 'Explore custom software',
+  },
+  {
+    need: 'Connect the tools you already use',
+    description: 'Repeated entry and disconnected systems can make simple tasks harder than they need to be. Start by finding the handoffs that would benefit from a connection.',
+    scope: 'Depending on the tools involved, a project could connect booking requests, checkout services or repeatable information transfers.',
+    action: 'Explore automation & integrations',
+  },
+];
+const steps = [
+  { title: 'Understand the problem', description: 'Talk through your business, the people doing the work and the tools already in place.' },
+  { title: 'Agree the scope', description: 'Define what to build, what it needs to connect with and what a useful result looks like.' },
+  { title: 'Build and review', description: 'Review the work together, test the agreed behaviour and plan the steps needed for delivery.' },
+];
 ---
-<SiteLayout title="Unfinished local setup — Ternloom Technologies" description="An unfinished local preview of the Ternloom Technologies website." pathname="/" noindex>
- <div class="container section flow">
-  <h1>Ternloom Technologies — unfinished local setup</h1>
-  <p>This page verifies the static website foundation. The website is not ready for publication.</p>
-  <ul>
-    {services.map((service) => <li data-service={service.id}>{service.name}</li>)}
-  </ul>
-  <p>Public contact details are awaiting confirmation.</p>
- </div>
+<SiteLayout title="Ternloom Technologies — Websites, Software & Integrations" description="Websites, custom software and connected tools for small businesses in Ottawa and across Canada. Explore Ternloom Technologies’ services and selected projects." pathname="/">
+  <section class="hero container" aria-labelledby="home-title">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Small-business technology · Ottawa &amp; Canada</p>
+        <h1 id="home-title">Built around<br /> the way<br /> <em>you work.</em></h1>
+        <p class="hero-intro">Websites, custom software and connected tools for small businesses in Ottawa and across Canada.</p>
+        <div class="hero-actions">
+          <ActionLink href="/contact/">Discuss your project</ActionLink>
+          <ActionLink href="/projects/" variant="text">Explore selected work</ActionLink>
+        </div>
+      </div>
+      <WorkingWeave />
+    </div>
+    <ul class="service-line" aria-label="Our services">
+      {services.map((service) => <li><a href={service.path}>{service.name}</a></li>)}
+    </ul>
+  </section>
+
+  <div class="experience">
+    <div class="container"><p>{site.experienceStatement}</p></div>
+  </div>
+
+  <section class="container section selected-projects" aria-labelledby="projects-title">
+    <div class="section-intro">
+      <SectionHeading id="projects-title" eyebrow="Selected projects">Work with a business behind it.</SectionHeading>
+      <p>Two business technology relationships and a product of our own. Different needs, with useful work at the centre.</p>
+    </div>
+    <div class="project-grid">{projects.map((project) => <ProjectSummary project={project} />)}</div>
+    <div class="section-end"><ActionLink href="/projects/" variant="text">More about these projects</ActionLink></div>
+  </section>
+
+  <section class="services-section section" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-intro">
+        <SectionHeading id="services-title" eyebrow="What we can build">Start with what your business needs.</SectionHeading>
+        <p>A clear website, a tool that fits, or a better connection between systems. The right starting point depends on your work.</p>
+      </div>
+      <div class="service-sections">
+        {services.map((service, index) => <section class="service-row" data-service={service.id} aria-labelledby={`${service.id}-title`}>
+          <div class="service-title">
+            <p class="eyebrow"><span aria-hidden="true">0{index + 1} / </span>{serviceIntroductions[index].need}</p>
+            <h3 id={`${service.id}-title`}>{service.name}</h3>
+          </div>
+          <div class="service-copy">
+            <p>{serviceIntroductions[index].description}</p>
+            <p class="service-scope">{serviceIntroductions[index].scope}</p>
+            <ActionLink href={service.path} variant="text">{serviceIntroductions[index].action}</ActionLink>
+          </div>
+        </section>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="container section working-together" aria-labelledby="process-title">
+    <div class="section-intro">
+      <SectionHeading id="process-title" eyebrow="Working together">A clear starting point.</SectionHeading>
+      <p>Begin with the business problem. Work out the details together before deciding what to build.</p>
+    </div>
+    <ol class="process-steps">
+      {steps.map((step, index) => <li><span class="step-number" aria-hidden="true">0{index + 1}</span><h3>{step.title}</h3><p>{step.description}</p></li>)}
+    </ol>
+    <div class="cloud-note">
+      <h3>Thoughtful delivery, too.</h3>
+      <p>Cloud deployment and hosting can support the work, with simple infrastructure, low maintenance and predictable running costs as design goals. Hosting, costs and any ongoing support are agreed for the project.</p>
+    </div>
+  </section>
+  <ContactInvitation heading="Tell us what needs to work better." />
 </SiteLayout>
+<style>
+  .hero { padding-block: var(--space-8) var(--space-4); }
+  .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: var(--space-6); }
+  .hero h1 { margin-block: var(--space-3); max-width: 12ch; }
+  .hero h1 em { font-family: var(--font-editorial); font-weight: var(--weight-regular); }
+  .hero-intro { max-width: 45ch; color: var(--color-muted); }
+  .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); margin-block-start: var(--space-4); }
+  .service-line { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-4); padding: var(--space-3) 0 0; margin-block-start: var(--space-6); border-block-start: var(--border-width) solid var(--color-line); list-style: none; font-size: var(--text-support); color: var(--color-muted); }
+  .service-line a { display: inline-flex; align-items: center; min-height: var(--control-height); text-decoration: none; }
+  .service-line a:hover { text-decoration: underline; }
+  .experience { border-block: var(--border-width) solid var(--color-line); padding-block: var(--space-3); font-size: var(--text-support); }
+  .experience p { display: flex; align-items: baseline; gap: var(--space-2); }
+  .experience p::before { content: ''; width: var(--space-4); height: var(--border-width); flex-shrink: 0; background: var(--color-rust); }
+  .section-intro { display: grid; grid-template-columns: 1.2fr 1fr; align-items: end; gap: var(--space-3) var(--space-6); margin-block-end: var(--space-6); }
+  .section-intro > p { color: var(--color-muted); max-width: 48ch; }
+  .project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4); }
+  .section-end { margin-block-start: var(--space-4); }
+  .services-section { background: var(--color-sage); }
+  .service-row { display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--space-3) var(--space-8); padding-block: var(--space-4); border-block-start: var(--border-width) solid var(--color-line); }
+  .service-row:last-child { padding-block-end: 0; }
+  .service-title .eyebrow { margin-block-end: var(--space-2); }
+  .service-title h3 { font-size: var(--text-section); max-width: 20ch; }
+  .service-copy > * + * { margin-block-start: var(--space-2); }
+  .service-scope { color: var(--color-muted); font-size: var(--text-support); }
+  .process-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4); padding: 0; list-style: none; }
+  .process-steps li { border-block-start: var(--border-width) solid var(--color-line); padding-block-start: var(--space-3); }
+  .step-number { display: block; color: var(--color-rust); font-size: var(--text-support); margin-block-end: var(--space-3); }
+  .process-steps h3 { margin-block-end: var(--space-2); }
+  .process-steps p { color: var(--color-muted); }
+  .cloud-note { display: grid; grid-template-columns: 1fr 2fr; gap: var(--space-3) var(--space-6); border-block-start: var(--border-width) solid var(--color-line); padding-block-start: var(--space-4); margin-block-start: var(--space-6); }
+  .cloud-note h3 { font-size: var(--text-body); }
+  .cloud-note p { color: var(--color-muted); font-size: var(--text-support); }
+  @media (max-width: 64rem) {
+    .hero-grid { gap: var(--space-4); }
+    .hero h1 { max-width: 11ch; }
+    .project-grid { gap: var(--space-3); }
+    .service-row { gap: var(--space-4); }
+  }
+  @media (max-width: 48rem) {
+    .hero { padding-block-start: var(--space-6); }
+    .hero-grid, .section-intro, .project-grid, .service-row, .process-steps, .cloud-note { grid-template-columns: 1fr; }
+    .hero-grid { gap: var(--space-6); }
+    .hero h1 { max-width: 12ch; }
+    .hero-grid > :global(.working-weave) { max-width: var(--reading-width); margin-inline: auto; }
+    .service-line { display: grid; gap: 0; margin-block-start: var(--space-4); padding-block-start: var(--space-2); }
+    .project-grid { gap: var(--space-6); }
+    .section-intro { margin-block-end: var(--space-4); }
+    .service-title h3 { max-width: none; }
+    .process-steps { gap: var(--space-4); }
+    .cloud-note { gap: var(--space-2); }
+  }
+</style>
