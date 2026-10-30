@@ -1,15 +1,15 @@
 ---
-interface Props { tallyId: string }
-const { tallyId } = Astro.props;
-const context = 'source=ternloom-website&environment=local-test';
+interface Props { tallyId: string; preview?: boolean }
+const { tallyId, preview = true } = Astro.props;
+const context = `source=ternloom-website&environment=${preview ? 'local-test' : 'production'}`;
 const embedUrl = `https://tally.so/embed/${encodeURIComponent(tallyId)}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&${context}`;
 const directUrl = `https://tally.so/r/${encodeURIComponent(tallyId)}?${context}`;
 ---
 <div class="contact-form">
-  <p><strong>Test form — please use dummy details only.</strong></p>
-  <p class="form-note">Submissions go to Tally and may trigger emails configured in the Tally account. This form is for local testing, not real project enquiries.</p>
-  <p><a href={directUrl}>Open the test form directly in Tally</a> if the embedded form does not load or is difficult to use.</p>
-  <iframe src={embedUrl} title="Ternloom project enquiry — test form"></iframe>
+  {preview && <p><strong>Local preview — please use test details.</strong> Submissions are sent to Tally and may trigger email notifications.</p>}
+  <p class="form-note">Ternloom Technologies uses the details you provide to review your project enquiry and respond by email. Tally hosts the form and stores submissions. Read our <a href="/privacy/">privacy notice</a> for details.</p>
+  <p><a href={directUrl}>Open the enquiry form in Tally</a> if the embedded form does not load or is difficult to use.</p>
+  <iframe src={embedUrl} title="Ternloom project enquiry"></iframe>
 </div>
 <script is:inline defer src="https://tally.so/widgets/embed.js"></script>
 <style>

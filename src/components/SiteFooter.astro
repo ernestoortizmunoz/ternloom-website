@@ -12,7 +12,7 @@ import { site } from '../config/site';
     <nav aria-label="Services"><h2>What we do</h2><ul>{services.map((service) => <li><a href={service.path}>{service.name}</a></li>)}</ul></nav>
     <nav aria-label="Explore"><h2>Explore</h2><ul><li><a href="/projects/">Selected projects</a></li><li><a href="/about/">About Ternloom</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
   </div>
-  <div class="container footer-bottom"><p>© {new Date().getFullYear()} {site.name}</p><p>Ottawa, Ontario · Serving Canada</p></div>
+  <div class="container footer-bottom"><p>© {new Date().getFullYear()} {site.name}</p><p>Ottawa, Ontario · Serving Canada</p><a href="/privacy/">Privacy notice</a></div>
 </footer>
 <style>
   .site-footer { border-block-start: var(--border-width) solid var(--color-line); padding-block: var(--space-8) var(--space-3); }

@@ -1,0 +1,69 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import { site } from '../config/site';
+
+const contact = site.readiness.contactConfirmed ? site.contact : null;
+const retentionMonths = site.privacy.enquiryRetentionMonths;
+---
+<SiteLayout
+  title="Privacy Notice — Ternloom Technologies"
+  description="How Ternloom Technologies handles project enquiries, including form providers, retention and privacy requests."
+  pathname="/privacy/"
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Privacy', path: '/privacy/' }]}
+>
+  <article class="container reading-width section" aria-labelledby="privacy-title">
+    <header class="flow">
+      <h1 id="privacy-title">Privacy notice</h1>
+      <p>Last updated: <time datetime="2026-10-30">October 30, 2026</time>.</p>
+      {!site.readiness.privacyNoticeApproved && (
+        <p><strong>Local draft — pending approval.</strong> This notice is prepared for review and has not been approved for publication. The local contact form connects to Tally and can send real submissions and email notifications.</p>
+      )}
+      <p>This notice explains how Ternloom Technologies handles the information you share when you contact us about a project, and how the embedded contact form processes information.</p>
+    </header>
+
+    <section class="section flow" aria-labelledby="information-title">
+      <SectionHeading id="information-title">Information you share</SectionHeading>
+      <p>The contact form asks for your name, email address, service choice and project message. You can also provide your business name and website URL; these fields are optional. If you email us, we receive your email address, message and any other information you choose to include.</p>
+      <p>The form also records where an enquiry came from and whether it was sent through a test or public version of the form. The form and security providers may process device, browser and connection information, such as an IP address, to operate their services and help prevent abuse.</p>
+      <p>Please avoid including passwords, payment details or sensitive personal information in your enquiry.</p>
+    </section>
+
+    <section class="section flow" aria-labelledby="purpose-title">
+      <SectionHeading id="purpose-title">How we use enquiry information</SectionHeading>
+      <p>We use your information to respond to you, assess and discuss your project, and maintain relevant enquiry and project records. Sending an enquiry does not subscribe you to a newsletter or give consent to advertising.</p>
+    </section>
+
+    <section class="section flow" aria-labelledby="providers-title">
+      <SectionHeading id="providers-title">Form and security providers</SectionHeading>
+      <p>Our contact form uses Tally. Tally stores submitted responses and sends email notifications, so enquiry information can also be held in our email account. The form uses Google reCAPTCHA to help prevent automated abuse.</p>
+      <p>These providers may process information outside Canada. Their services and processing practices are described in <a href="https://tally.so/help/gdpr">Tally's data processing information</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Google reCAPTCHA is also subject to <a href="https://policies.google.com/terms">Google's Terms of Service</a>.</p>
+    </section>
+
+    <section class="section flow" aria-labelledby="retention-title">
+      <SectionHeading id="retention-title">How long we keep enquiries</SectionHeading>
+      {retentionMonths && retentionMonths > 0 ? (
+        <p>Our policy is to delete active enquiry copies within {retentionMonths} months of submission, unless they are needed for an ongoing project or required records. This includes responses held in Tally, enquiry emails and any exported copies we retain.</p>
+      ) : (
+        <p>The enquiry retention period is awaiting confirmation before publication.</p>
+      )}
+      <p>We delete these records manually. Copies in providers' trash and backup systems may remain for their normal deletion cycles after an active copy is deleted.</p>
+    </section>
+
+    <section class="section flow" aria-labelledby="cookies-title">
+      <SectionHeading id="cookies-title">Cookies and website measurement</SectionHeading>
+      <p>We have not added first-party visitor analytics or advertising tracking to this website. Embedded services, including Tally and Google reCAPTCHA on the contact page, may process device and connection information and use cookies to provide their services and security checks.</p>
+      <p>You can email us directly using the address below if you prefer not to use the embedded form.</p>
+    </section>
+
+    <section class="section flow" aria-labelledby="requests-title">
+      <SectionHeading id="requests-title">Privacy questions and requests</SectionHeading>
+      {contact ? (
+        <p>For privacy questions, or to request access to, correction of or deletion of your enquiry information, email <a href={`mailto:${contact.email}`}>{contact.email}</a>. You can also use this address to send a project enquiry directly.</p>
+      ) : (
+        <p>The privacy contact email is awaiting confirmation before publication.</p>
+      )}
+      <p>Include enough detail to help us locate your enquiry. We may ask for information to verify your identity before sharing or changing records. We will review your request and explain any information that needs to be retained for an ongoing project or required records.</p>
+    </section>
+  </article>
+</SiteLayout>

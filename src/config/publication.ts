@@ -6,6 +6,9 @@ export function getPublicationState(site: SiteConfig, releaseRequested: boolean,
 
   const missing: string[] = [];
   if (!site.contact?.email.trim()) missing.push('contact');
+  if (!site.contactForm?.tallyId.trim()) missing.push('contactForm');
+  const retention = site.privacy.enquiryRetentionMonths;
+  if (retention === null || !Number.isInteger(retention) || retention <= 0) missing.push('privacy.retention');
   for (const [gate, approved] of Object.entries(site.readiness)) {
     if (!approved) missing.push(gate);
   }

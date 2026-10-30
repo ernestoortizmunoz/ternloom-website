@@ -9,8 +9,12 @@ const approvedProjects = projects.map((project) => ({ ...project, copyApproved: 
 const ready = {
   ...site,
   contact: { email: 'test@example.invalid' },
+  contactForm: { tallyId: 'dbEbrd' },
+  privacy: { enquiryRetentionMonths: 12 },
   readiness: {
     contactConfirmed: true,
+    contactFormReady: true,
+    privacyNoticeApproved: true,
     projectCopyApproved: true,
     projectAssetsApproved: true,
   },
@@ -29,7 +33,7 @@ test('release rejects an empty contact address', () => {
   assert.throws(() => getPublicationState({ ...ready, contact: { email: '  ' } }, true), /contact/i);
 });
 
-for (const gate of ['contactConfirmed', 'projectCopyApproved', 'projectAssetsApproved']) {
+for (const gate of ['contactConfirmed', 'contactFormReady', 'privacyNoticeApproved', 'projectCopyApproved', 'projectAssetsApproved']) {
   test(`release requires ${gate}`, () => {
     assert.throws(() => getPublicationState({
       ...ready,
@@ -37,6 +41,18 @@ for (const gate of ['contactConfirmed', 'projectCopyApproved', 'projectAssetsApp
     }, true), new RegExp(gate));
   });
 }
+
+test('release rejects a missing or empty form even when approvals are true', () => {
+  for (const contactForm of [null, { tallyId: ' ' }]) {
+    assert.throws(() => getPublicationState({ ...ready, contactForm }, true, approvedProjects), /contactForm/i);
+  }
+});
+
+test('release rejects an unconfirmed or invalid retention period', () => {
+  for (const enquiryRetentionMonths of [null, 0, -1, 1.5]) {
+    assert.throws(() => getPublicationState({ ...ready, privacy: { enquiryRetentionMonths } }, true, approvedProjects), /retention/i);
+  }
+});
 
 test('explicit release with every prerequisite permits indexing', () => {
   assert.deepEqual(getPublicationState(ready, true, approvedProjects), { noindex: false });

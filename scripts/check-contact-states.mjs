@@ -18,8 +18,7 @@ import ContactDetails from '../ContactDetails.astro';
 ---
 <div id="confirmed"><ContactDetails contact={{ email: 'hello@example.test' }} confirmed={true} /></div>
 <div id="unconfirmed"><ContactDetails contact={{ email: 'hidden@example.test' }} confirmed={false} /></div>
-<div id="missing"><ContactDetails contact={null} confirmed={true} /></div>
-<div id="test"><ContactDetails contact={null} confirmed={false} localTest={true} /></div>`);
+<div id="missing"><ContactDetails contact={null} confirmed={true} /></div>`);
   await build({ root: fixture, configFile: false, logLevel: 'error' });
   const html = await readFile(join(fixture, 'dist/index.html'), 'utf8');
   const state = (id) => html.match(new RegExp(`<div id="${id}">([\\s\\S]*?)<\\/div>`))?.[1];
@@ -29,12 +28,8 @@ import ContactDetails from '../ContactDetails.astro';
     assert.match(state(id), /Contact details are not yet available/);
     assert.doesNotMatch(state(id), /mailto:|example.test/);
   }
-  assert.match(state('test'), /Try the test form below/);
-  assert.match(state('test'), /dummy details/);
-  assert.match(state('test'), /may trigger/);
-  assert.doesNotMatch(state('test'), /mailto:|Contact details are not yet available/);
   assert.doesNotMatch(html, /<form\b|<button\b|<script\b/i);
-  console.log('Contact fixture checks passed: confirmed email, inactive missing/unconfirmed contacts, and honest local-test state.');
+  console.log('Contact fixture checks passed: confirmed email and inactive missing/unconfirmed contacts.');
 } finally {
   await rm(fixture, { recursive: true, force: true });
 }

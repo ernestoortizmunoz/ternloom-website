@@ -14,7 +14,7 @@ const attributes = (tag) => Object.fromEntries([...tag.matchAll(/([\w:-]+)="([^"
 const contents = new Map(await Promise.all(files.map(async (file) => [file, await readFile(new URL(file, output), 'utf8')])));
 const fileForPath = (pathname) => pathname === '/404/' ? '404.html' : `${pathname.slice(1)}${pathname.endsWith('/') ? 'index.html' : ''}`;
 if (stage === 'setup') assert.deepEqual(files, ['404.html', 'index.html'], 'Setup must contain only its two fixtures.');
-if (stage === 'website') assert.deepEqual(files, [...contentPaths.map(fileForPath), '404.html'].sort(), 'Exactly seven content routes and a 404 required.');
+if (stage === 'website') assert.deepEqual(files, [...contentPaths.map(fileForPath), '404.html'].sort(), 'Exactly eight content routes and a 404 required.');
 assert.ok(files.includes('index.html') && files.includes('404.html'), 'Home and 404 outputs required.');
 const titles = new Set();
 const descriptions = new Set();
@@ -28,12 +28,12 @@ for (const [file, html] of contents) {
   if (!site.contact || !site.readiness.contactConfirmed) assert.doesNotMatch(html, /mailto:/i, `${file}: contact actions are not approved`);
   const clientScripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)].filter(([tag]) => !tag.includes('type="application/ld+json"'));
   const frames = [...html.matchAll(/<iframe\b[^>]*>/g)];
-  if (file === 'contact/index.html' && site.localTestForm) {
+  if (file === 'contact/index.html' && site.contactForm) {
     assert.equal(clientScripts.length, 1, `${file}: only the official sizing script`);
     assert.equal(attributes(clientScripts[0][0]).src, 'https://tally.so/widgets/embed.js');
     assert.equal(clientScripts[0][2].trim(), '', `${file}: no inline executable code`);
-    assert.equal(frames.length, 1, `${file}: one local test iframe`);
-    assert.equal(new URL(attributes(frames[0][0]).src).pathname, `/embed/${site.localTestForm.tallyId}`);
+    assert.equal(frames.length, 1, `${file}: one Ternloom enquiry iframe`);
+    assert.equal(new URL(attributes(frames[0][0]).src).pathname, `/embed/${site.contactForm.tallyId}`);
   } else {
     assert.equal(clientScripts.length, 0, `${file}: no executable client JavaScript`);
     assert.equal(frames.length, 0, `${file}: no third-party iframe`);
@@ -41,6 +41,7 @@ for (const [file, html] of contents) {
   assert.doesNotMatch(html, /\bon\w+\s*=|javascript:/i, `${file}: no executable inline handlers`);
   if (stage === 'setup' && file === 'index.html') assert.match(html, /unfinished local setup/);
   if (stage !== 'website') continue;
+  assert.ok(html.includes('href="/privacy/"'), `${file}: privacy notice is discoverable`);
 
   const title = decode(html.match(/<title>([^<]+)<\/title>/)?.[1] ?? '');
   const meta = Object.fromEntries([...html.matchAll(/<meta\b[^>]*>/g)].map(([tag]) => { const attr = attributes(tag); return [attr.name ?? attr.property, attr.content]; }));
@@ -112,6 +113,6 @@ if (stage === 'website') {
   assert.ok(!(await readdir(output)).some((file) => /sitemap.*\.xml$/.test(file)), 'Preview must not emit a production sitemap');
 }
 if (stage === 'home' || stage === 'website') {
-  for (const check of ['home', 'shell', 'website-service', 'software-service', 'automation-service', 'projects', 'about', 'contact', '404']) await import(`./check-${check}.mjs`);
+  for (const check of ['home', 'shell', 'website-service', 'software-service', 'automation-service', 'projects', 'about', 'contact', 'privacy', '404']) await import(`./check-${check}.mjs`);
 }
-console.log(`Output checks passed: ${stage} (${files.length} noindex pages, exact canonical paths, contact-only Tally test exception${stage === 'website' ? ', unique metadata, factual schema, all local links/fragments/assets, reserved images and social PNG' : ''}).`);
+console.log(`Output checks passed: ${stage} (${files.length} noindex pages, exact canonical paths, contact-only Tally integration${stage === 'website' ? ', unique metadata, factual schema, all local links/fragments/assets, reserved images and social PNG' : ''}).`);

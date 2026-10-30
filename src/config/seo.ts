@@ -2,7 +2,7 @@ import { site } from './site.ts';
 import { getPublicationState } from './publication.ts';
 import { services } from '../data/services.ts';
 
-export const contentPaths = ['/', ...services.map((service) => service.path), '/projects/', '/about/', '/contact/'];
+export const contentPaths = ['/', ...services.map((service) => service.path), '/projects/', '/about/', '/contact/', '/privacy/'];
 export const socialImage = { path: '/social-preview.png', width: 1200, height: 630, alt: 'Ternloom Technologies — Built around the way you work.' };
 
 export interface Breadcrumb { name: string; path: string }

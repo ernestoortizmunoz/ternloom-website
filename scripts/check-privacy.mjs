@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { site } from '../src/config/site.ts';
+
+const html = await readFile(new URL('../dist/privacy/index.html', import.meta.url), 'utf8');
+const main = html.match(/<main\b[\s\S]*?<\/main>/)?.[0];
+assert.ok(main);
+assert.equal((main.match(/<h1\b/g) ?? []).length, 1);
+assert.match(main, /Privacy notice/);
+assert.match(main, /draft/i);
+assert.equal(site.privacy.enquiryRetentionMonths, 12);
+assert.match(main, /12 months/);
+for (const topic of [/Tally/, /reCAPTCHA/, /outside Canada/, /ongoing project/i, /required records/i, /backup/i, /cookies/i]) assert.match(main, topic);
+assert.match(main, /href="mailto:info@ternloom.com"/);
+assert.match(main, /href="https:\/\/policies.google.com\/privacy"/);
+assert.match(main, /href="https:\/\/policies.google.com\/terms"/);
+assert.match(html, /<meta name="robots" content="noindex, nofollow"/);
+assert.match(html, /<link rel="canonical" href="https:\/\/ternloom.com\/privacy\/"/);
+assert.doesNotMatch(html, /<iframe\b|<form\b|<script\b(?![^>]*type="application\/ld\+json")/i);
+console.log('Privacy output checks passed: factual providers, confirmed email, owner-selected retention, draft status and static noindex route.');

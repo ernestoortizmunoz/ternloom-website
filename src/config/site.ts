@@ -6,9 +6,12 @@ export interface SiteConfig {
   serviceArea: string;
   experienceStatement: string;
   contact: { email: string } | null;
-  localTestForm: { tallyId: string } | null;
+  contactForm: { tallyId: string } | null;
+  privacy: { enquiryRetentionMonths: number | null };
   readiness: {
     contactConfirmed: boolean;
+    contactFormReady: boolean;
+    privacyNoticeApproved: boolean;
     projectCopyApproved: boolean;
     projectAssetsApproved: boolean;
   };
@@ -21,10 +24,13 @@ export const site: SiteConfig = {
   location: 'Ottawa, Ontario, Canada',
   serviceArea: 'Canada',
   experienceStatement: 'Built on more than 15 years of experience in IT and software development.',
-  contact: null,
-  localTestForm: { tallyId: 'dbEbrd' },
+  contact: { email: 'info@ternloom.com' },
+  contactForm: { tallyId: 'dbEbrd' },
+  privacy: { enquiryRetentionMonths: 12 },
   readiness: {
-    contactConfirmed: false,
+    contactConfirmed: true,
+    contactFormReady: false,
+    privacyNoticeApproved: false,
     projectCopyApproved: false,
     projectAssetsApproved: false,
   },

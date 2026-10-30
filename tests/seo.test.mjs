@@ -5,7 +5,7 @@ import { site } from '../src/config/site.ts';
 import { services } from '../src/data/services.ts';
 
 test('canonical content inventory excludes errors and fixtures', () => {
-  assert.deepEqual(contentPaths, ['/', '/services/website-development/', '/services/custom-business-software/', '/services/business-automation-integrations/', '/projects/', '/about/', '/contact/']);
+  assert.deepEqual(contentPaths, ['/', '/services/website-development/', '/services/custom-business-software/', '/services/business-automation-integrations/', '/projects/', '/about/', '/contact/', '/privacy/']);
 });
 
 test('structured data contains factual identity and visible service hierarchy only', () => {
