@@ -2,6 +2,9 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { getPublicationState } from '../src/config/publication.ts';
 import { site } from '../src/config/site.ts';
+import { projects } from '../src/data/projects.ts';
+
+const approvedProjects = projects.map((project) => ({ ...project, copyApproved: true, image: { ...project.image, approved: true } }));
 
 const ready = {
   ...site,
@@ -36,5 +39,20 @@ for (const gate of ['contactConfirmed', 'projectCopyApproved', 'projectAssetsApp
 }
 
 test('explicit release with every prerequisite permits indexing', () => {
-  assert.deepEqual(getPublicationState(ready, true), { noindex: false });
+  assert.deepEqual(getPublicationState(ready, true, approvedProjects), { noindex: false });
 });
+
+test('global readiness cannot override real unapproved project copy or images', () => {
+  assert.throws(() => getPublicationState(ready, true), /bonita-nights.*copyApproved/);
+});
+
+for (const gate of ['copy', 'image']) {
+  test(`each project requires approved ${gate} independently of global readiness`, () => {
+    for (const project of approvedProjects) {
+      const candidate = approvedProjects.map((item) => item.id !== project.id ? item : {
+        ...item, ...(gate === 'copy' ? { copyApproved: false } : { image: { ...item.image, approved: false } }),
+      });
+      assert.throws(() => getPublicationState(ready, true, candidate), new RegExp(project.id));
+    }
+  });
+}
