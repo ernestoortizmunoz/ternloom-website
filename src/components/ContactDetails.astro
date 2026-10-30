@@ -1,0 +1,35 @@
+---
+interface Props {
+  contact: { email: string } | null;
+  confirmed: boolean;
+}
+const { contact, confirmed } = Astro.props;
+---
+<section class="contact-details" aria-labelledby="contact-details-title">
+  {contact && confirmed ? (
+    <>
+      <p class="contact-label">Start a conversation</p>
+      <h2 id="contact-details-title">Email us about your project</h2>
+      <p>A few sentences about your business and what you need are enough to begin.</p>
+      <p class="email"><a href={`mailto:${contact.email}`}>{contact.email}</a></p>
+      <p class="contact-note">Open the link in your email app, or select the address to use it in your preferred email service.</p>
+    </>
+  ) : (
+    <>
+      <p class="contact-label">Local draft · Enquiries not enabled</p>
+      <h2 id="contact-details-title">Contact details are not yet available</h2>
+      <p>This local draft does not accept enquiries. An email address will appear here once the contact details are confirmed.</p>
+      <p class="contact-note">For now, explore the services below and use the project prompts to think through what you need.</p>
+    </>
+  )}
+</section>
+<style>
+  .contact-details { padding: var(--space-6); background: var(--color-pine); color: var(--color-white); }
+  .contact-label { font-size: var(--text-label); font-weight: var(--weight-medium); letter-spacing: var(--tracking-label); text-transform: uppercase; margin-block-end: var(--space-3); }
+  h2 + p, .email, .contact-note { margin-block-start: var(--space-3); }
+  .contact-note { font-size: var(--text-support); line-height: var(--leading-support); }
+  .email { overflow-wrap: anywhere; font-weight: var(--weight-medium); }
+  .email a { display: inline-block; padding-block: var(--space-1); }
+  ::selection { background: var(--color-paper); color: var(--color-pine); }
+  @media (max-width: 48rem) { .contact-details { padding: var(--space-4); } }
+</style>
