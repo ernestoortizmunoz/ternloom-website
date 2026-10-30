@@ -102,6 +102,42 @@ export const services: ServiceDefinition[] = [
     name: 'Business Automation & Integrations',
     path: '/services/business-automation-integrations/',
     summary: 'Connected tools and automated workflows that reduce repetitive work.',
-    problems: [], deliverables: [], scopeNotes: [], projectIds: [], questions: [],
+    problems: [
+      'Staff copy the same information between forms, spreadsheets and business tools.',
+      'Enquiries or requests arrive in one place, but the next person needs to be told manually.',
+      'Existing tools cover individual tasks, yet the handoffs between them are unclear or easy to miss.',
+    ],
+    deliverables: [
+      'A map of the current workflow, including where information moves and where a person needs to review it.',
+      'A connection that passes agreed information from an enquiry or request into an existing business tool.',
+      'Notifications or reminders that help the right person see what needs attention.',
+      'A repeatable transfer of selected records between tools, where their integration options allow it.',
+      'Clear review steps, error handling and a manual fallback for work that cannot safely proceed on its own.',
+    ],
+    scopeNotes: [
+      'These are possible workflows, not claims of completed automation projects. We start with one specific handoff and agree what should remain under human review.',
+      'Connections depend on the access and integration options each tool provides. Permissions, data quality, privacy needs and limits on usage are reviewed before choosing an approach.',
+      'Subscriptions, usage charges, hosting and ongoing monitoring or maintenance are scoped separately. Changes to a connected provider can require updates after handover.',
+      'The selected projects below show booking-request and hosted-checkout connections. They do not establish fully automated business operations or a custom payment-processing system.',
+    ],
+    projectIds: ['bonita-nights', 'wood-dust-creations'],
+    questions: [
+      {
+        question: 'Can we keep the tools we already use?',
+        answer: 'That is the starting point. We review the tools, the information that needs to move and the access each provider offers. A supported connection or a small change to the workflow may be enough; some tools cannot support the requested handoff.',
+      },
+      {
+        question: 'Does every step need to be automated?',
+        answer: 'No. Approvals, exceptions and decisions that need judgement can stay with a person. We define where automation stops, who reviews the result and how the next step is confirmed.',
+      },
+      {
+        question: 'What happens if a connection fails?',
+        answer: 'Error handling is part of the scope: how a failure becomes visible, who responds and how work can continue through a manual fallback. Monitoring, retries and ongoing support need to be agreed for the particular workflow.',
+      },
+      {
+        question: 'What should we bring to the first conversation?',
+        answer: 'Choose one repetitive task and describe its trigger, the tools involved, the information being copied and the person responsible for the result. Examples with sensitive details removed help us identify a useful first connection and any limits to investigate.',
+      },
+    ],
   },
 ];
