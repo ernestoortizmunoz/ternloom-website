@@ -38,3 +38,6 @@ next-env.d.ts
 # Astro
 /dist/
 /.astro/
+
+# Wrangler local state
+/.wrangler/

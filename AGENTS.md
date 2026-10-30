@@ -19,7 +19,7 @@
 ## Technical direction
 
 - Owner selected a static Astro website following the Turnory and Wood Dust Creations project pattern.
-- Implemented: TypeScript, plain CSS, npm lockfile, canonical origin `https://ternloom.com`, trailing slashes and `en-CA`. Cloudflare Pages remains the intended hosting target.
+- Implemented: TypeScript, plain CSS, npm lockfile, canonical origin `https://ternloom.com`, trailing slashes and `en-CA`. The owner selected Cloudflare Workers Static Assets to simplify hosting setup. Local Wrangler configuration and headers are prepared; no provider project or deployment is established.
 - Keep website builds independent of sibling repositories. Use their architecture as reference, not their branding, legal notices, provider accounts, forms or business data.
 - Prefer small shared components and one public business configuration. Add runtime services only for a demonstrated requirement.
 - Essential content must work without JavaScript. Use semantic HTML, keyboard access, visible focus, meaningful image alternatives and reduced-motion support.
@@ -32,6 +32,7 @@
 - Owner authorized scoped local commits on existing `main`. Do not create branches, worktrees, pushes or pull requests without a new request. Preserve unrelated changes, including the pre-existing unstaged `.idea` ignore.
 - Current authorization: local website work and scoped commits on main, without worktrees. The owner authorized production contact preparation locally, confirmed `info@ternloom.com` and a 12-month enquiry retention policy with ongoing-project/required-record exceptions, approved the privacy wording, and confirmed the final Tally copy/test. Never submit the form or change provider settings without an authorizing task. External account changes, uploads, deployment, DNS changes and sending messages require a task authorizing those actions.
 - Default builds must remain noindex with no production sitemap. Explicit release must satisfy confirmed contact/form/retention settings, all global readiness flags (including final Tally copy and privacy notice) and each project’s copy/image approval. Do not change approvals to make checks pass. Approved release output may include the contact form with production context; preview notices and test context must never leak into it. Review crawler policy separately before an authorized launch.
+- Use `npm run build` for preview and `npm run build:release` for release; the commands own the internal release flag. Workers reads existing Node/npm pins from the repository, with automatic installation and no manually entered build variables. Follow the current [launch guide](docs/cloudflare-launch-guide.md); older Pages and inline release-variable commands are historical.
 - Preserve existing email DNS records and existing domain services during any later authorized hosting change.
 - Verify proportionately. For documentation, check local links and whitespace. Once implementation exists, run diagnostics, build and focused output checks; distinguish local proof from hosted behavior.
 - Update project context with material decisions and actual verification results. Do not accumulate routine chat history.
