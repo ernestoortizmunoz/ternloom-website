@@ -31,7 +31,7 @@ export const site: SiteConfig = {
     contactConfirmed: true,
     contactFormReady: true,
     privacyNoticeApproved: true,
-    projectCopyApproved: false,
-    projectAssetsApproved: false,
+    projectCopyApproved: true,
+    projectAssetsApproved: true,
   },
 };

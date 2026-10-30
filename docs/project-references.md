@@ -1,6 +1,6 @@
 # Project references for Ternloom
 
-Prepared October 30, 2026. Status: owner-nominated projects and technology-provider relationships confirmed; Turnory summary approved; other summaries remain drafts for the later website design.
+Prepared October 30, 2026. Status: owner-nominated projects, technology-provider relationships, final summaries and all three website screenshots approved. Wood Dust's owner-confirmed blog is included in its final description.
 
 ## Purpose
 
@@ -16,7 +16,7 @@ Public project links must use the websites below, never Cloudflare dashboard URL
 - Customer need demonstrated: explore rental themes, understand the service and request a preferred night.
 - Observed website capabilities: theme galleries, service steps, FAQ, setup/care information, rental terms, a Cal.com request link and a booking calendar opened on demand.
 - Service fit: Website Development; Business Automation & Integrations through the booking-provider connection. This is evidence of an integration, not proof of an entirely automated rental operation.
-- Draft public summary: “A website for an Ottawa and Gatineau sleepover-rental business, bringing together theme galleries, customer information and a connected booking-request flow.”
+- Owner-approved public summary: “A website for an Ottawa and Gatineau sleepover-rental business, bringing together theme galleries, customer information and a connected booking-request flow.”
 - Scope boundary: a request is not a confirmed reservation. Do not claim automated payment, inventory management, guaranteed availability or measured booking growth.
 
 ## Wood Dust Creations
@@ -25,9 +25,9 @@ Public project links must use the websites below, never Cloudflare dashboard URL
 - Business context: handmade woodworking in Ottawa, including ready-made products and custom work.
 - Relationship: Ternloom is the business's technology provider, as confirmed by the owner. Exact ongoing support commitments remain to be scoped.
 - Customer need demonstrated: browse available pieces, purchase through an existing payment provider and start a custom-work enquiry.
-- Observed website capabilities: product catalogue, Square-hosted checkout links, custom-order entry point, portfolio/gallery, service information and articles.
+- Observed website capabilities: product catalogue, Square-hosted checkout links, custom-order entry point, portfolio/gallery, service information and a blog. The owner explicitly confirmed the blog section during final copy review on October 30.
 - Service fit: Website Development; Business Automation & Integrations through the Square checkout connection. Local source also contains catalogue preparation scripts; these do not establish live inventory synchronization.
-- Draft public summary: “A woodworking business website combining a product catalogue, Square checkout links, custom-order enquiries and a portfolio of completed work.”
+- Owner-approved public summary: “A woodworking business website combining a product catalogue, Square checkout links, custom-order enquiries, a blog and a portfolio of completed work.”
 - Scope boundary: describe Square-hosted checkout accurately. Do not claim a custom payment processor, real-time inventory sync, automated fulfilment or measured sales growth.
 
 ## Turnory
@@ -48,7 +48,7 @@ Public project links must use the websites below, never Cloudflare dashboard URL
 - Separate an implemented capability from a measured commercial outcome. Conversion, revenue, cost and time-saving figures require actual evidence.
 - Technology-provider relationships are owner-confirmed for Bonita Nights and Wood Dust Creations. Exact project contributions and ongoing support scope still need final wording. A public project link is not itself a testimonial, independent endorsement or evidence of payment.
 - These projects establish concrete website and integration examples, plus an own software product in development. A standalone business-automation case study is not yet established; do not manufacture one to fill a service category.
-- Screenshots must avoid customer records, booking details, email addresses belonging to customers, administrative dashboards and private data. Asset selection is part of the later design stage.
+- Screenshots must avoid customer records, booking details, email addresses belonging to customers, administrative dashboards and private data. On October 30 the owner approved all three public website screenshots currently shown on the local Projects page for use on Ternloom's website, then approved both final Bonita Nights and revised Wood Dust descriptions. Turnory's earlier copy approval remains intact. These content approvals do not authorize deployment.
 
 ## Verification limits
 

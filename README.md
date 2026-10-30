@@ -20,9 +20,9 @@ The approved Working Weave website is implemented locally: homepage, three servi
 
 Public contact/privacy email is confirmed as `info@ternloom.com`. The owner approved the privacy wording and confirmed the final Tally copy plus submission/inbox test, including a screenshot of the new completion message in the local embed. The selected policy is 12-month active enquiry retention with ongoing-project/required-record exceptions. Notifications can fire during local testing. [Operator instructions](docs/contact-form-operations.md) preserve the final copy and manual retention process on Free.
 
-`contactConfirmed`, `contactFormReady` and `privacyNoticeApproved` are true after explicit owner confirmation; both portfolio readiness flags remain false. Bonita Nights and Wood Dust Creations copy still needs final approval; Turnory’s summary is approved and remains explicitly in development. All project screenshot approvals remain false. An approved explicit release includes the production form context and omits local preview notices.
+All five readiness flags and each project's copy/image approvals are true after explicit owner confirmation. The owner approved all three project screenshots, requested Wood Dust Creations' blog in its summary/capabilities, then approved both final business-project descriptions. Turnory’s earlier approved summary remains explicitly in development. Explicit release output includes production form context and omits local preview notices.
 
-**Release: parked — waiting on project copy/assets approval and authorized launch.** Nothing has been pushed or deployed; no provider account or DNS changes were made. Cloudflare Pages remains the intended hosting target.
+**Local release candidate: verified. Deployment remains unauthorized.** The [real release preflight](docs/verification/2026-10-30-release-preflight.md) used approved source data in a separate output directory; the browser preview remains noindex. Nothing has been pushed or deployed; no provider account or DNS changes were made. Cloudflare Pages remains the intended hosting target. Hosting setup, crawler policy and hosted verification remain launch work.
 
 ## Local commands
 

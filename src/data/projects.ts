@@ -22,9 +22,8 @@ export interface ProjectDefinition {
   image: ProjectImage | null;
 }
 
-// Owner-confirmed relationships; Bonita and Wood Dust summaries still await
-// final copy approval. Screenshots are actual public sites, captured 2026-10-30
-// and selected for local review only. No image has publication approval.
+// Owner-confirmed relationships and final project copy. Screenshots are actual
+// public sites, captured 2026-10-30 and approved for website use on the same day.
 export const projects: ProjectDefinition[] = [
   {
     id: 'bonita-nights',
@@ -37,14 +36,14 @@ export const projects: ProjectDefinition[] = [
     capabilities: ['Theme galleries and service information', 'Setup guidance and answers to common questions', 'A connected booking-request flow'],
     scopeNotes: ['Families submit a booking request for their preferred date and theme. Bonita Nights then confirms availability and the reservation with the customer.'],
     serviceIds: ['website-development', 'business-automation-integrations'],
-    copyApproved: false,
+    copyApproved: true,
     image: {
       src: '/images/projects/bonita-website-preview.jpg',
       alt: 'Bonita Nights website introducing its indoor sleepover rentals.',
       width: 1265,
       height: 712,
       caption: 'Bonita Nights — public website.',
-      approved: false,
+      approved: true,
     },
   },
   {
@@ -53,19 +52,19 @@ export const projects: ProjectDefinition[] = [
     url: 'https://www.wooddustcreations.ca/',
     role: 'technology-provider',
     status: 'business-website',
-    summary: 'A woodworking business website combining a product catalogue, Square checkout links, custom-order enquiries and a portfolio of completed work.',
+    summary: 'A woodworking business website combining a product catalogue, Square checkout links, custom-order enquiries, a blog and a portfolio of completed work.',
     businessNeed: 'Help customers browse handmade pieces, purchase through an existing payment provider and discuss custom work.',
-    capabilities: ['A product catalogue and portfolio', 'Square-hosted checkout links', 'An entry point for custom-order enquiries'],
+    capabilities: ['A product catalogue and portfolio', 'Square-hosted checkout links', 'An entry point for custom-order enquiries', 'A business blog'],
     scopeNotes: ['Customers follow product links to Square-hosted checkout to make a purchase. Custom work starts with an enquiry to discuss the piece and its requirements.'],
     serviceIds: ['website-development', 'business-automation-integrations'],
-    copyApproved: false,
+    copyApproved: true,
     image: {
       src: '/images/projects/wooddust-website-preview.jpg',
       alt: 'Wood Dust Creations website introducing its handmade woodworking.',
       width: 1265,
       height: 712,
       caption: 'Wood Dust Creations — public website.',
-      approved: false,
+      approved: true,
     },
   },
   {
@@ -86,7 +85,7 @@ export const projects: ProjectDefinition[] = [
       width: 1265,
       height: 712,
       caption: 'Turnory — product website; application in development.',
-      approved: false,
+      approved: true,
     },
   },
 ];

@@ -25,7 +25,7 @@ for (const project of projects) {
     assert.equal(project.summary, 'Turnory is a Windows sim-racing telemetry application developed by Ternloom Technologies, alongside its product website and launch-notification integration. The application is currently in development.');
   }
   assert.ok(project.image);
-  assert.equal(project.image.approved, false);
+  assert.equal(project.image.approved, true, 'Owner approved all three project screenshots');
   assert.ok(article.includes(`src="${project.image.src}"`));
   assert.match(article, /<img[^>]*alt="[^"]+"[^>]*width="\d+"[^>]*height="\d+"/);
   assert.match(article, /<figcaption[^>]*>[^<]+<\/figcaption>/);

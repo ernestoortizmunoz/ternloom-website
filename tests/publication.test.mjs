@@ -59,7 +59,8 @@ test('explicit release with every prerequisite permits indexing', () => {
 });
 
 test('global readiness cannot override real unapproved project copy or images', () => {
-  assert.throws(() => getPublicationState(ready, true), /bonita-nights.*copyApproved/);
+  const unapproved = approvedProjects.map((project) => project.id === 'bonita-nights' ? { ...project, copyApproved: false } : project);
+  assert.throws(() => getPublicationState(ready, true, unapproved), /bonita-nights.*copyApproved/);
 });
 
 for (const gate of ['copy', 'image']) {

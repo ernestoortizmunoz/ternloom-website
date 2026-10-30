@@ -4,7 +4,7 @@
 
 - Read [project context](docs/project-context.md) and the [configuration brief](docs/superpowers/specs/2026-10-29-project-configuration-design.md) before changing this project.
 - This repository owns the main Ternloom Technologies website for `ternloom.com`.
-- Current state: approved configuration and Working Weave design implemented locally in static Astro: eight content pages including the owner-approved privacy notice, a designed 404, shared theme/brand, factual metadata/schema and guarded visibility output. Public email, final Tally copy and local form test are owner-confirmed; project copy/assets still have unresolved publication approvals. Nothing is deployed.
+- Current state: approved configuration and Working Weave design implemented locally in static Astro: eight content pages, a designed 404, shared theme/brand, factual metadata/schema and guarded visibility output. Public email, final Tally copy/test, privacy wording, project descriptions and all three project screenshots are owner-confirmed. Wood Dust's blog is included. An isolated real release preflight passed; the browser preview remains noindex. Nothing is deployed.
 - Keep confirmed owner decisions distinct from proposed defaults and verified implementation.
 
 ## Business and audience
