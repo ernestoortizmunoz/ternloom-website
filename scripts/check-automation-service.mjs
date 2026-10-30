@@ -15,11 +15,11 @@ assert.match(html, /<meta name="robots" content="noindex, nofollow"/);
 const projects = [...html.matchAll(/<article[^>]*data-project="([^"]+)"[\s\S]*?<\/article>/g)];
 assert.deepEqual(projects.map((project) => project[1]), ['bonita-nights', 'wood-dust-creations']);
 for (const project of projects) assert.match(project[0], /Technology provider/);
-assert.match(projects[0][0], /A booking request is not a confirmed reservation/);
-assert.match(projects[0][0], /does not establish automated payments, inventory management or guaranteed availability/);
+assert.match(projects[0][0], /Families submit a booking request/);
+assert.match(projects[0][0], /Bonita Nights then confirms availability and the reservation/);
 assert.match(projects[1][0], /Square-hosted checkout links/);
-assert.match(projects[1][0], /Checkout takes place through Square/);
-assert.match(projects[1][0], /does not establish live inventory synchronization or automated fulfilment/);
+assert.match(projects[1][0], /Square-hosted checkout to make a purchase/);
+assert.match(projects[1][0], /Custom work starts with an enquiry/);
 for (const id of ['service-fit', 'service-deliverables', 'service-boundaries', 'service-evidence', 'service-process', 'service-questions']) {
   assert.ok(html.includes(`id="${id}"`), `Missing service section: ${id}`);
 }

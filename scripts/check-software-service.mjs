@@ -16,7 +16,7 @@ const projects = [...html.matchAll(/<article[^>]*data-project="([^"]+)"[\s\S]*?<
 assert.deepEqual(projects.map((project) => project[1]), ['turnory'], 'Only relevant software evidence belongs on this page');
 assert.match(projects[0][0], /Ternloom’s own product/);
 assert.match(projects[0][0], /application is currently in development/);
-assert.match(projects[0][0], /not a completed commissioned software engagement/);
+assert.match(projects[0][0], /game-specific capabilities/);
 assert.match(projects[0][0], /href="https:\/\/turnory.racing\/"/);
 for (const id of ['service-fit', 'service-deliverables', 'service-boundaries', 'service-evidence', 'service-process', 'service-questions']) {
   assert.ok(html.includes(`id="${id}"`), `Missing service section: ${id}`);

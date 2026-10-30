@@ -1,0 +1,35 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ProjectSummary from '../components/ProjectSummary.astro';
+import ContactInvitation from '../components/ContactInvitation.astro';
+import { projects } from '../data/projects';
+---
+<SiteLayout
+  title="Selected Projects — Ternloom Technologies"
+  description="Explore business websites for Bonita Nights and Wood Dust Creations, alongside Turnory, Ternloom’s own software product in development."
+  pathname="/projects/"
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Selected projects', path: '/projects/' }]}
+>
+  <section class="container projects-intro" aria-labelledby="projects-title">
+    <p class="eyebrow">Websites, connected tools and product development</p>
+    <h1 id="projects-title">Selected projects</h1>
+    <p class="projects-lead">Different businesses. Different needs. Technology shaped around the work.</p>
+    <p class="portfolio-context">Ternloom is the technology provider for Bonita Nights and Wood Dust Creations. Turnory is our own software product, currently in development. These projects show how business information, customer actions and specialist software come together.</p>
+  </section>
+
+  <div class="container project-stories">
+    {projects.map((project) => <div class="project-story"><ProjectSummary project={project} detailed headingLevel={2} /></div>)}
+  </div>
+
+  <ContactInvitation heading="Have a project in mind?" />
+</SiteLayout>
+
+<style>
+  .projects-intro { padding-block: var(--space-6) var(--section-space); }
+  h1 { margin-block: var(--space-3); }
+  .projects-lead { max-width: var(--reading-width); font-size: var(--text-section); font-family: var(--font-editorial); line-height: var(--leading-heading); }
+  .portfolio-context { max-width: var(--reading-width); margin-block-start: var(--space-4); color: var(--color-muted); }
+  .project-stories { padding-block-end: var(--section-space); }
+  .project-story { padding-block: var(--section-space); border-block-start: var(--border-width) solid var(--color-line); }
+  .project-story:last-child { padding-block-end: 0; }
+</style>

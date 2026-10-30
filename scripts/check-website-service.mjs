@@ -26,8 +26,8 @@ for (const [id, name, url] of [
 for (const section of ['service-fit', 'service-deliverables', 'service-boundaries', 'service-evidence', 'service-process', 'service-questions']) {
   assert.ok(html.includes(`id="${section}"`), `Missing service narrative: ${section}`);
 }
-assert.match(text, /A booking request is not a confirmed reservation/);
-assert.match(text, /does not establish live inventory synchronization or automated fulfilment/);
+assert.match(text, /Bonita Nights then confirms availability and the reservation/);
+assert.match(text, /Square-hosted checkout to make a purchase/);
 assert.match(text, /Provider fees, domains, email/);
 assert.match(text, /Can you work with an existing website\?/);
 assert.match(text, /We start by reviewing what is working/);
