@@ -33,5 +33,6 @@ if (stage === 'home') {
   await import('./check-projects.mjs');
   await import('./check-about.mjs');
   await import('./check-contact.mjs');
+  await import('./check-404.mjs');
 }
 console.log(`Output checks passed: ${stage} (${files.length} noindex pages, canonical paths, no active enquiry or client JavaScript).`);

@@ -1,8 +1,37 @@
 ---
-import SetupLayout from '../layouts/SetupLayout.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ActionLink from '../components/ActionLink.astro';
+import { services } from '../data/services';
 ---
-<SetupLayout title="Page not found" pathname="/404/">
-  <h1>Page not found</h1>
-  <p>This unfinished local website has no page at this address.</p>
-  <a href="/">Return to the local setup page</a>
-</SetupLayout>
+<SiteLayout
+  title="Page Not Found — Ternloom Technologies"
+  description="This page could not be found. Return to Ternloom's homepage or explore website development, custom software and business automation services."
+  pathname="/404/"
+  noindex={true}
+>
+  <section class="container missing-page" aria-labelledby="missing-title">
+    <div class="missing-copy">
+      <p class="eyebrow">Error 404</p>
+      <h1 id="missing-title">Page not found</h1>
+      <p class="explanation">We couldn’t find a page at this address. The link may be out of date, or the address may have been typed incorrectly.</p>
+      <ActionLink href="/">Return to home</ActionLink>
+    </div>
+    <nav class="recovery" aria-labelledby="recovery-title">
+      <h2 id="recovery-title">Explore our services</h2>
+      <p>Find help with your website, business software or everyday workflows.</p>
+      <ul>
+        {services.map((service) => <li><ActionLink href={service.path} variant="text">{service.name}</ActionLink></li>)}
+      </ul>
+    </nav>
+  </section>
+</SiteLayout>
+<style>
+  .missing-page { display: grid; grid-template-columns: 1.15fr 1fr; align-items: start; gap: var(--space-6); padding-block: var(--section-space); }
+  h1 { margin-block: var(--space-3); }
+  .explanation { max-width: var(--reading-width); color: var(--color-muted); margin-block-end: var(--space-4); }
+  .recovery { border-block-start: var(--border-width) solid var(--color-line); padding-block-start: var(--space-4); }
+  .recovery > p { color: var(--color-muted); margin-block: var(--space-3) var(--space-4); }
+  .recovery ul { list-style: none; padding: 0; }
+  .recovery li { border-block-start: var(--border-width) solid var(--color-line); padding-block: var(--space-2); }
+  @media (max-width: 48rem) { .missing-page { grid-template-columns: 1fr; } }
+</style>
