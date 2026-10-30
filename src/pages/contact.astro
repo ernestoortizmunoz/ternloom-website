@@ -12,21 +12,22 @@ import { services } from '../data/services';
   pathname="/contact/"
   breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact/' }]}
 >
-  <section class="container contact-intro" aria-labelledby="contact-title">
+  <section class:list={['container contact-intro', { 'has-form': site.contactForm }]} aria-labelledby="contact-title">
     <div class="intro-copy">
       <h1 id="contact-title">Discuss your project</h1>
       {site.contact && site.readiness.contactConfirmed && (
         <p class="email-fallback">Prefer email? <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></p>
       )}
     </div>
-    {site.contactForm ? (
+    {site.contactForm && (
       <section class="form-region" aria-labelledby="form-title">
         <div class="visually-hidden"><SectionHeading id="form-title">Tell us about your project</SectionHeading></div>
         <ContactForm tallyId={site.contactForm.tallyId} preview={import.meta.env.TERNLOOM_RELEASE !== '1'} />
       </section>
-    ) : (
-      <ContactDetails contact={site.contact} confirmed={site.readiness.contactConfirmed} />
     )}
+    <div class="contact-panel">
+      <ContactDetails contact={site.contact} confirmed={site.readiness.contactConfirmed} />
+    </div>
   </section>
 
   <section class="container contact-section" aria-labelledby="include-title">
@@ -53,6 +54,10 @@ import { services } from '../data/services';
 </SiteLayout>
 <style>
   .contact-intro { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr); align-items: start; gap: var(--space-4) var(--space-6); padding-block: var(--space-3) var(--section-space); }
+  .contact-intro.has-form { grid-template-areas: 'intro form' 'details form'; grid-template-rows: auto 1fr; }
+  .has-form .intro-copy { grid-area: intro; }
+  .has-form .form-region { grid-area: form; }
+  .has-form .contact-panel { grid-area: details; }
   h1 { font-size: var(--text-section); line-height: var(--leading-heading); margin-block-end: var(--space-1); }
   .email-fallback { font-size: var(--text-support); line-height: var(--leading-support); margin-block-start: var(--space-1); overflow-wrap: anywhere; }
   .email-fallback a { display: inline-block; padding-block: var(--space-1); }
@@ -71,5 +76,6 @@ import { services } from '../data/services';
   @media (max-width: 48rem) {
     .contact-intro, .prompt-list, .next-step, .service-row { grid-template-columns: 1fr; }
     .contact-intro { row-gap: var(--space-2); padding-block-start: var(--space-2); }
+    .contact-intro.has-form { grid-template-areas: 'intro' 'form' 'details'; grid-template-rows: auto auto auto; }
   }
 </style>
