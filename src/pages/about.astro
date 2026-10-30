@@ -1,0 +1,74 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import ActionLink from '../components/ActionLink.astro';
+import ContactInvitation from '../components/ContactInvitation.astro';
+import { site } from '../config/site';
+import { services } from '../data/services';
+---
+<SiteLayout
+  title="About Ternloom Technologies"
+  description="Websites, custom software and business integrations for small businesses in Ottawa and across Canada, built on more than 15 years of IT and software experience."
+  pathname="/about/"
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'About', path: '/about/' }]}
+>
+  <section class="container about-intro" aria-labelledby="about-title">
+    <p class="eyebrow">Technology shaped around your business</p>
+    <h1 id="about-title">About Ternloom Technologies</h1>
+    <p class="about-lead">Ternloom Technologies builds websites, custom software and business automations for small businesses in Ottawa and across Canada.</p>
+    <p class="experience">{site.experienceStatement}</p>
+    <p class="intro-detail">The starting point is the work you need to do: helping customers understand your business, giving a process a better tool, or connecting the systems you already use.</p>
+  </section>
+
+  <section class="container about-section" aria-labelledby="services-title">
+    <SectionHeading id="services-title" eyebrow="Three ways to help">What does your business need?</SectionHeading>
+    <div class="service-list">
+      {services.map((service) => (
+        <article class="service-row">
+          <h3><a href={service.path}>{service.name}</a></h3>
+          <p>{service.summary}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="container about-section" aria-labelledby="approach-title">
+    <SectionHeading id="approach-title" eyebrow="Working together">Understand the work. Agree the scope. Build and review.</SectionHeading>
+    <p class="section-intro">Our approach keeps the business problem in view, from the first conversation through the details of the build.</p>
+    <ol class="approach-list">
+      <li><h3>Start with the everyday problem</h3><p>Discuss who will use the website or software, how the work happens now, and where the current tools get in the way.</p></li>
+      <li><h3>Make the scope clear</h3><p>Agree what the project needs to do, what it depends on and what sits outside the work. Hosting, paid tools and ongoing support need their own scope.</p></li>
+      <li><h3>Review against real needs</h3><p>Use concrete examples to review the work together, so decisions stay connected to the people and processes the project is meant to help.</p></li>
+    </ol>
+  </section>
+
+  <section class="container about-section work-invitation" aria-labelledby="work-title">
+    <div>
+      <SectionHeading id="work-title" eyebrow="See the work">From business websites to a software product.</SectionHeading>
+      <p class="section-intro">Explore selected projects, with the role, scope and current status of each explained.</p>
+    </div>
+    <ActionLink href="/projects/" variant="text">Explore selected work</ActionLink>
+  </section>
+  <ContactInvitation />
+</SiteLayout>
+
+<style>
+  .about-intro { padding-block: var(--space-6) var(--section-space); }
+  h1 { max-width: var(--reading-width); margin-block: var(--space-3); }
+  .about-lead { max-width: var(--reading-width); font-size: var(--text-section); line-height: var(--leading-heading); }
+  .experience { max-width: var(--reading-width); margin-block-start: var(--space-6); font-weight: var(--weight-medium); }
+  .intro-detail, .section-intro { max-width: var(--reading-width); margin-block-start: var(--space-3); color: var(--color-muted); }
+  .about-section { padding-block: var(--section-space); border-block-start: var(--border-width) solid var(--color-line); }
+  .service-list { margin-block-start: var(--space-6); }
+  .service-row { display: grid; grid-template-columns: 1fr 1.25fr; gap: var(--space-3) var(--space-6); padding-block: var(--space-4); border-block-start: var(--border-width) solid var(--color-line); }
+  .service-row p, .approach-list p { color: var(--color-muted); }
+  .approach-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); margin-block: var(--space-6) 0; padding-inline-start: var(--space-3); }
+  .approach-list li { padding-inline-start: var(--space-1); }
+  .approach-list li::marker { color: var(--color-rust); font-weight: var(--weight-medium); }
+  .approach-list h3 { margin-block-end: var(--space-2); }
+  .work-invitation { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4) var(--space-6); }
+  .work-invitation > div { flex: 1 1 25rem; }
+  @media (max-width: 48rem) {
+    .service-row, .approach-list { grid-template-columns: 1fr; }
+  }
+</style>
