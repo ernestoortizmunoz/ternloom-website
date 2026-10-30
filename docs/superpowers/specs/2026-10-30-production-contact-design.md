@@ -20,14 +20,14 @@ The final contact and privacy experience is prepared locally, with default noind
 
 Reference: existing contact page, shared SiteLayout/SectionHeading/ContactDetails/ContactForm and theme. Keep the accepted design and preparation/service sections.
 
-1. Keep the shared shell, breadcrumb, H1, factual introduction and existing section order.
-2. Reuse the pine ContactDetails panel for the confirmed, selectable `mailto:info@ternloom.com` fallback; remove its obsolete local-test branch.
-3. Use a full-width form section headed “Tell us about your project”, with public service/customer language.
+1. Keep the shared shell, breadcrumb and one H1. Following owner feedback about excessive scrolling, the contact introduction is compact rather than a marketing hero: “Discuss your project” and the email alternative. Tally already supplies the explanatory introduction, so do not repeat it outside the form.
+2. Put the confirmed, selectable `mailto:info@ternloom.com` fallback in the compact introduction. Keep ContactDetails for the no-form fallback only; a large email card must not precede the form on mobile.
+3. Desktop: compact introduction at the left and form at the right, aligned at the top. Mobile: brief introduction immediately followed by the form. Keep an accessible H2/region name “Tell us about your project” without a second visible introductory heading. Preparation/service sections stay below.
 4. Show one local-only preview notice outside the provider frame; do not claim emails are disabled. Release must omit this notice and local-test context.
 5. Use the same titled, scrollable iframe and official sizing script only on this route. Retain existing dynamic height/transparent/left/hidden-title options and theme height token.
-6. Keep a visible direct-form fallback, a `/privacy/` link and a short factual purpose/provider note. No promised reply time, automatic confirmation email or guaranteed delivery.
+6. Keep a short purpose/privacy line before the iframe and the visible direct-form fallback after it. Avoid long preambles that delay the first field; the introductory email fallback remains accessible before the iframe. No promised reply time, automatic confirmation email or guaranteed delivery.
 7. “What happens next” starts “An initial conversation”; preserve scope-before-project wording.
-8. Use existing theme values, semantic headings, focus and responsive layout. Provider validation, success page and CAPTCHA remain Tally-managed.
+8. Use existing theme values, semantic headings, focus and responsive layout, including the section text size for the compact H1. Provider validation, success page and CAPTCHA remain Tally-managed. Measure the loaded first-field position at desktop and 375px mobile; it should be visible in the initial 812px mobile viewport when the current provider text fits, with no overflow.
 
 ## Privacy page checklist
 

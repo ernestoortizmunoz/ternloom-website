@@ -6,16 +6,18 @@ const embedUrl = `https://tally.so/embed/${encodeURIComponent(tallyId)}?alignLef
 const directUrl = `https://tally.so/r/${encodeURIComponent(tallyId)}?${context}`;
 ---
 <div class="contact-form">
-  {preview && <p><strong>Local preview — please use test details.</strong> Submissions are sent to Tally and may trigger email notifications.</p>}
-  <p class="form-note">Ternloom Technologies uses the details you provide to review your project enquiry and respond by email. Tally hosts the form and stores submissions. Read our <a href="/privacy/">privacy notice</a> for details.</p>
-  <p><a href={directUrl}>Open the enquiry form in Tally</a> if the embedded form does not load or is difficult to use.</p>
+  {preview && <p class="preview-note"><strong>Local preview — please use test details.</strong></p>}
+  <p class="form-note">We use your details to respond. Read our <a href="/privacy/">privacy notice</a>.</p>
   <iframe src={embedUrl} title="Ternloom project enquiry"></iframe>
+  {preview && <p class="preview-note submission-note">Submissions are sent to Tally and may trigger email notifications.</p>}
+  <p class="direct-form"><a href={directUrl}>Open the enquiry form in Tally</a> if the embedded form does not load or is difficult to use.</p>
 </div>
 <script is:inline defer src="https://tally.so/widgets/embed.js"></script>
 <style>
-  .contact-form { margin-block-start: var(--space-3); }
   .contact-form > p { max-width: var(--reading-width); }
-  .contact-form > p + p { margin-block-start: var(--space-2); }
+  .contact-form > p + p { margin-block-start: var(--space-1); }
+  .preview-note, .form-note { font-size: var(--text-support); line-height: var(--leading-support); }
   .form-note { color: var(--color-muted); }
-  iframe { display: block; width: 100%; height: var(--contact-form-initial-height); border: 0; margin-block-start: var(--space-4); }
+  iframe { display: block; width: 100%; height: var(--contact-form-initial-height); border: 0; margin-block-start: var(--space-1); }
+  .submission-note, .direct-form { margin-block-start: var(--space-2); }
 </style>

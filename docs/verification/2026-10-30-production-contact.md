@@ -37,3 +37,20 @@ All commands used Node 24.22.2 through `env PATH=/private/tmp/node-v24.22.2-darw
 Fresh GPT Astra page implementers handled contact/privacy separately. A separate GPT Astra reviewer found no actionable code/release-safety findings and requested current-state documentation updates, which were addressed in AGENTS, README and project context. The source check compared two changed pages with their checklists and the existing About/layout/theme; approximately 27 project files and two searches. A separate temporary copied-source calibration detected a planted inline H1 weight outside the shared theme. No worktree was created. Calibration establishes that source-style check, not browser/provider behavior.
 
 The notice remains a concrete draft pending owner review, with no claim of legal review or compliance certification. Owner-managed Tally copy, actual notification configuration, ongoing deletion operations, third-party retention and provider error/success states were not changed or independently verified. The prior owner-reported inbox success remains distinct from agent verification. Full keyboard traversal, 200% browser zoom, explicitly disabled JavaScript and blocked-provider simulation remain untested. Website HTML provides fallback access; the Tally form itself depends on its provider's implementation. Hosting, DNS, headers, crawler policy and production indexing remain separate authorized launch work.
+
+## Contact placement revision after owner feedback
+
+The owner reported that both mobile and desktop required excessive scrolling before reaching the form. The top contact region was revised in `contact.astro` and its contact-only `ContactForm.astro`: compact H1/email introduction, top-aligned desktop columns, mobile introduction immediately followed by the form, accessible hidden H2, shorter preamble and direct fallback after the iframe. Existing lower sections, provider integration, preview/release context and approvals remain unchanged.
+
+Measured loaded first-input document positions, including Tally's unchanged introduction and test paragraph:
+
+| Viewport | Before | After |
+| --- | ---: | ---: |
+| Mobile 375×812 | 2070px | 724px |
+| Desktop width 1142 | 1275px | 394px |
+
+Mobile first-input height was 36px, so the complete first field now fits in the initial 812px viewport. The revised iframe starts at 514px on mobile and 232px on desktop. The page had no horizontal overflow at 375, 768, 769 or 1142px; iframe widths at the 768/769 breakpoint were 705/388px. A fresh tab and a top-of-document fragment were used to avoid retained scroll position while capturing proof. Temporary viewport overrides were reset and the extra inspection tab was closed.
+
+`npm run check` (45 clean diagnostic files), `npm run build` (nine outputs), `npm run check:output` and the synthetic explicit-release fixture passed after the final layout edit. No new unit tests were added for this reversible layout change; publication logic was unchanged. A fresh Astra implementer and separate reviewer handled the change; the reviewer inspected six source files and reported no actionable deviations, with rendered/provider behavior left to parent verification. No provider settings or data were changed and no form was submitted.
+
+Screenshots: [mobile initial viewport](/Users/dev-zero/.codex/visualizations/2026/10/30/01a18b06-d02d-78b1-ab76-ae279c2d4c2c/ternloom-contact-near-top-mobile.png), [desktop](/Users/dev-zero/.codex/visualizations/2026/10/30/01a18b06-d02d-78b1-ab76-ae279c2d4c2c/ternloom-contact-near-top-desktop.png).

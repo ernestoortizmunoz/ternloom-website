@@ -14,21 +14,20 @@ import { services } from '../data/services';
 >
   <section class="container contact-intro" aria-labelledby="contact-title">
     <div class="intro-copy">
-      <p class="eyebrow">A useful starting point</p>
       <h1 id="contact-title">Discuss your project</h1>
-      <p class="contact-lead">What would make your work easier?</p>
-      <p>Whether you need a clearer website, a tool built around your work or a better connection between systems, start with the problem you want to solve.</p>
-      <p class="audience">For small businesses in Ottawa and across Canada.</p>
+      {site.contact && site.readiness.contactConfirmed && (
+        <p class="email-fallback">Prefer email? <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></p>
+      )}
     </div>
-    <ContactDetails contact={site.contact} confirmed={site.readiness.contactConfirmed} />
+    {site.contactForm ? (
+      <section class="form-region" aria-labelledby="form-title">
+        <div class="visually-hidden"><SectionHeading id="form-title">Tell us about your project</SectionHeading></div>
+        <ContactForm tallyId={site.contactForm.tallyId} preview={import.meta.env.TERNLOOM_RELEASE !== '1'} />
+      </section>
+    ) : (
+      <ContactDetails contact={site.contact} confirmed={site.readiness.contactConfirmed} />
+    )}
   </section>
-
-  {site.contactForm && (
-    <section class="container contact-section" aria-labelledby="form-title">
-      <SectionHeading id="form-title" eyebrow="Start a conversation">Tell us about your project</SectionHeading>
-      <ContactForm tallyId={site.contactForm.tallyId} preview={import.meta.env.TERNLOOM_RELEASE !== '1'} />
-    </section>
-  )}
 
   <section class="container contact-section" aria-labelledby="include-title">
     <SectionHeading id="include-title" eyebrow="Before the conversation">What to include</SectionHeading>
@@ -53,11 +52,12 @@ import { services } from '../data/services';
   </section>
 </SiteLayout>
 <style>
-  .contact-intro { display: grid; grid-template-columns: 1.15fr 1fr; align-items: start; gap: var(--space-6); padding-block: var(--space-6) var(--section-space); }
-  h1 { margin-block: var(--space-3); }
-  .contact-lead { font-size: var(--text-section); line-height: var(--leading-heading); margin-block-end: var(--space-3); }
-  .intro-copy > p:last-child { margin-block-start: var(--space-3); }
-  .audience, .section-intro, .prompt-list p, .service-row p { color: var(--color-muted); }
+  .contact-intro { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr); align-items: start; gap: var(--space-4) var(--space-6); padding-block: var(--space-3) var(--section-space); }
+  h1 { font-size: var(--text-section); line-height: var(--leading-heading); margin-block-end: var(--space-1); }
+  .email-fallback { font-size: var(--text-support); line-height: var(--leading-support); margin-block-start: var(--space-1); overflow-wrap: anywhere; }
+  .email-fallback a { display: inline-block; padding-block: var(--space-1); }
+  .form-region { min-width: 0; }
+  .section-intro, .prompt-list p, .service-row p { color: var(--color-muted); }
   .contact-section { padding-block: var(--section-space); border-block-start: var(--border-width) solid var(--color-line); }
   .section-intro { max-width: var(--reading-width); margin-block-start: var(--space-3); }
   .prompt-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); padding-inline-start: var(--space-3); margin-block-start: var(--space-6); }
@@ -70,5 +70,6 @@ import { services } from '../data/services';
   .service-row { display: grid; grid-template-columns: 1fr 1.25fr; gap: var(--space-3) var(--space-6); padding-block: var(--space-4); border-block-start: var(--border-width) solid var(--color-line); }
   @media (max-width: 48rem) {
     .contact-intro, .prompt-list, .next-step, .service-row { grid-template-columns: 1fr; }
+    .contact-intro { row-gap: var(--space-2); padding-block-start: var(--space-2); }
   }
 </style>
