@@ -22,13 +22,17 @@ Contact HTML contains the Ternloom `dbEbrd` iframe, `environment=production` and
 
 The HTTP-www chain has two hops rather than one, with HTTPS upgrading before the hostname redirect. It reaches the intended canonical URL without a loop and preserves the query; this is not a broken redirect.
 
+## Owner confirmation after the public checks
+
+After the live-form test and Tally privacy-link instructions, the owner reported “all works as expected.” Record the live contact/privacy workflow as owner-confirmed. This is an owner report, not an independent mailbox, CAPTCHA or provider-settings inspection. The agent did not submit the form or change Tally settings. Continue the approved manual retention procedure.
+
+A subsequent read-only HEAD request to the production Workers hostname returned 200 and `X-Robots-Tag: noindex`. No account subdomain identifier is recorded here. Version/branch URLs were not independently checked publicly.
+
 ## Remaining follow-up
 
-- The owner should perform a final dummy enquiry through the live form, check CAPTCHA/completion and confirm receipt at `info@ternloom.com`. Earlier success was from the local embed; this hosted inbox test remains separate.
-- Add or confirm the live `https://ternloom.com/privacy/` link in Tally. Continue the approved manual retention procedure.
 - Google Search Console/Bing verification and sitemap submission are not independently confirmed. Crawl permission and public availability do not prove indexing, rankings or AI recommendations.
 - Effective robots currently permits all compliant crawlers. Individual AI search/training preferences and any independent edge bot restrictions remain an explicit owner decision; the public robots response alone does not prove real crawler access.
-- Actual Worker development/version hostnames, preview builds, account settings, DNS/mail records and certificates for other services were not inspected. Reconcile actual custom-domain bindings into local Wrangler configuration before a later production deployment, following the launch guide. Do not infer those bindings solely from HTTP responses.
+- Actual Worker version/branch URLs, preview builds, account settings, DNS/mail records and certificates for other services were not inspected. Reconcile actual custom-domain bindings into local Wrangler configuration before a later production deployment, following the launch guide. Do not infer those bindings solely from HTTP responses.
 - No hosted visual, full accessibility, performance or security audit is claimed. The local website verification remains separately recorded.
 
 These checks establish the listed public responses at the time of observation, not continuous availability or a provider-configuration audit.

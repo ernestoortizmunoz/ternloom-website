@@ -4,6 +4,8 @@ Prepared locally October 30, 2026. Form: `https://tally.so/r/dbEbrd`. Public con
 
 The owner approved the website privacy-notice wording on October 30 and subsequently confirmed the final Tally copy and successful test, supplying the new completion screen from the local embed. Both privacy and form readiness flags are true. These confirmations do not authorize deployment. The steps below preserve the final configuration and ongoing operating procedure.
 
+After the owner's dashboard launch and instructions for the live contact test and published privacy link, they reported “all works as expected.” The live contact/privacy workflow is owner-confirmed; the agent did not inspect the mailbox, submit the form or change provider settings. The [hosted verification](verification/2026-10-30-hosted-launch.md) distinguishes public HTTP proof from this owner report.
+
 ## Final Tally editor wording
 
 Keep the existing title and introductory paragraph:
