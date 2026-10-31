@@ -16,6 +16,8 @@ These are concrete owner/operator steps, not evidence that provider actions have
 2. Inspect or submit the canonical sitemap and confirm its processing in [Sitemaps](https://www2.bing.com/webmasters/help/sitemaps-3b5cf6ed). Inspect the same representative URLs and record provider-reported problems rather than inferring status from a browser search.
 3. Save a dated baseline of available query/page performance. Keep Bing and Google results separate. Do not claim that verification or sitemap acceptance ensures a search appearance.
 
+4. Review Bing's AI Performance report for citations/referenced pages across supported Bing/Copilot experiences. [Topics Portfolio](https://blogs.bing.com/webmaster/2026/10/introducing-topics-portfolio-beta-in-ai-performance/) is beta and requires sufficient data; its absence on a small/new site is not itself a source defect. The [Bing appearance review](../2026-10-31/bing-readiness-review.md) records the favicon compatibility fix and remaining checks. If using Cloudflare Crawler Hints for IndexNow notifications, confirm that setting before adding a separate submission workflow.
+
 ## AI answer baseline
 
 Use the nine exact prompts and recording rules in the [AI visibility report](ai-visibility-report.md#reproducible-multi-assistant-prompt-set). Brand-free discovery prompts must run in fresh sessions without preloading Ternloom material. Record search mode, platform/model, date, locale, full answer, cited URLs, unsupported claims and unavailable runs. The suggested full baseline is 9 prompts × 3 repetitions × 4 platforms; start with a clearly labelled smaller sample if account access or time prevents completion, and never present it as the full set.

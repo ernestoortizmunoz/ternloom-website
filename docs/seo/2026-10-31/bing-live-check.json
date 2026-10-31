@@ -1,0 +1,271 @@
+{
+  "audit_date": "2026-10-31",
+  "scope": "read-only ordinary public GETs; not verified Bingbot or Webmaster account evidence",
+  "observations": [
+    {
+      "path": "/",
+      "status": 200,
+      "effective_url": "https://ternloom.com/",
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 24867,
+      "title": "Ternloom Technologies \u2014 Websites, Software & Integrations",
+      "canonical": "https://ternloom.com/",
+      "robots": [],
+      "icons": [
+        "<link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">"
+      ],
+      "restrictive_attributes": [],
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "organization": {
+        "@type": "Organization",
+        "@id": "https://ternloom.com/#organization",
+        "name": "Ternloom Technologies",
+        "url": "https://ternloom.com/"
+      }
+    },
+    {
+      "path": "/services/website-development/",
+      "status": 200,
+      "effective_url": "https://ternloom.com/services/website-development/",
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 27725,
+      "title": "Website Development for Small Businesses \u2014 Ternloom",
+      "canonical": "https://ternloom.com/services/website-development/",
+      "robots": [],
+      "icons": [
+        "<link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">"
+      ],
+      "restrictive_attributes": [],
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/services/custom-business-software/",
+      "status": 200,
+      "effective_url": "https://ternloom.com/services/custom-business-software/",
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 25354,
+      "title": "Custom Business Software for Small Businesses \u2014 Ternloom",
+      "canonical": "https://ternloom.com/services/custom-business-software/",
+      "robots": [],
+      "icons": [
+        "<link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">"
+      ],
+      "restrictive_attributes": [],
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/services/business-automation-integrations/",
+      "status": 200,
+      "effective_url": "https://ternloom.com/services/business-automation-integrations/",
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 27657,
+      "title": "Business Automation & Integrations for Small Businesses \u2014 Ternloom",
+      "canonical": "https://ternloom.com/services/business-automation-integrations/",
+      "robots": [],
+      "icons": [
+        "<link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">"
+      ],
+      "restrictive_attributes": [],
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/projects/",
+      "status": 200,
+      "effective_url": "https://ternloom.com/projects/",
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 19455,
+      "title": "Selected Projects \u2014 Ternloom Technologies",
+      "canonical": "https://ternloom.com/projects/",
+      "robots": [],
+      "icons": [
+        "<link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">"
+      ],
+      "restrictive_attributes": [],
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "effective_url": "https://ternloom.com/about/",
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 15300,
+      "title": "About Ternloom Technologies",
+      "canonical": "https://ternloom.com/about/",
+      "robots": [],
+      "icons": [
+        "<link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">"
+      ],
+      "restrictive_attributes": [],
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/contact/",
+      "status": 200,
+      "effective_url": "https://ternloom.com/contact/",
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 12512,
+      "title": "Discuss Your Project \u2014 Ternloom Technologies",
+      "canonical": "https://ternloom.com/contact/",
+      "robots": [],
+      "icons": [
+        "<link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">"
+      ],
+      "restrictive_attributes": [],
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/privacy/",
+      "status": 200,
+      "effective_url": "https://ternloom.com/privacy/",
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 11701,
+      "title": "Privacy Notice \u2014 Ternloom Technologies",
+      "canonical": "https://ternloom.com/privacy/",
+      "robots": [],
+      "icons": [
+        "<link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">"
+      ],
+      "restrictive_attributes": [],
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "effective_url": "https://ternloom.com/robots.txt",
+      "headers": {
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 66,
+      "text": "User-agent: *\nAllow: /\n\nSitemap: https://ternloom.com/sitemap.xml\n"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "effective_url": "https://ternloom.com/sitemap.xml",
+      "headers": {
+        "content-type": "application/xml",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 614,
+      "urls": [
+        "https://ternloom.com/",
+        "https://ternloom.com/services/website-development/",
+        "https://ternloom.com/services/custom-business-software/",
+        "https://ternloom.com/services/business-automation-integrations/",
+        "https://ternloom.com/projects/",
+        "https://ternloom.com/about/",
+        "https://ternloom.com/contact/",
+        "https://ternloom.com/privacy/"
+      ]
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "effective_url": "https://ternloom.com/favicon.svg",
+      "headers": {
+        "content-type": "image/svg+xml",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 299
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 404,
+      "effective_url": "https://ternloom.com/favicon.ico",
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 9880
+    },
+    {
+      "path": "/favicon-96x96.png",
+      "status": 404,
+      "effective_url": "https://ternloom.com/favicon-96x96.png",
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 9880
+    },
+    {
+      "path": "/social-preview.png",
+      "status": 200,
+      "effective_url": "https://ternloom.com/social-preview.png",
+      "headers": {
+        "content-type": "image/png",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 59723
+    },
+    {
+      "path": "/brand/ternloom-logo.svg",
+      "status": 404,
+      "effective_url": "https://ternloom.com/brand/ternloom-logo.svg",
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "bytes": 9880
+    }
+  ]
+}

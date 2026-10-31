@@ -27,7 +27,9 @@ const socialImageUrl = new URL(socialImage.path, site.origin).href;
     {metadata.noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={metadata.canonical} />
     {contentPaths.includes(pathname) && <link rel="alternate" type="text/markdown" href={`${site.origin}/_agent-markdown${pathname}index.md`} />}
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/vnd.microsoft.icon" sizes="16x16 32x32 48x48" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg" />
     <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={site.name} />

@@ -1,0 +1,58 @@
+{
+  "scope": "local preview/release, not hosted Bing indexing",
+  "favicon_source": "Approved public/brand/ternloom-logo.svg; unchanged mark geometry, white raster background",
+  "ico_sizes": [
+    [
+      16,
+      16
+    ],
+    [
+      32,
+      32
+    ],
+    [
+      48,
+      48
+    ]
+  ],
+  "png_dimensions": [
+    96,
+    96
+  ],
+  "icon_urls": [
+    "/favicon.ico",
+    "/favicon-96x96.png",
+    "/favicon.svg"
+  ],
+  "release_content_urls": [
+    "https://ternloom.com/",
+    "https://ternloom.com/services/website-development/",
+    "https://ternloom.com/services/custom-business-software/",
+    "https://ternloom.com/services/business-automation-integrations/",
+    "https://ternloom.com/projects/",
+    "https://ternloom.com/about/",
+    "https://ternloom.com/contact/",
+    "https://ternloom.com/privacy/"
+  ],
+  "release_directive_findings": "No noindex/nosnippet/noarchive/nocache or data-nosnippet on eight canonical release pages; source no-training policy retained",
+  "local_headers": {
+    "/favicon.ico": {
+      "status": 200,
+      "content_type": "image/vnd.microsoft.icon"
+    },
+    "/favicon-96x96.png": {
+      "status": 200,
+      "content_type": "image/png"
+    }
+  },
+  "native_image_reader": "macOS sips recognized ICO and PNG; 48px largest ICO frame and96px PNG",
+  "diagnostics": {
+    "files": 49,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "unit_tests": 24,
+  "preview_build_output": "passed",
+  "isolated_real_release": "passed"
+}
