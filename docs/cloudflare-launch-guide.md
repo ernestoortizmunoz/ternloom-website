@@ -2,6 +2,8 @@
 
 Updated October 30, 2026. The owner selected **Workers Static Assets** after reviewing the earlier Pages guide. This guide replaces that Pages setup. Local preparation does not authorize a push, deployment, account change or DNS operation.
 
+Status update: after the owner's dashboard setup, the public canonical site and redirect passed [read-only hosted checks](verification/2026-10-30-hosted-launch.md). The steps below remain the operating procedure; the record distinguishes completed public checks from pending account, form and search-console follow-up.
+
 ## 1. Understand what is already configured
 
 The website remains static Astro. `wrangler.jsonc` serves `dist`, preserves trailing slashes and uses the real custom 404. There is no runtime Worker script, SSR adapter, database or application secret.

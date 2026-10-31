@@ -4,7 +4,7 @@
 
 - Read [project context](docs/project-context.md) and the [configuration brief](docs/superpowers/specs/2026-10-29-project-configuration-design.md) before changing this project.
 - This repository owns the main Ternloom Technologies website for `ternloom.com`.
-- Current state: approved configuration and Working Weave design implemented locally in static Astro: eight content pages, a designed 404, shared theme/brand, factual metadata/schema and guarded visibility output. Public email, final Tally copy/test, privacy wording, project descriptions and all three project screenshots are owner-confirmed. Wood Dust's blog is included. An isolated real release preflight passed; the browser preview remains noindex. Nothing is deployed.
+- Current state: approved Working Weave static Astro website with eight content pages, designed 404, shared brand, factual metadata/schema and guarded builds. Contact/privacy/project approvals are confirmed. After the owner's dashboard setup, read-only public checks verified the live release at `https://ternloom.com`, www redirects, eight canonical indexable pages, sitemap/robots and a real custom 404. The local preview remains noindex. See [hosted verification](docs/verification/2026-10-30-hosted-launch.md) for evidence and remaining owner actions.
 - Keep confirmed owner decisions distinct from proposed defaults and verified implementation.
 
 ## Business and audience
@@ -19,7 +19,7 @@
 ## Technical direction
 
 - Owner selected a static Astro website following the Turnory and Wood Dust Creations project pattern.
-- Implemented: TypeScript, plain CSS, npm lockfile, canonical origin `https://ternloom.com`, trailing slashes and `en-CA`. The owner selected Cloudflare Workers Static Assets to simplify hosting setup. Local Wrangler configuration and headers are prepared; no provider project or deployment is established.
+- Implemented: TypeScript, plain CSS, npm lockfile, canonical origin `https://ternloom.com`, trailing slashes and `en-CA`. The owner selected Cloudflare Workers Static Assets and performed dashboard setup. Local Wrangler configuration and headers are prepared; public Cloudflare-served release responses are verified. Exact account bindings and the deployed commit were not independently inspected.
 - Keep website builds independent of sibling repositories. Use their architecture as reference, not their branding, legal notices, provider accounts, forms or business data.
 - Prefer small shared components and one public business configuration. Add runtime services only for a demonstrated requirement.
 - Essential content must work without JavaScript. Use semantic HTML, keyboard access, visible focus, meaningful image alternatives and reduced-motion support.
