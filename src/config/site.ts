@@ -5,6 +5,7 @@ export interface SiteConfig {
   location: string;
   serviceArea: string;
   experienceStatement: string;
+  contentSignal: string;
   contact: { email: string } | null;
   contactForm: { tallyId: string } | null;
   privacy: { enquiryRetentionMonths: number | null };
@@ -24,6 +25,7 @@ export const site: SiteConfig = {
   location: 'Ottawa, Ontario, Canada',
   serviceArea: 'Canada',
   experienceStatement: 'Built on more than 15 years of experience in IT and software development.',
+  contentSignal: 'ai-train=no, search=yes, ai-input=yes',
   contact: { email: 'info@ternloom.com' },
   contactForm: { tallyId: 'dbEbrd' },
   privacy: { enquiryRetentionMonths: 12 },

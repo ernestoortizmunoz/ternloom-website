@@ -1,0 +1,268 @@
+{
+  "scope": "local static release; no hosted claim",
+  "observations": [
+    {
+      "path": "/",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"d70de98b6178641854558af55ba2a5f0\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes"
+      },
+      "body_bytes": 26459
+    },
+    {
+      "path": "/_agent-markdown/index.md",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"8043cdad351d967a9b87da0d3a35e748\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes",
+        "x-robots-tag": "noindex"
+      },
+      "body_bytes": 5929
+    },
+    {
+      "path": "/about/",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"1fafc11797d26ac13b0db6a95c7a582c\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes"
+      },
+      "body_bytes": 15677
+    },
+    {
+      "path": "/_agent-markdown/about/index.md",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"7cdd087ad1964e932f248924b3e8391d\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes",
+        "x-robots-tag": "noindex"
+      },
+      "body_bytes": 3783
+    },
+    {
+      "path": "/contact/",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"0a4d59c840dc0084e937ebc3c48f8d24\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes"
+      },
+      "body_bytes": 12768
+    },
+    {
+      "path": "/_agent-markdown/contact/index.md",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"a682e8a73b4d515212453b16e6df7a37\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes",
+        "x-robots-tag": "noindex"
+      },
+      "body_bytes": 3527
+    },
+    {
+      "path": "/privacy/",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"1494064d2376156762af9d04e25d40de\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes"
+      },
+      "body_bytes": 11942
+    },
+    {
+      "path": "/_agent-markdown/privacy/index.md",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"fcc6544ff6b01e6b4503c5e00106d319\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes",
+        "x-robots-tag": "noindex"
+      },
+      "body_bytes": 4573
+    },
+    {
+      "path": "/projects/",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"60556311689a14ba033c1c7125f1f942\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes"
+      },
+      "body_bytes": 20909
+    },
+    {
+      "path": "/_agent-markdown/projects/index.md",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"9a4f6e8398f50a00ffeb837bc14c2916\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes",
+        "x-robots-tag": "noindex"
+      },
+      "body_bytes": 5263
+    },
+    {
+      "path": "/services/website-development/",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"f653f0a84f4250f7da554a4bc4e01dba\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes"
+      },
+      "body_bytes": 29580
+    },
+    {
+      "path": "/_agent-markdown/services/website-development/index.md",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"03e6c10eecb602902e3ff326e4d475f2\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes",
+        "x-robots-tag": "noindex"
+      },
+      "body_bytes": 8549
+    },
+    {
+      "path": "/services/custom-business-software/",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"54762e9feb9465971b61eedc4b3deacb\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes"
+      },
+      "body_bytes": 27448
+    },
+    {
+      "path": "/_agent-markdown/services/custom-business-software/index.md",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"6ca8f489e77e4c05ca6e29154ba059e6\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes",
+        "x-robots-tag": "noindex"
+      },
+      "body_bytes": 8219
+    },
+    {
+      "path": "/services/business-automation-integrations/",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"9bd55408bacb227457b36f07cd23a34d\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes"
+      },
+      "body_bytes": 30105
+    },
+    {
+      "path": "/_agent-markdown/services/business-automation-integrations/index.md",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"7e55faada1af793eb28dc610fc60f468\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes",
+        "x-robots-tag": "noindex"
+      },
+      "body_bytes": 8980
+    },
+    {
+      "path": "/_agent-markdown/about/index.md",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"7cdd087ad1964e932f248924b3e8391d\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes",
+        "x-robots-tag": "noindex"
+      },
+      "body_bytes": 0
+    },
+    {
+      "path": "/_agent-markdown/about/index.md",
+      "method": "GET",
+      "status": 304,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"7cdd087ad1964e932f248924b3e8391d\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes",
+        "x-robots-tag": "noindex"
+      },
+      "body_bytes": 0
+    },
+    {
+      "path": "/_agent-markdown/definitely-missing.md",
+      "method": "GET",
+      "status": 404,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"65cc453654b6f05a2c5f716517382746\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes",
+        "x-robots-tag": "noindex"
+      },
+      "body_bytes": 10017
+    },
+    {
+      "path": "/robots.txt",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"56843591619aa443046b19c5f865c7a0\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes"
+      },
+      "body_bytes": 120
+    },
+    {
+      "path": "/llms.txt",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"143aae8413b4bf8979f13fb2398460d0\"",
+        "content-signal": "ai-train=no, search=yes, ai-input=yes"
+      },
+      "body_bytes": 3556
+    }
+  ]
+}

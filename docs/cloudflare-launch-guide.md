@@ -1,6 +1,6 @@
 # Ternloom: simplified Cloudflare Workers launch instructions
 
-Updated October 30, 2026. The owner selected **Workers Static Assets** after reviewing the earlier Pages guide. This guide replaces that Pages setup. Local preparation does not authorize a push, deployment, account change or DNS operation.
+Updated October 31, 2026. The owner selected **Workers Static Assets** after reviewing the earlier Pages guide. This guide replaces that Pages setup. Local preparation does not authorize a push, deployment, account change or DNS operation.
 
 Status update: after the owner's dashboard setup, the public canonical site and redirect passed [read-only hosted checks](verification/2026-10-30-hosted-launch.md). The steps below remain the operating procedure; the record distinguishes completed public checks from pending account, form and search-console follow-up.
 
@@ -73,7 +73,7 @@ For a **first hosted rehearsal before launch**, temporarily use `npm run build &
 
 ## 4. Review static delivery and preview protection
 
-`public/_headers` is implemented and copied into output. It adds baseline content-type, referrer, framing and browser-feature restrictions. A host-scoped rule sets `X-Robots-Tag: noindex` on `*.*.workers.dev`, including standard development/version hosts; it does not add noindex to `ternloom.com`.
+`public/_headers` supplies baseline content-type, referrer, framing and browser-feature restrictions. The build adds the authoritative `Content-Signal` header from `site.contentSignal`; do not duplicate that header in the source file. A host-scoped rule sets `X-Robots-Tag: noindex` on `*.*.workers.dev`, including standard development/version hosts. A separate rule marks `/_agent-markdown/*` mirrors noindex; it does not add noindex to canonical HTML on `ternloom.com`. Fingerprinted `/_astro/*` resources receive long immutable browser caching, while mutable URLs retain revalidation.
 
 Review the live header on the actual assigned URLs. Noindex is not password protection. For any future custom preview domain, separately configure noindex/access controls; do not point it at production release output without reviewing that behavior. See [Workers static headers](https://developers.cloudflare.com/workers/static-assets/headers/).
 
@@ -85,12 +85,13 @@ Current release generation in `scripts/visibility-output.mjs` produces:
 
 ```text
 User-agent: *
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Allow: /
 
 Sitemap: https://ternloom.com/sitemap.xml
 ```
 
-This permits compliant crawlers generally, including training crawlers. Individual training preferences remain an owner decision. Recommended for the visibility goal: allow ordinary search crawlers and AI search retrieval; choose model-training permissions separately.
+The owner selected no training/fine-tuning, while permitting search and real-time AI input/retrieval. The general Allow rule permits fetching; the Content-Signal line specifies how content may be used. The same policy appears in HTTP headers and the LLM guide. Preview robots retains `Disallow: /`, so usage preferences do not open preview pages to crawling. Signals express the policy; they do not guarantee that every automated system complies. See [Content Signals](https://contentsignals.org/).
 
 | Control | Meaning |
 | --- | --- |
@@ -102,9 +103,32 @@ This permits compliant crawlers generally, including training crawlers. Individu
 
 See [OpenAI's crawler definitions](https://developers.openai.com/api/docs/bots), [Google-Extended](https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers#google-extended), and [Google's AI Search guidance](https://developers.google.com/search/docs/appearance/ai-features). Google AI Search uses ordinary Search requirements; no special AI schema or new AI file is needed for those features. Crawl permission does not guarantee indexing, rankings or recommendations.
 
-If the owner elects to disallow OpenAI training while keeping search permitted, add a `GPTBot` group with `Disallow: /` to the **release generator**, retaining the general allow group and sitemap. Do not hand-edit `dist/robots.txt`: a rebuild overwrites it. Update the exact release-robots expectation in `scripts/check-404-release.mjs` and verify the default preview remains disallowed. This example does not settle other providers' training policies.
+Do not hand-edit `dist/robots.txt`: a rebuild overwrites it. Policy changes belong in `site.contentSignal`; provider-specific fetch restrictions would be a separate deliberate change in the release generator. Avoid blanket AI blocking that also disables permitted retrieval. Some provider tokens, such as Google-Extended, combine training and grounding controls; do not silently change those from this policy alone.
 
 In Cloudflare's bot/AI controls, review search, agent and training preferences plus managed robots settings. Ensure the dashboard does not contradict the chosen policy. Cloudflare can prepend managed robots rules or enforce blocks independently of the repository; inspect the actual public response and relevant security events. Do not disable unrelated security controls wholesale. See [Cloudflare's bot configuration reference](https://developers.cloudflare.com/api/resources/bot_management/).
+
+### Static Markdown for agents
+
+Both build commands generate eight static Markdown versions from the actual HTML main content, using the pinned build-only converter. The files live under `dist/_agent-markdown/`; for example, the public path for About is `/_agent-markdown/about/index.md`. `llms.txt` lists them, and each canonical page includes an alternate-format link in its head. These are ordinary Static Assets, with no custom Worker script, binding, environment variable, paid converter or runtime model call.
+
+The owner explicitly accepted the trade-off: **requests with `Accept: text/markdown` to an ordinary page URL still return HTML**. Cloudflare's same-URL Markdown-negotiation check will therefore remain unsupported. Direct Markdown URLs work independently of that check. Do not enable a paid feature solely to remove the warning. Cloudflare describes its optional managed alternative in [Markdown for Agents](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/).
+
+To verify locally, build and run the existing static emulator:
+
+```sh
+npm run build
+npx wrangler dev --local --port 4332
+```
+
+In a second terminal:
+
+```sh
+curl -i http://127.0.0.1:4332/_agent-markdown/about/index.md
+curl -i -H 'Accept: text/markdown' http://127.0.0.1:4332/about/
+curl -fsS http://127.0.0.1:4332/robots.txt
+```
+
+Expect Markdown/noindex at the first URL, HTML at the second, and the exact chosen Content-Signal policy. A nonexistent Markdown URL must return a real HTML 404, not an HTML error mislabeled as Markdown. The native `.md` MIME type is retained; no wildcard Content-Type override is needed.
 
 ## 6. Check the production candidate
 
@@ -162,6 +186,7 @@ Check these expected results:
 - `www` redirects permanently to the matching apex path and preserves `?check=launch`. The Workers development hostname and uploaded version URLs should return noindex headers; do not redirect preview hosts to production.
 - The deliberately missing URL returns a real 404 and the designed recovery page, with noindex; it is absent from the sitemap.
 - Robots permits the chosen search crawlers, advertises the sitemap and contains no unexpected managed restriction. The sitemap contains exactly the eight canonical content URLs.
+- `Content-Signal: ai-train=no, search=yes, ai-input=yes` appears in robots and HTTP headers. Direct Markdown files return 200 Markdown/noindex, and the canonical pages/LLM guide link to them. Same-URL Accept negotiation remains unsupported by the owner's explicit choice.
 - Expected headers are present; no local-test notice or draft label remains in Ternloom's production HTML. Contact iframe URL has `source=ternloom-website` and `environment=production`.
 - On desktop and mobile, navigation, project links, form placement, keyboard focus and email/direct-form fallbacks work. Check 200% zoom and a blocked/unavailable embed as well. Run a hosted Lighthouse/PageSpeed review and address material failures; no performance score has been promised.
 

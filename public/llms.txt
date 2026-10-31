@@ -4,11 +4,15 @@
 
 This is a concise guide to Ternloom's public website. The linked pages provide the current service descriptions, selected project context and policies.
 
+Static Markdown versions of the eight pages are linked below. They are generated from the same page content; the ordinary page URLs return HTML.
+
 Ternloom is based in Ottawa, Ontario, Canada. Its experience statement is “Built on more than 15 years of experience in IT and software development.” This describes experience, not the company's age. Cloud deployment and hosting support the three services; scope, provider costs and ongoing support are agreed separately.
 
 Ternloom is the technology provider for Bonita Nights and Wood Dust Creations. Wood Dust Creations' website includes a product catalogue, Square checkout links, custom-order enquiries, a blog and a portfolio. Turnory is Ternloom's own Windows sim-racing telemetry application, currently in development. These relationships do not establish ownership of the two client businesses, quantified results or endorsements. Potential service deliverables are examples, not claims of completed client work.
 
 Public contact: info@ternloom.com. Pricing, delivery dates and support commitments depend on the agreed project scope.
+
+Content-use preference: AI model training and fine-tuning are not permitted; search indexing and real-time AI input/retrieval are permitted. The site's Content-Signal policy is `ai-train=no, search=yes, ai-input=yes`. Crawl directives remain separate.
 
 ## Company and services
 
@@ -23,3 +27,14 @@ Public contact: info@ternloom.com. Pricing, delivery dates and support commitmen
 ## Policies
 
 - [Privacy notice](https://ternloom.com/privacy/): Enquiry handling, service providers and retention policy.
+
+## Markdown versions
+
+- [Company overview](https://ternloom.com/_agent-markdown/index.md)
+- [Website Development](https://ternloom.com/_agent-markdown/services/website-development/index.md)
+- [Custom Business Software](https://ternloom.com/_agent-markdown/services/custom-business-software/index.md)
+- [Business Automation & Integrations](https://ternloom.com/_agent-markdown/services/business-automation-integrations/index.md)
+- [Selected projects](https://ternloom.com/_agent-markdown/projects/index.md)
+- [About Ternloom](https://ternloom.com/_agent-markdown/about/index.md)
+- [Contact](https://ternloom.com/_agent-markdown/contact/index.md)
+- [Privacy notice](https://ternloom.com/_agent-markdown/privacy/index.md)

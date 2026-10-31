@@ -15,6 +15,7 @@ try {
   await cp(new URL('../astro.config.mjs', import.meta.url), join(fixture, 'astro.config.mjs'));
   await mkdir(join(fixture, 'scripts'));
   await cp(new URL('./visibility-output.mjs', import.meta.url), join(fixture, 'scripts/visibility-output.mjs'));
+  await cp(new URL('./markdown-output.mjs', import.meta.url), join(fixture, 'scripts/markdown-output.mjs'));
   await cp(new URL('../public/', import.meta.url), join(fixture, 'public'), { recursive: true });
   await writeFile(join(fixture, 'src/data/projects.ts'), `export const projects = ${JSON.stringify(projects.map((project) => ({ ...project, copyApproved: true, image: project.image ? { ...project.image, approved: true } : null })))};`);
   await symlink(fileURLToPath(new URL('../node_modules', import.meta.url)), join(fixture, 'node_modules'));
@@ -38,7 +39,8 @@ try {
   const sitemap = await readFile(join(fixture, 'dist/sitemap.xml'), 'utf8');
   assert.deepEqual([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]), contentPaths.map((path) => new URL(path, site.origin).href));
   assert.doesNotMatch(sitemap, /404|setup/);
-  assert.equal(await readFile(join(fixture, 'dist/robots.txt'), 'utf8'), `User-agent: *\nAllow: /\n\nSitemap: ${site.origin}/sitemap.xml\n`);
+  assert.equal(await readFile(join(fixture, 'dist/robots.txt'), 'utf8'), `User-agent: *\nContent-Signal: ${site.contentSignal}\nAllow: /\n\nSitemap: ${site.origin}/sitemap.xml\n`);
+  assert.ok((await readFile(join(fixture, 'dist/_headers'), 'utf8')).startsWith(`/*\n  Content-Signal: ${site.contentSignal}\n`));
   for (const path of contentPaths) {
     const html = await readFile(join(fixture, 'dist', path.slice(1), 'index.html'), 'utf8');
     assert.doesNotMatch(html, /<meta name="robots" content="noindex/);

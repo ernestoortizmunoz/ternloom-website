@@ -46,6 +46,17 @@ for (const [file, html] of contents) {
   const title = decode(html.match(/<title>([^<]+)<\/title>/)?.[1] ?? '');
   const meta = Object.fromEntries([...html.matchAll(/<meta\b[^>]*>/g)].map(([tag]) => { const attr = attributes(tag); return [attr.name ?? attr.property, attr.content]; }));
   assert.ok(title && meta.description, `${file}: title and description required`);
+  if (contentPaths.includes(pathname)) {
+    const markdown = await readFile(new URL(`_agent-markdown${pathname}index.md`, output), 'utf8');
+    assert.ok(markdown.includes(`title: ${JSON.stringify(title)}`), `${file}: Markdown metadata follows HTML`);
+    assert.ok(markdown.includes(`url: ${JSON.stringify(canonical[1])}`));
+    assert.ok(markdown.includes(`content_signal: ${JSON.stringify(site.contentSignal)}`));
+    assert.match(markdown, /robots: "noindex, nofollow"/);
+    assert.match(markdown, /^# /m);
+    assert.match(markdown, /```json\n/);
+    assert.doesNotMatch(markdown, /<(?:script|style|iframe|svg|nav)\b/i, `${file}: clean Markdown main content`);
+    assert.ok(html.includes(`rel="alternate" type="text/markdown" href="${site.origin}/_agent-markdown${pathname}index.md"`), `${file}: discoverable static Markdown`);
+  }
   assert.ok(!titles.has(title) && !descriptions.has(meta.description), `${file}: unique metadata required`);
   titles.add(title); descriptions.add(meta.description);
   for (const key of ['og:title', 'twitter:title']) assert.equal(meta[key], title);
@@ -113,7 +124,15 @@ if (stage === 'website') {
   assert.match(logo, /width="512" height="512"/);
   assert.equal(png.subarray(1, 4).toString(), 'PNG');
   assert.equal(png.readUInt32BE(16), 1200); assert.equal(png.readUInt32BE(20), 630);
-  assert.equal(await readFile(new URL('robots.txt', output), 'utf8'), 'User-agent: *\nDisallow: /\n');
+  assert.equal(await readFile(new URL('robots.txt', output), 'utf8'), `User-agent: *\nContent-Signal: ${site.contentSignal}\nDisallow: /\n`);
+  const headers = await readFile(new URL('_headers', output), 'utf8');
+  assert.ok(headers.startsWith(`/*\n  Content-Signal: ${site.contentSignal}\n`));
+  assert.equal((headers.match(/Content-Signal:/g) ?? []).length, 1, 'One authoritative usage policy header');
+  assert.ok(headers.includes('/_agent-markdown/*\n  X-Robots-Tag: noindex\n'));
+  const llms = await readFile(new URL('llms.txt', output), 'utf8');
+  const destinations = [...llms.matchAll(/\]\((https:\/\/ternloom\.com\/[^)]*)\)/g)].map((match) => match[1]);
+  const expected = contentPaths.flatMap((path) => [`${site.origin}${path}`, `${site.origin}/_agent-markdown${path}index.md`]);
+  assert.deepEqual(destinations.sort(), expected.sort(), 'LLM guide links to eight canonical pages and eight static Markdown versions');
   assert.ok(!(await readdir(output)).some((file) => /sitemap.*\.xml$/.test(file)), 'Preview must not emit a production sitemap');
 }
 if (stage === 'home' || stage === 'website') {
