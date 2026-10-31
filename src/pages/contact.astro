@@ -5,10 +5,11 @@ import ContactDetails from '../components/ContactDetails.astro';
 import ContactForm from '../components/ContactForm.astro';
 import { site } from '../config/site';
 import { services } from '../data/services';
+import { getContactDescription } from '../config/seo';
 ---
 <SiteLayout
-  title="Discuss Your Project — Ternloom Technologies"
-  description="Plan a website, custom software or business automation project. Tell Ternloom about your business, your current tools and what you want to change."
+  title="Contact Ternloom Technologies — Discuss Your Project"
+  description={getContactDescription()}
   pathname="/contact/"
   breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact/' }]}
 >

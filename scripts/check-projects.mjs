@@ -26,10 +26,23 @@ for (const project of projects) {
   }
   assert.ok(project.image);
   assert.equal(project.image.approved, true, 'Owner approved all three project screenshots');
-  assert.ok(article.includes(`src="${project.image.src}"`));
-  assert.match(article, /<img[^>]*alt="[^"]+"[^>]*width="\d+"[^>]*height="\d+"/);
+  assert.deepEqual(await readFile(new URL(`../dist/images/projects/${project.image.source}`, import.meta.url)), await readFile(new URL(`../src/assets/projects/${project.image.source}`, import.meta.url)), `${project.name}: preserve published original image URL and content`);
+  const imageTag = article.match(/<img\b[^>]*>/)?.[0];
+  assert.ok(imageTag, `${project.name}: screenshot is rendered`);
+  const attrs = Object.fromEntries([...imageTag.matchAll(/([\w:-]+)="([^"]*)"/g)].map((match) => [match[1], match[2]]));
+  assert.equal(attrs.alt, project.image.alt);
+  assert.equal(Number(attrs.width), project.image.width);
+  assert.equal(Number(attrs.height), project.image.height);
+  assert.equal(attrs.loading, 'lazy');
+  assert.equal(attrs.decoding, 'async');
+  assert.ok(attrs.sizes && attrs.srcset, `${project.name}: responsive screenshot candidates required`);
+  const candidates = attrs.srcset.split(',').map((entry) => entry.trim().split(/\s+/));
+  assert.deepEqual(candidates.map((entry) => entry[1]), ['320w', '480w', '640w', '960w', '1265w']);
+  for (const [url] of [[attrs.src], ...candidates]) {
+    assert.match(url, /^\/_astro\/[^/]+\.webp$/, `${project.name}: fingerprinted WebP output`);
+    await access(new URL(`../dist${url}`, import.meta.url));
+  }
   assert.match(article, /<figcaption[^>]*>[^<]+<\/figcaption>/);
-  await access(new URL(`../dist${project.image.src}`, import.meta.url));
   assert.match(article, /aria-label="Services related to/);
 }
 assert.match(html, /href="\/contact\/"/);

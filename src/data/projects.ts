@@ -1,5 +1,5 @@
 export interface ProjectImage {
-  src: string;
+  source: string;
   alt: string;
   width: number;
   height: number;
@@ -24,6 +24,8 @@ export interface ProjectDefinition {
 
 // Owner-confirmed relationships and final project copy. Screenshots are actual
 // public sites, captured 2026-10-30 and approved for website use on the same day.
+// Optimize src/assets/projects originals in Astro; retain byte-identical public
+// compatibility copies so already-published /images/projects/ URLs keep working.
 export const projects: ProjectDefinition[] = [
   {
     id: 'bonita-nights',
@@ -38,7 +40,7 @@ export const projects: ProjectDefinition[] = [
     serviceIds: ['website-development', 'business-automation-integrations'],
     copyApproved: true,
     image: {
-      src: '/images/projects/bonita-website-preview.jpg',
+      source: 'bonita-website-preview.jpg',
       alt: 'Bonita Nights website introducing its indoor sleepover rentals.',
       width: 1265,
       height: 712,
@@ -59,7 +61,7 @@ export const projects: ProjectDefinition[] = [
     serviceIds: ['website-development', 'business-automation-integrations'],
     copyApproved: true,
     image: {
-      src: '/images/projects/wooddust-website-preview.jpg',
+      source: 'wooddust-website-preview.jpg',
       alt: 'Wood Dust Creations website introducing its handmade woodworking.',
       width: 1265,
       height: 712,
@@ -80,7 +82,7 @@ export const projects: ProjectDefinition[] = [
     serviceIds: ['website-development', 'custom-business-software'],
     copyApproved: true,
     image: {
-      src: '/images/projects/turnory-website-preview.jpg',
+      source: 'turnory-website-preview.jpg',
       alt: 'Turnory product website introducing its sim-racing telemetry application.',
       width: 1265,
       height: 712,

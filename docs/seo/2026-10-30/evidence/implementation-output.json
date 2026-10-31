@@ -1,0 +1,148 @@
+{
+  "scope": "local preview and isolated real release, not hosted",
+  "content": [
+    {
+      "url": "https://ternloom.com/",
+      "title": "Ternloom Technologies \u2014 Websites, Software & Integrations",
+      "description": "Websites, custom software and business integrations for small businesses in Ottawa and across Canada. Explore Ternloom\u2019s services and selected projects."
+    },
+    {
+      "url": "https://ternloom.com/services/website-development/",
+      "title": "Website Development in Ottawa \u2014 Ternloom",
+      "description": "Website development and redesigns for small businesses in Ottawa and across Canada. Explore service pages, product catalogues and clear enquiry journeys."
+    },
+    {
+      "url": "https://ternloom.com/services/custom-business-software/",
+      "title": "Custom Software Development in Ottawa \u2014 Ternloom",
+      "description": "Custom business software for small businesses in Ottawa and across Canada. Explore internal tools, portals, dashboards and quoting workflows."
+    },
+    {
+      "url": "https://ternloom.com/services/business-automation-integrations/",
+      "title": "Business Automation & Integrations in Ottawa \u2014 Ternloom",
+      "description": "Business automation and integrations for small businesses in Ottawa and across Canada. Connect existing tools and plan handoffs, reviews and error handling."
+    },
+    {
+      "url": "https://ternloom.com/projects/",
+      "title": "Selected Projects \u2014 Ternloom Technologies",
+      "description": "Explore business websites for Bonita Nights and Wood Dust Creations, alongside Turnory, Ternloom\u2019s own software product in development."
+    },
+    {
+      "url": "https://ternloom.com/about/",
+      "title": "About Ternloom Technologies",
+      "description": "Learn about Ternloom Technologies, serving small businesses in Ottawa and across Canada and built on more than 15 years of IT and software development experience."
+    },
+    {
+      "url": "https://ternloom.com/contact/",
+      "title": "Contact Ternloom Technologies \u2014 Discuss Your Project",
+      "description": "Contact Ternloom Technologies about a website, custom software or business automation project. Use the enquiry form or email info@ternloom.com."
+    },
+    {
+      "url": "https://ternloom.com/privacy/",
+      "title": "Privacy Notice \u2014 Ternloom Technologies",
+      "description": "How Ternloom Technologies handles project enquiries, including form providers, retention and privacy requests."
+    }
+  ],
+  "images": [
+    {
+      "project": "bonita-nights",
+      "original_bytes": 84409,
+      "variants": [
+        {
+          "width": 320,
+          "path": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp",
+          "bytes": 8508
+        },
+        {
+          "width": 480,
+          "path": "/_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp",
+          "bytes": 14718
+        },
+        {
+          "width": 640,
+          "path": "/_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp",
+          "bytes": 21738
+        },
+        {
+          "width": 960,
+          "path": "/_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp",
+          "bytes": 35466
+        },
+        {
+          "width": 1265,
+          "path": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "bytes": 48746
+        }
+      ]
+    },
+    {
+      "project": "wood-dust-creations",
+      "original_bytes": 72045,
+      "variants": [
+        {
+          "width": 320,
+          "path": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp",
+          "bytes": 6232
+        },
+        {
+          "width": 480,
+          "path": "/_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp",
+          "bytes": 11122
+        },
+        {
+          "width": 640,
+          "path": "/_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp",
+          "bytes": 16694
+        },
+        {
+          "width": 960,
+          "path": "/_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp",
+          "bytes": 27070
+        },
+        {
+          "width": 1265,
+          "path": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "bytes": 38998
+        }
+      ]
+    },
+    {
+      "project": "turnory",
+      "original_bytes": 51143,
+      "variants": [
+        {
+          "width": 320,
+          "path": "/_astro/turnory-website-preview.BgVMxxzs_Z21dbEx.webp",
+          "bytes": 4696
+        },
+        {
+          "width": 480,
+          "path": "/_astro/turnory-website-preview.BgVMxxzs_2wr2vL.webp",
+          "bytes": 8242
+        },
+        {
+          "width": 640,
+          "path": "/_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp",
+          "bytes": 11876
+        },
+        {
+          "width": 960,
+          "path": "/_astro/turnory-website-preview.BgVMxxzs_2lEL6m.webp",
+          "bytes": 19624
+        },
+        {
+          "width": 1265,
+          "path": "/_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp",
+          "bytes": 29364
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "exact eight canonical indexable sitemap URLs",
+    "all content Organization nodes use confirmed email and 512px logo",
+    "LLM file unchanged in both modes, eight sitemap destinations",
+    "production Tally context, noindex excluded 404",
+    "default preview remains noindex, disallow, no sitemap",
+    "all fifteen WebP candidates exist; published original image bytes preserved"
+  ]
+}

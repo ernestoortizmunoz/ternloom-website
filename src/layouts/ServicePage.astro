@@ -4,11 +4,16 @@ import ActionLink from '../components/ActionLink.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import ProjectSummary from '../components/ProjectSummary.astro';
 import ContactInvitation from '../components/ContactInvitation.astro';
-import type { ServiceDefinition } from '../data/services';
+import { services, type ServiceDefinition } from '../data/services';
 import { projects } from '../data/projects';
 
 interface Props { service: ServiceDefinition }
 const { service } = Astro.props;
+const questions = service.questions.map((question) => {
+  const related = question.related && services.find((entry) => entry.id === question.related?.serviceId);
+  if (question.related && !related) throw new Error(`Unknown related service ${question.related.serviceId}`);
+  return { ...question, relatedPath: related?.path };
+});
 const relevantProjects = service.projectIds.map((id) => {
   const project = projects.find((entry) => entry.id === id);
   if (!project) throw new Error(`Unknown project ${id} for service ${service.id}`);
@@ -21,8 +26,8 @@ const steps = [
 ];
 ---
 <SiteLayout
-  title={`${service.name} for Small Businesses — Ternloom`}
-  description={service.summary}
+  title={service.seo.title}
+  description={service.seo.description}
   pathname={service.path}
   serviceId={service.id}
   breadcrumbs={[{ name: 'Home', path: '/' }, { name: service.name, path: service.path }]}
@@ -30,7 +35,7 @@ const steps = [
   <section class="container service-intro" aria-labelledby="service-title">
     <p class="eyebrow">For small businesses in Ottawa and across Canada</p>
     <h1 id="service-title">{service.name}</h1>
-    <p class="service-lead">{service.summary}</p>
+    <p class="service-lead">{service.lead}</p>
     <div class="intro-actions">
       <ActionLink href="/contact/">Discuss your project</ActionLink>
       <ActionLink href="#service-evidence" variant="text">Explore relevant work</ActionLink>
@@ -61,6 +66,7 @@ const steps = [
       <SectionHeading id="service-evidence" eyebrow="Selected projects">See the work in context</SectionHeading>
       <ActionLink href="/projects/" variant="text">View all selected projects</ActionLink>
     </div>
+    <p class="evidence-intro">{service.evidenceIntro}</p>
     <div class="project-list">{relevantProjects.map((project) => <ProjectSummary project={project} detailed />)}</div>
   </section>
 
@@ -70,8 +76,8 @@ const steps = [
   </section>
 
   <section class="container section questions-section" aria-labelledby="service-questions">
-    <SectionHeading id="service-questions" eyebrow="Before you begin">Useful questions</SectionHeading>
-    <div class="questions-list">{service.questions.map(({ question, answer }) => <div class="question"><h3>{question}</h3><p>{answer}</p></div>)}</div>
+    <SectionHeading id="service-questions" eyebrow="Before you begin">{service.questionsHeading}</SectionHeading>
+    <div class="questions-list">{questions.map(({ question, answer, related, relatedPath }) => <div class="question"><h3>{question}</h3><p>{answer}</p>{related && <p>{related.before}<a href={relatedPath}>{related.label}</a>{related.after}</p>}</div>)}</div>
   </section>
 
   <ContactInvitation />
@@ -95,6 +101,7 @@ const steps = [
   .scope-boundaries h2 { margin-block-end: var(--space-3); }
   .scope-boundaries p { font-size: var(--text-support); line-height: var(--leading-body); }
   .evidence-heading { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: var(--space-3); }
+  .evidence-intro { max-width: var(--reading-width); margin-block-start: var(--space-3); color: var(--color-muted); }
   .project-list { display: grid; gap: var(--space-8); margin-block-start: var(--space-6); }
   .process-section { border-block-start: var(--border-width) solid var(--color-line); }
   .process-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-block-start: var(--space-6); padding-inline-start: var(--space-3); }
@@ -105,6 +112,7 @@ const steps = [
   .questions-section { display: grid; grid-template-columns: 1fr 2fr; gap: var(--space-6); padding-block-start: var(--space-4); }
   .question { padding-block: var(--space-3); border-block-start: var(--border-width) solid var(--color-line); }
   .question h3 { margin-block-end: var(--space-2); }
+  .question p + p { margin-block-start: var(--space-2); }
   @media (max-width: 48rem) {
     .service-fit, .scope-columns, .process-list, .questions-section { grid-template-columns: 1fr; }
     .scope-columns { gap: var(--space-6); }

@@ -3,11 +3,15 @@ export interface ServiceDefinition {
   name: string;
   path: string;
   summary: string;
+  seo: { title: string; description: string };
+  lead: string;
+  evidenceIntro: string;
+  questionsHeading: string;
   problems: string[];
   deliverables: string[];
   scopeNotes: string[];
   projectIds: string[];
-  questions: { question: string; answer: string }[];
+  questions: { question: string; answer: string; related?: { serviceId: string; before: string; label: string; after: string } }[];
 }
 
 export const services: ServiceDefinition[] = [
@@ -16,6 +20,13 @@ export const services: ServiceDefinition[] = [
     name: 'Website Development',
     path: '/services/website-development/',
     summary: 'A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step.',
+    seo: {
+      title: 'Website Development in Ottawa — Ternloom',
+      description: 'Website development and redesigns for small businesses in Ottawa and across Canada. Explore service pages, product catalogues and clear enquiry journeys.',
+    },
+    lead: 'A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step.',
+    evidenceIntro: 'Bonita Nights brings rental themes and customer information together with a booking-request flow. Wood Dust Creations combines a product catalogue, Square checkout links, custom-order enquiries, a blog and a portfolio.',
+    questionsHeading: 'Website project questions',
     problems: [
       'Your business has outgrown a basic page, or needs its first website.',
       'Customers struggle to understand your services, browse your work or find the right enquiry route.',
@@ -47,6 +58,7 @@ export const services: ServiceDefinition[] = [
       {
         question: 'Can the site connect to booking or payment tools?',
         answer: 'Connections can be included when the tools and workflow are understood. A booking-request form or a link to a hosted checkout may be enough; live availability, inventory synchronization and more complex automation need their own scope.',
+        related: { serviceId: 'business-automation-integrations', before: 'If the main problem is moving information between tools, explore our ', label: 'business automation and integrations', after: ' service.' },
       },
       {
         question: 'How are cost, timing and future updates agreed?',
@@ -59,6 +71,13 @@ export const services: ServiceDefinition[] = [
     name: 'Custom Business Software',
     path: '/services/custom-business-software/',
     summary: "Software built around a business's own workflows.",
+    seo: {
+      title: 'Custom Software Development in Ottawa — Ternloom',
+      description: 'Custom business software for small businesses in Ottawa and across Canada. Explore internal tools, portals, dashboards and quoting workflows.',
+    },
+    lead: 'When spreadsheets or off-the-shelf tools no longer fit the work, custom software can give staff or customers a clearer way to complete a task. We start with one business workflow and agree what a useful first version should do.',
+    evidenceIntro: 'Turnory is Ternloom’s own Windows sim-racing telemetry application, currently in development. Its public website explains the product and offers launch notifications; this is an own-product example, not a completed client software project.',
+    questionsHeading: 'Custom software project questions',
     problems: [
       'Important work is spread across spreadsheets, email and handwritten notes, making it hard to see what needs attention.',
       'An off-the-shelf product forces awkward workarounds or cannot represent the way your business handles a job.',
@@ -82,6 +101,7 @@ export const services: ServiceDefinition[] = [
       {
         question: 'Should we use an existing product or build custom software?',
         answer: 'We first consider whether an existing tool can meet the need with reasonable configuration. Custom software may make sense when the workflow has requirements that available products cannot accommodate well. The decision includes ongoing running and maintenance costs, not just the initial build.',
+        related: { serviceId: 'business-automation-integrations', before: 'If the tools already do what you need but information has to be copied between them, ', label: 'business automation and integrations', after: ' may be the better starting point.' },
       },
       {
         question: 'Can we start with one part of the workflow?',
@@ -102,6 +122,13 @@ export const services: ServiceDefinition[] = [
     name: 'Business Automation & Integrations',
     path: '/services/business-automation-integrations/',
     summary: 'Connected tools and automated workflows that reduce repetitive work.',
+    seo: {
+      title: 'Business Automation & Integrations in Ottawa — Ternloom',
+      description: 'Business automation and integrations for small businesses in Ottawa and across Canada. Connect existing tools and plan handoffs, reviews and error handling.',
+    },
+    lead: 'Connect existing business tools so information can move between them with less manual copying. We start with one repetitive task, review what each tool supports and agree which steps need a person’s approval.',
+    evidenceIntro: 'These examples show connections to existing providers: a booking-request flow for Bonita Nights and Square-hosted checkout links for Wood Dust Creations. They do not demonstrate fully automated bookings, inventory synchronisation or fulfilment.',
+    questionsHeading: 'Automation and integration questions',
     problems: [
       'Staff copy the same information between forms, spreadsheets and business tools.',
       'Enquiries or requests arrive in one place, but the next person needs to be told manually.',
@@ -125,6 +152,7 @@ export const services: ServiceDefinition[] = [
       {
         question: 'Can we keep the tools we already use?',
         answer: 'That is the starting point. We review the tools, the information that needs to move and the access each provider offers. A supported connection or a small change to the workflow may be enough; some tools cannot support the requested handoff.',
+        related: { serviceId: 'custom-business-software', before: 'If the existing tools cannot support the task itself, ', label: 'custom business software', after: ' may be worth considering. Connecting tools and building a new tool solve different parts of the problem.' },
       },
       {
         question: 'Does every step need to be automated?',

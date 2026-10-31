@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { site } from '../src/config/site.ts';
 import { services } from '../src/data/services.ts';
-import { contentPaths, socialImage } from '../src/config/seo.ts';
+import { contentPaths, socialImage, organizationLogo } from '../src/config/seo.ts';
 
 const args = process.argv.slice(2);
 const stage = args.length === 0 ? 'website' : args[1];
@@ -69,13 +69,15 @@ for (const [file, html] of contents) {
   const breadcrumbMarkup = html.match(/<nav[^>]*aria-label="Breadcrumb"[^>]*>([\s\S]*?)<\/nav>/)?.[1];
   assert.deepEqual(types, ['Organization', 'WebSite', ...(service ? ['Service'] : []), ...(breadcrumbMarkup ? ['BreadcrumbList'] : [])]);
   const organizationId = `${site.origin}/#organization`;
-  assert.deepEqual(graph[0], { '@type': 'Organization', '@id': organizationId, name: site.name, url: `${site.origin}/` });
+  assert.deepEqual(graph[0], { '@type': 'Organization', '@id': organizationId, name: site.name, url: `${site.origin}/`, logo: { '@type': 'ImageObject', url: `${site.origin}${organizationLogo.path}`, width: organizationLogo.width, height: organizationLogo.height }, ...(site.contact && site.readiness.contactConfirmed ? { email: site.contact.email } : {}) });
   assert.deepEqual(graph[1], { '@type': 'WebSite', '@id': `${site.origin}/#website`, name: site.name, url: `${site.origin}/`, inLanguage: site.locale, publisher: { '@id': organizationId } });
   const visible = decode(html.replace(/<script\b[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ');
   assert.ok(visible.includes(site.name), `${file}: identity visible`);
   if (service) {
-    assert.deepEqual(graph[2], { '@type': 'Service', '@id': `${site.origin}${service.path}#service`, name: service.name, description: service.summary, url: canonical[1], provider: { '@id': organizationId }, areaServed: site.serviceArea });
-    assert.ok(visible.includes(service.name) && visible.includes(service.summary) && visible.includes(site.serviceArea), `${file}: service facts visible`);
+    assert.deepEqual(graph[2], { '@type': 'Service', '@id': `${site.origin}${service.path}#service`, name: service.name, description: service.lead, url: canonical[1], provider: { '@id': organizationId }, areaServed: site.serviceArea });
+    assert.ok(visible.includes(service.name) && visible.includes(service.lead) && visible.includes(site.serviceArea), `${file}: service facts visible`);
+    assert.equal(title, service.seo.title, `${file}: dedicated service title`);
+    assert.equal(meta.description, service.seo.description, `${file}: dedicated service description`);
   }
   if (breadcrumbMarkup) {
     const labels = [...breadcrumbMarkup.matchAll(/<(?:a|span)\b[^>]*>([^<]+)<\/(?:a|span)>/g)].map((match) => decode(match[1]));
@@ -107,6 +109,8 @@ for (const [file, html] of contents) {
 }
 if (stage === 'website') {
   const png = await readFile(new URL(socialImage.path.slice(1), output));
+  const logo = await readFile(new URL(organizationLogo.path.slice(1), output), 'utf8');
+  assert.match(logo, /width="512" height="512"/);
   assert.equal(png.subarray(1, 4).toString(), 'PNG');
   assert.equal(png.readUInt32BE(16), 1200); assert.equal(png.readUInt32BE(20), 630);
   assert.equal(await readFile(new URL('robots.txt', output), 'utf8'), 'User-agent: *\nDisallow: /\n');

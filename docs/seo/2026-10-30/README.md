@@ -2,6 +2,8 @@
 
 Audit date: October 30, 2026, America/Toronto. Site: [ternloom.com](https://ternloom.com/). Scope: all eight public content pages, the custom 404, source/configuration, live HTTP responses, internal links, representative performance tests and enquiry-focused keyword research.
 
+**Approved follow-up implemented locally:** the owner subsequently authorized the on-site changes. See the [implementation and verification record](implementation.md), [guide briefs](content-briefs.md) and [external measurement checklist](external-measurement-checklist.md). The audit snapshot below preserves the pre-change evidence and recommendations; its historical “proposed only” statements are superseded for the specific local changes recorded there. No follow-up deployment occurred.
+
 **Finding: no critical technical crawl/indexing blocker was found in the sampled live responses.** The useful next work is clearer service search descriptions, better evidence and contextual links, and establishing actual search-console and AI-answer baselines. Technical eligibility and Lighthouse scores do not establish indexing or rankings.
 
 Separate GPT Astra agents reviewed general SEO, on-page SEO, technical SEO and AI retrieval. Keyword research was consolidated into one map and independently reviewed by Astra. Reviews used the five requested skills, applying current primary documentation where older checklist advice was inapplicable. No composite SEO score, traffic forecast or AI visibility score was invented.

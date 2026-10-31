@@ -2,6 +2,8 @@
 import type { ProjectDefinition } from '../data/projects';
 import { services } from '../data/services';
 import ActionLink from './ActionLink.astro';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 interface Props { project: ProjectDefinition; detailed?: boolean; headingLevel?: 2 | 3 }
 const { project, detailed = false, headingLevel = 3 } = Astro.props;
 const Heading = headingLevel === 2 ? 'h2' : 'h3';
@@ -14,10 +16,17 @@ const statusLabels: Record<ProjectDefinition['status'], string> = {
   'application-in-development': 'application in development',
 };
 const relatedServices = services.filter((service) => project.serviceIds.includes(service.id));
+// Keep asset imports in Astro so Node-only publication checks can read project records.
+const imageSources = import.meta.glob<{ default: ImageMetadata }>('../assets/projects/*.jpg', { eager: true });
+const imageSource = project.image && imageSources[`../assets/projects/${project.image.source}`]?.default;
+if (project.image && !imageSource) throw new Error(`Missing approved screenshot for ${project.id}`);
+const imageSizes = detailed
+  ? '(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem'
+  : '(max-width: 48rem) calc(100vw - 3rem), (max-width: 64rem) calc(33.333vw - 3rem), (max-width: 78rem) calc(33.333vw - 3.333rem), 22.667rem';
 ---
 <article class:list={['project-summary', { detailed }]} data-project={project.id} aria-labelledby={`${project.id}-title`}>
-  {project.image && <figure class="project-preview">
-    <img src={project.image.src} alt={project.image.alt} width={project.image.width} height={project.image.height} loading="lazy" decoding="async" />
+  {project.image && imageSource && <figure class="project-preview">
+    <Image src={imageSource} alt={project.image.alt} width={project.image.width} height={project.image.height} widths={[320, 480, 640, 960, 1265]} sizes={imageSizes} format="webp" loading="lazy" decoding="async" />
     <figcaption>{project.image.caption}</figcaption>
   </figure>}
   <div class="project-copy">
@@ -38,7 +47,7 @@ const relatedServices = services.filter((service) => project.serviceIds.includes
 <style>
   .project-summary { min-width: 0; }
   .project-preview { margin: 0 0 var(--space-3); }
-  .project-preview img { width: 100%; border: var(--border-width) solid var(--color-line); }
+  .project-preview :global(img) { width: 100%; border: var(--border-width) solid var(--color-line); }
   figcaption { margin-block-start: var(--space-1); color: var(--color-muted); font-size: var(--text-label); line-height: var(--leading-support); }
   .project-role { padding-block-start: var(--space-3); border-block-start: var(--border-width) solid var(--color-line); margin-block-end: var(--space-1); color: var(--color-muted); font-size: var(--text-support); line-height: var(--leading-support); }
   h2, h3 { margin-block-end: var(--space-2); }

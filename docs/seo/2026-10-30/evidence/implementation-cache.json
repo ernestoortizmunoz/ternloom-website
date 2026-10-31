@@ -1,0 +1,47 @@
+{
+  "host": "loopback local Workers emulator, not production",
+  "observations": [
+    {
+      "path": "/_astro/index.BTySDOOe.css",
+      "status": 200,
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/_astro/turnory-website-preview.BgVMxxzs_2lEL6m.webp",
+      "status": 200,
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "cache_control": "public, max-age=0, must-revalidate",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/services/custom-business-software/",
+      "status": 200,
+      "cache_control": "public, max-age=0, must-revalidate",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/images/projects/bonita-website-preview.jpg",
+      "status": 200,
+      "cache_control": "public, max-age=0, must-revalidate",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/brand/ternloom-logo.svg",
+      "status": 200,
+      "cache_control": "public, max-age=0, must-revalidate",
+      "content_type": "image/svg+xml"
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "cache_control": "public, max-age=0, must-revalidate",
+      "content_type": "text/plain; charset=utf-8"
+    }
+  ]
+}

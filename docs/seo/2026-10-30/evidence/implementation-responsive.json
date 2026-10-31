@@ -1,0 +1,791 @@
+{
+  "host": "local Astro preview, not production",
+  "observations": [
+    {
+      "route": "/",
+      "requestedViewport": {
+        "width": 375,
+        "height": 812
+      },
+      "description": "Websites, custom software and business integrations for small businesses in Ottawa and across Canada. Explore Ternloom’s services and selected projects.",
+      "documentWidth": 360,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp",
+          "height": 176.375,
+          "naturalWidth": 327,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 64rem) calc(33.333vw - 3rem), (max-width: 78rem) calc(33.333vw - 3.333rem), 22.667rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 312
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "",
+          "height": 176.46875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 64rem) calc(33.333vw - 3rem), (max-width: 78rem) calc(33.333vw - 3.333rem), 22.667rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 312
+        },
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "currentSrc": "",
+          "height": 176.46875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 64rem) calc(33.333vw - 3rem), (max-width: 78rem) calc(33.333vw - 3.333rem), 22.667rem",
+          "src": "/_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp",
+          "srcset": "/_astro/turnory-website-preview.BgVMxxzs_Z21dbEx.webp 320w, /_astro/turnory-website-preview.BgVMxxzs_2wr2vL.webp 480w, /_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp 640w, /_astro/turnory-website-preview.BgVMxxzs_2lEL6m.webp 960w, /_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp 1265w",
+          "width": 312
+        }
+      ],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Ternloom Technologies — Websites, Software & Integrations",
+      "width": 375
+    },
+    {
+      "route": "/services/website-development/",
+      "requestedViewport": {
+        "width": 375,
+        "height": 812
+      },
+      "description": "Website development and redesigns for small businesses in Ottawa and across Canada. Explore service pages, product catalogues and clear enquiry journeys.",
+      "documentWidth": 360,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp",
+          "height": 176.375,
+          "naturalWidth": 327,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 312
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "",
+          "height": 176.46875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 312
+        }
+      ],
+      "lead": "A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step.",
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [
+        {
+          "path": "/services/business-automation-integrations/",
+          "text": "business automation and integrations"
+        }
+      ],
+      "title": "Website Development in Ottawa — Ternloom",
+      "width": 375
+    },
+    {
+      "route": "/services/custom-business-software/",
+      "requestedViewport": {
+        "width": 375,
+        "height": 812
+      },
+      "description": "Custom business software for small businesses in Ottawa and across Canada. Explore internal tools, portals, dashboards and quoting workflows.",
+      "documentWidth": 360,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "currentSrc": "",
+          "height": 176.46875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp",
+          "srcset": "/_astro/turnory-website-preview.BgVMxxzs_Z21dbEx.webp 320w, /_astro/turnory-website-preview.BgVMxxzs_2wr2vL.webp 480w, /_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp 640w, /_astro/turnory-website-preview.BgVMxxzs_2lEL6m.webp 960w, /_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp 1265w",
+          "width": 312
+        }
+      ],
+      "lead": "When spreadsheets or off-the-shelf tools no longer fit the work, custom software can give staff or customers a clearer way to complete a task. We start with one business workflow and agree what a useful first version should do.",
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [
+        {
+          "path": "/services/business-automation-integrations/",
+          "text": "business automation and integrations"
+        }
+      ],
+      "title": "Custom Software Development in Ottawa — Ternloom",
+      "width": 375
+    },
+    {
+      "route": "/services/business-automation-integrations/",
+      "requestedViewport": {
+        "width": 375,
+        "height": 812
+      },
+      "description": "Business automation and integrations for small businesses in Ottawa and across Canada. Connect existing tools and plan handoffs, reviews and error handling.",
+      "documentWidth": 360,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp",
+          "height": 176.375,
+          "naturalWidth": 327,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 312
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "",
+          "height": 176.46875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 312
+        }
+      ],
+      "lead": "Connect existing business tools so information can move between them with less manual copying. We start with one repetitive task, review what each tool supports and agree which steps need a person’s approval.",
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [
+        {
+          "path": "/services/custom-business-software/",
+          "text": "custom business software"
+        }
+      ],
+      "title": "Business Automation & Integrations in Ottawa — Ternloom",
+      "width": 375
+    },
+    {
+      "route": "/projects/",
+      "requestedViewport": {
+        "width": 375,
+        "height": 812
+      },
+      "description": "Explore business websites for Bonita Nights and Wood Dust Creations, alongside Turnory, Ternloom’s own software product in development.",
+      "documentWidth": 360,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp",
+          "height": 176.375,
+          "naturalWidth": 327,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 312
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "",
+          "height": 176.46875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 312
+        },
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "currentSrc": "",
+          "height": 176.46875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp",
+          "srcset": "/_astro/turnory-website-preview.BgVMxxzs_Z21dbEx.webp 320w, /_astro/turnory-website-preview.BgVMxxzs_2wr2vL.webp 480w, /_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp 640w, /_astro/turnory-website-preview.BgVMxxzs_2lEL6m.webp 960w, /_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp 1265w",
+          "width": 312
+        }
+      ],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Selected Projects — Ternloom Technologies",
+      "width": 375
+    },
+    {
+      "route": "/about/",
+      "requestedViewport": {
+        "width": 375,
+        "height": 812
+      },
+      "description": "Learn about Ternloom Technologies, serving small businesses in Ottawa and across Canada and built on more than 15 years of IT and software development experience.",
+      "documentWidth": 360,
+      "h1": 1,
+      "images": [],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "About Ternloom Technologies",
+      "width": 375
+    },
+    {
+      "route": "/contact/",
+      "requestedViewport": {
+        "width": 375,
+        "height": 812
+      },
+      "description": "Contact Ternloom Technologies about a website, custom software or business automation project. Use the enquiry form or email info@ternloom.com.",
+      "documentWidth": 360,
+      "formTop": 514.1875,
+      "h1": 1,
+      "images": [],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Contact Ternloom Technologies — Discuss Your Project",
+      "width": 375
+    },
+    {
+      "route": "/privacy/",
+      "requestedViewport": {
+        "width": 375,
+        "height": 812
+      },
+      "description": "How Ternloom Technologies handles project enquiries, including form providers, retention and privacy requests.",
+      "documentWidth": 360,
+      "h1": 1,
+      "images": [],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Privacy Notice — Ternloom Technologies",
+      "width": 375
+    },
+    {
+      "route": "/",
+      "requestedViewport": {
+        "width": 768,
+        "height": 900
+      },
+      "description": "Websites, custom software and business integrations for small businesses in Ottawa and across Canada. Explore Ternloom’s services and selected projects.",
+      "documentWidth": 753,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp",
+          "height": 397.4375,
+          "naturalWidth": 720,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 64rem) calc(33.333vw - 3rem), (max-width: 78rem) calc(33.333vw - 3.333rem), 22.667rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 705
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "",
+          "height": 397.671875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 64rem) calc(33.333vw - 3rem), (max-width: 78rem) calc(33.333vw - 3.333rem), 22.667rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 705
+        },
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "currentSrc": "",
+          "height": 397.671875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 64rem) calc(33.333vw - 3rem), (max-width: 78rem) calc(33.333vw - 3.333rem), 22.667rem",
+          "src": "/_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp",
+          "srcset": "/_astro/turnory-website-preview.BgVMxxzs_Z21dbEx.webp 320w, /_astro/turnory-website-preview.BgVMxxzs_2wr2vL.webp 480w, /_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp 640w, /_astro/turnory-website-preview.BgVMxxzs_2lEL6m.webp 960w, /_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp 1265w",
+          "width": 705
+        }
+      ],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Ternloom Technologies — Websites, Software & Integrations",
+      "width": 768
+    },
+    {
+      "route": "/services/website-development/",
+      "requestedViewport": {
+        "width": 768,
+        "height": 900
+      },
+      "description": "Website development and redesigns for small businesses in Ottawa and across Canada. Explore service pages, product catalogues and clear enquiry journeys.",
+      "documentWidth": 753,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp",
+          "height": 397.4375,
+          "naturalWidth": 720,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 705
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "",
+          "height": 397.671875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 705
+        }
+      ],
+      "lead": "A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step.",
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [
+        {
+          "path": "/services/business-automation-integrations/",
+          "text": "business automation and integrations"
+        }
+      ],
+      "title": "Website Development in Ottawa — Ternloom",
+      "width": 768
+    },
+    {
+      "route": "/services/custom-business-software/",
+      "requestedViewport": {
+        "width": 768,
+        "height": 900
+      },
+      "description": "Custom business software for small businesses in Ottawa and across Canada. Explore internal tools, portals, dashboards and quoting workflows.",
+      "documentWidth": 753,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "currentSrc": "",
+          "height": 397.671875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp",
+          "srcset": "/_astro/turnory-website-preview.BgVMxxzs_Z21dbEx.webp 320w, /_astro/turnory-website-preview.BgVMxxzs_2wr2vL.webp 480w, /_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp 640w, /_astro/turnory-website-preview.BgVMxxzs_2lEL6m.webp 960w, /_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp 1265w",
+          "width": 705
+        }
+      ],
+      "lead": "When spreadsheets or off-the-shelf tools no longer fit the work, custom software can give staff or customers a clearer way to complete a task. We start with one business workflow and agree what a useful first version should do.",
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [
+        {
+          "path": "/services/business-automation-integrations/",
+          "text": "business automation and integrations"
+        }
+      ],
+      "title": "Custom Software Development in Ottawa — Ternloom",
+      "width": 768
+    },
+    {
+      "route": "/services/business-automation-integrations/",
+      "requestedViewport": {
+        "width": 768,
+        "height": 900
+      },
+      "description": "Business automation and integrations for small businesses in Ottawa and across Canada. Connect existing tools and plan handoffs, reviews and error handling.",
+      "documentWidth": 753,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp",
+          "height": 397.4375,
+          "naturalWidth": 720,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 705
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "",
+          "height": 397.671875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 705
+        }
+      ],
+      "lead": "Connect existing business tools so information can move between them with less manual copying. We start with one repetitive task, review what each tool supports and agree which steps need a person’s approval.",
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [
+        {
+          "path": "/services/custom-business-software/",
+          "text": "custom business software"
+        }
+      ],
+      "title": "Business Automation & Integrations in Ottawa — Ternloom",
+      "width": 768
+    },
+    {
+      "route": "/projects/",
+      "requestedViewport": {
+        "width": 768,
+        "height": 900
+      },
+      "description": "Explore business websites for Bonita Nights and Wood Dust Creations, alongside Turnory, Ternloom’s own software product in development.",
+      "documentWidth": 753,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp",
+          "height": 397.4375,
+          "naturalWidth": 720,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 705
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp",
+          "height": 397.4375,
+          "naturalWidth": 720,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 705
+        },
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "currentSrc": "",
+          "height": 397.671875,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp",
+          "srcset": "/_astro/turnory-website-preview.BgVMxxzs_Z21dbEx.webp 320w, /_astro/turnory-website-preview.BgVMxxzs_2wr2vL.webp 480w, /_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp 640w, /_astro/turnory-website-preview.BgVMxxzs_2lEL6m.webp 960w, /_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp 1265w",
+          "width": 705
+        }
+      ],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Selected Projects — Ternloom Technologies",
+      "width": 768
+    },
+    {
+      "route": "/about/",
+      "requestedViewport": {
+        "width": 768,
+        "height": 900
+      },
+      "description": "Learn about Ternloom Technologies, serving small businesses in Ottawa and across Canada and built on more than 15 years of IT and software development experience.",
+      "documentWidth": 753,
+      "h1": 1,
+      "images": [],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "About Ternloom Technologies",
+      "width": 768
+    },
+    {
+      "route": "/contact/",
+      "requestedViewport": {
+        "width": 768,
+        "height": 900
+      },
+      "description": "Contact Ternloom Technologies about a website, custom software or business automation project. Use the enquiry form or email info@ternloom.com.",
+      "documentWidth": 753,
+      "formTop": 381.1875,
+      "h1": 1,
+      "images": [],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Contact Ternloom Technologies — Discuss Your Project",
+      "width": 768
+    },
+    {
+      "route": "/privacy/",
+      "requestedViewport": {
+        "width": 768,
+        "height": 900
+      },
+      "description": "How Ternloom Technologies handles project enquiries, including form providers, retention and privacy requests.",
+      "documentWidth": 753,
+      "h1": 1,
+      "images": [],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Privacy Notice — Ternloom Technologies",
+      "width": 768
+    },
+    {
+      "route": "/",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "description": "Websites, custom software and business integrations for small businesses in Ottawa and across Canada. Explore Ternloom’s services and selected projects.",
+      "documentWidth": 1425,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp",
+          "height": 204.859375,
+          "naturalWidth": 362,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 64rem) calc(33.333vw - 3rem), (max-width: 78rem) calc(33.333vw - 3.333rem), 22.667rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 362.65625
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp",
+          "height": 204.875,
+          "naturalWidth": 362,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 64rem) calc(33.333vw - 3rem), (max-width: 78rem) calc(33.333vw - 3.333rem), 22.667rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 362.671875
+        },
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/turnory-website-preview.BgVMxxzs_2wr2vL.webp",
+          "height": 204.859375,
+          "naturalWidth": 362,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 64rem) calc(33.333vw - 3rem), (max-width: 78rem) calc(33.333vw - 3.333rem), 22.667rem",
+          "src": "/_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp",
+          "srcset": "/_astro/turnory-website-preview.BgVMxxzs_Z21dbEx.webp 320w, /_astro/turnory-website-preview.BgVMxxzs_2wr2vL.webp 480w, /_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp 640w, /_astro/turnory-website-preview.BgVMxxzs_2lEL6m.webp 960w, /_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp 1265w",
+          "width": 362.65625
+        }
+      ],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Ternloom Technologies — Websites, Software & Integrations",
+      "width": 1440
+    },
+    {
+      "route": "/services/website-development/",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "description": "Website development and redesigns for small businesses in Ottawa and across Canada. Explore service pages, product catalogues and clear enquiry journeys.",
+      "documentWidth": 1425,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp",
+          "height": 311.375,
+          "naturalWidth": 552,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 552
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "",
+          "height": 311.5625,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 552
+        }
+      ],
+      "lead": "A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step.",
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [
+        {
+          "path": "/services/business-automation-integrations/",
+          "text": "business automation and integrations"
+        }
+      ],
+      "title": "Website Development in Ottawa — Ternloom",
+      "width": 1440
+    },
+    {
+      "route": "/services/custom-business-software/",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "description": "Custom business software for small businesses in Ottawa and across Canada. Explore internal tools, portals, dashboards and quoting workflows.",
+      "documentWidth": 1425,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp",
+          "height": 311.375,
+          "naturalWidth": 552,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp",
+          "srcset": "/_astro/turnory-website-preview.BgVMxxzs_Z21dbEx.webp 320w, /_astro/turnory-website-preview.BgVMxxzs_2wr2vL.webp 480w, /_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp 640w, /_astro/turnory-website-preview.BgVMxxzs_2lEL6m.webp 960w, /_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp 1265w",
+          "width": 552
+        }
+      ],
+      "lead": "When spreadsheets or off-the-shelf tools no longer fit the work, custom software can give staff or customers a clearer way to complete a task. We start with one business workflow and agree what a useful first version should do.",
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [
+        {
+          "path": "/services/business-automation-integrations/",
+          "text": "business automation and integrations"
+        }
+      ],
+      "title": "Custom Software Development in Ottawa — Ternloom",
+      "width": 1440
+    },
+    {
+      "route": "/services/business-automation-integrations/",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "description": "Business automation and integrations for small businesses in Ottawa and across Canada. Connect existing tools and plan handoffs, reviews and error handling.",
+      "documentWidth": 1425,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp",
+          "height": 311.375,
+          "naturalWidth": 552,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 552
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "",
+          "height": 311.5625,
+          "naturalWidth": 0,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 552
+        }
+      ],
+      "lead": "Connect existing business tools so information can move between them with less manual copying. We start with one repetitive task, review what each tool supports and agree which steps need a person’s approval.",
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [
+        {
+          "path": "/services/custom-business-software/",
+          "text": "custom business software"
+        }
+      ],
+      "title": "Business Automation & Integrations in Ottawa — Ternloom",
+      "width": 1440
+    },
+    {
+      "route": "/projects/",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "description": "Explore business websites for Bonita Nights and Wood Dust Creations, alongside Turnory, Ternloom’s own software product in development.",
+      "documentWidth": 1425,
+      "h1": 1,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp",
+          "height": 311.375,
+          "naturalWidth": 552,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp",
+          "srcset": "/_astro/bonita-website-preview.C1rYmdjX_ZNIL32.webp 320w, /_astro/bonita-website-preview.C1rYmdjX_1mhOec.webp 480w, /_astro/bonita-website-preview.C1rYmdjX_ZOrYyh.webp 640w, /_astro/bonita-website-preview.C1rYmdjX_ZPbd4w.webp 960w, /_astro/bonita-website-preview.C1rYmdjX_2IkeP.webp 1265w",
+          "width": 552
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp",
+          "height": 311.375,
+          "naturalWidth": 552,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp",
+          "srcset": "/_astro/wooddust-website-preview.BMvHu7D5_YrTXK.webp 320w, /_astro/wooddust-website-preview.BMvHu7D5_Z2jqnVl.webp 480w, /_astro/wooddust-website-preview.BMvHu7D5_aiaGI.webp 640w, /_astro/wooddust-website-preview.BMvHu7D5_ZDQyzj.webp 960w, /_astro/wooddust-website-preview.BMvHu7D5_ydDyj.webp 1265w",
+          "width": 552
+        },
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "currentSrc": "http://127.0.0.1:4330/_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp",
+          "height": 311.375,
+          "naturalWidth": 552,
+          "sizes": "(max-width: 48rem) calc(100vw - 3rem), (max-width: 78rem) calc(50vw - 4.5rem), 34.5rem",
+          "src": "/_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp",
+          "srcset": "/_astro/turnory-website-preview.BgVMxxzs_Z21dbEx.webp 320w, /_astro/turnory-website-preview.BgVMxxzs_2wr2vL.webp 480w, /_astro/turnory-website-preview.BgVMxxzs_Z2mRhby.webp 640w, /_astro/turnory-website-preview.BgVMxxzs_2lEL6m.webp 960w, /_astro/turnory-website-preview.BgVMxxzs_wJE3U.webp 1265w",
+          "width": 552
+        }
+      ],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Selected Projects — Ternloom Technologies",
+      "width": 1440
+    },
+    {
+      "route": "/about/",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "description": "Learn about Ternloom Technologies, serving small businesses in Ottawa and across Canada and built on more than 15 years of IT and software development experience.",
+      "documentWidth": 1425,
+      "h1": 1,
+      "images": [],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "About Ternloom Technologies",
+      "width": 1440
+    },
+    {
+      "route": "/contact/",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "description": "Contact Ternloom Technologies about a website, custom software or business automation project. Use the enquiry form or email info@ternloom.com.",
+      "documentWidth": 1425,
+      "formTop": 232,
+      "h1": 1,
+      "images": [],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Contact Ternloom Technologies — Discuss Your Project",
+      "width": 1440
+    },
+    {
+      "route": "/privacy/",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "description": "How Ternloom Technologies handles project enquiries, including form providers, retention and privacy requests.",
+      "documentWidth": 1425,
+      "h1": 1,
+      "images": [],
+      "main": 1,
+      "overflow": false,
+      "relatedLinks": [],
+      "title": "Privacy Notice — Ternloom Technologies",
+      "width": 1440
+    }
+  ]
+}
