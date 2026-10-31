@@ -1,0 +1,25 @@
+# Ternloom Technologies
+
+> Ternloom Technologies provides Website Development, Custom Business Software, and Business Automation & Integrations for small businesses in Ottawa and across Canada.
+
+This is a concise guide to Ternloom's public website. The linked pages provide the current service descriptions, selected project context and policies.
+
+Ternloom is based in Ottawa, Ontario, Canada. Its experience statement is “Built on more than 15 years of experience in IT and software development.” This describes experience, not the company's age. Cloud deployment and hosting support the three services; scope, provider costs and ongoing support are agreed separately.
+
+Ternloom is the technology provider for Bonita Nights and Wood Dust Creations. Wood Dust Creations' website includes a product catalogue, Square checkout links, custom-order enquiries, a blog and a portfolio. Turnory is Ternloom's own Windows sim-racing telemetry application, currently in development. These relationships do not establish ownership of the two client businesses, quantified results or endorsements. Potential service deliverables are examples, not claims of completed client work.
+
+Public contact: info@ternloom.com. Pricing, delivery dates and support commitments depend on the agreed project scope.
+
+## Company and services
+
+- [Ternloom Technologies](https://ternloom.com/): Company overview, audience, services and selected work.
+- [Website Development](https://ternloom.com/services/website-development/): Business websites, redesigns and clear customer enquiry paths.
+- [Custom Business Software](https://ternloom.com/services/custom-business-software/): Software built around business workflows; potential deliverables and scope boundaries.
+- [Business Automation & Integrations](https://ternloom.com/services/business-automation-integrations/): Connections between existing tools and repeatable workflows.
+- [Selected projects](https://ternloom.com/projects/): Approved descriptions of Bonita Nights, Wood Dust Creations and Turnory, with each relationship and development status identified.
+- [About Ternloom](https://ternloom.com/about/): Business approach, Ottawa location, Canadian service area and experience statement.
+- [Contact](https://ternloom.com/contact/): Project enquiry information and public email.
+
+## Policies
+
+- [Privacy notice](https://ternloom.com/privacy/): Enquiry handling, service providers and retention policy.

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-30 America/Toronto",
+  "method": "Bounded web-search samples and first-party provider pages; not Google Ads Keyword Planner, Search Console or a keyword-volume provider. Result inclusion/order is not a ranking measurement.",
+  "samples": [
+    {
+      "query": "website development Ottawa small business website redesign",
+      "provider_pages": [
+        "https://agpixels.ca/web-design-ottawa/",
+        "https://aceconsultants.ca/services/web-development/"
+      ],
+      "observation": "Provider pages use website design/development, small-business and redesign language. This supports terminology, not measured demand."
+    },
+    {
+      "query": "custom software development Ottawa small business",
+      "provider_pages": [
+        "https://www.bitesite.ca/"
+      ],
+      "observation": "Local provider positions itself as custom software development in Ottawa. No Ternloom affiliation inferred."
+    },
+    {
+      "query": "business automation Ottawa integration services",
+      "provider_pages": [
+        "https://www.northbridgetech.com/nbt-bas",
+        "https://mosan.ca/services/automation-and-ai"
+      ],
+      "observation": "Business workflow, data/application integration and internal-tool language overlaps. Broad automation searches also surfaced jobs; service/buyer modifiers matter."
+    }
+  ],
+  "limits": [
+    "Search results are not a complete location-controlled Google SERP export.",
+    "No search volumes, difficulty scores, traffic forecasts, conversion rates or formal SERP-overlap percentages are available.",
+    "Keyword examples are research seeds, not claims that Ternloom already ranks for them.",
+    "Competitor claims, prices, guarantees and technology specializations are not copied into Ternloom content."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "audit_date": "2026-10-30",
+  "timezone": "America/Toronto",
+  "method": "One PageSpeed Insights UI report per sampled route, with homepage mobile and desktop views; Lighthouse 13.6.0. Mobile Moto G Power, Slow 4G; desktop emulated desktop with custom throttling. Four mobile routes plus homepage desktop. API fallback after HTTP 429.",
+  "limits": "Single initial-load lab samples; no field CWV/INP, ranking, full accessibility or successful submission claim. Agentic Browsing category is not AI mention visibility.",
+  "contact_diagnostic": "Best Practices 96 accompanies reCAPTCHA api2 anchor/bframe requestStorageAccess permission-denied errors. Not proof of form failure. Retain CAPTCHA and existing fallbacks.",
+  "reports": [
+    {
+      "route": "/",
+      "form_factor": "mobile",
+      "report_url": "https://pagespeed.web.dev/analysis/https-ternloom-com/jjkdcw27wv?form_factor=mobile",
+      "source_text": "pagespeed-home-mobile.txt",
+      "report_time": "Oct 30, 2026, 11:12:56\u202fPM",
+      "field_data": "No Data",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "0.8\u00a0s",
+        "lcp": "0.8\u00a0s",
+        "tbt": "0\u00a0ms",
+        "cls": "0",
+        "speed_index": "0.8\u00a0s"
+      }
+    },
+    {
+      "route": "/",
+      "form_factor": "desktop",
+      "report_url": "https://pagespeed.web.dev/analysis/https-ternloom-com/jjkdcw27wv?form_factor=desktop",
+      "source_text": "pagespeed-home-desktop.txt",
+      "report_time": "Oct 30, 2026, 11:12:56\u202fPM",
+      "field_data": "No Data",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "0.4\u00a0s",
+        "lcp": "0.4\u00a0s",
+        "tbt": "0\u00a0ms",
+        "cls": "0",
+        "speed_index": "0.4\u00a0s"
+      }
+    },
+    {
+      "route": "/projects/",
+      "form_factor": "mobile",
+      "report_url": "https://pagespeed.web.dev/analysis/https-ternloom-com-projects/km0kn3nj4f?form_factor=mobile",
+      "source_text": "pagespeed-projects-mobile.txt",
+      "report_time": "Oct 30, 2026, 11:14:41\u202fPM",
+      "field_data": "No Data",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "0.8\u00a0s",
+        "lcp": "0.8\u00a0s",
+        "tbt": "0\u00a0ms",
+        "cls": "0",
+        "speed_index": "0.8\u00a0s"
+      }
+    },
+    {
+      "route": "/contact/",
+      "form_factor": "mobile",
+      "report_url": "https://pagespeed.web.dev/analysis/https-ternloom-com-contact/67bk7nbevn?form_factor=mobile",
+      "source_text": "pagespeed-contact-mobile.txt",
+      "report_time": "Oct 30, 2026, 11:14:25\u202fPM",
+      "field_data": "No Data",
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.7\u00a0s",
+        "lcp": "1.7\u00a0s",
+        "tbt": "240\u00a0ms",
+        "cls": "0",
+        "speed_index": "2.9\u00a0s"
+      }
+    },
+    {
+      "route": "/services/custom-business-software/",
+      "form_factor": "mobile",
+      "report_url": "https://pagespeed.web.dev/analysis/https-ternloom-com-services-custom-business-software/dhbqzd8cu0?form_factor=mobile",
+      "source_text": "pagespeed-service-mobile.txt",
+      "report_time": "Oct 30, 2026, 11:20:18\u202fPM",
+      "field_data": "No Data",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.5\u00a0s",
+        "lcp": "1.5\u00a0s",
+        "tbt": "0\u00a0ms",
+        "cls": "0",
+        "speed_index": "2.5\u00a0s"
+      }
+    }
+  ]
+}

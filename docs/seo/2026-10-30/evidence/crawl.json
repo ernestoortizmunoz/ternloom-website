@@ -1,0 +1,4489 @@
+{
+  "fetchedAtUtc": "2026-10-31T03:09:36.870260+00:00",
+  "note": "Public GET crawl only; single-run timings are not CWV or field performance. Headers are allowlisted; raw HTML/header dumps are scratch-only. No form submissions.",
+  "pages": [
+    {
+      "url": "https://ternloom.com/",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.157562,
+      "totalSeconds": 0.159764,
+      "downloadBytes": 5074,
+      "decodedBytes": 24867,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      },
+      "page": {
+        "lang": "en-CA",
+        "title": "Ternloom Technologies — Websites, Software & Integrations",
+        "meta": [
+          {
+            "charset": "utf-8"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "description",
+            "content": "Websites, custom software and connected tools for small businesses in Ottawa and across Canada. Explore Ternloom Technologies’ services and selected projects."
+          },
+          {
+            "property": "og:type",
+            "content": "website"
+          },
+          {
+            "property": "og:site_name",
+            "content": "Ternloom Technologies"
+          },
+          {
+            "property": "og:title",
+            "content": "Ternloom Technologies — Websites, Software & Integrations"
+          },
+          {
+            "property": "og:description",
+            "content": "Websites, custom software and connected tools for small businesses in Ottawa and across Canada. Explore Ternloom Technologies’ services and selected projects."
+          },
+          {
+            "property": "og:url",
+            "content": "https://ternloom.com/"
+          },
+          {
+            "property": "og:locale",
+            "content": "en_CA"
+          },
+          {
+            "property": "og:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "property": "og:image:type",
+            "content": "image/png"
+          },
+          {
+            "property": "og:image:width",
+            "content": "1200"
+          },
+          {
+            "property": "og:image:height",
+            "content": "630"
+          },
+          {
+            "property": "og:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "Ternloom Technologies — Websites, Software & Integrations"
+          },
+          {
+            "name": "twitter:description",
+            "content": "Websites, custom software and connected tools for small businesses in Ottawa and across Canada. Explore Ternloom Technologies’ services and selected projects."
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "name": "twitter:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          }
+        ],
+        "links": [
+          {
+            "rel": "canonical",
+            "href": "https://ternloom.com/"
+          },
+          {
+            "rel": "icon",
+            "type": "image/svg+xml",
+            "href": "/favicon.svg"
+          },
+          {
+            "rel": "preload",
+            "href": "/fonts/dm-sans-latin.woff2",
+            "as": "font",
+            "type": "font/woff2",
+            "crossorigin": null
+          },
+          {
+            "rel": "stylesheet",
+            "href": "/_astro/SiteLayout.BfSyBjXN.css"
+          },
+          {
+            "rel": "stylesheet",
+            "href": "/_astro/index.BTySDOOe.css"
+          }
+        ],
+        "anchors": [
+          {
+            "href": "#main-content",
+            "text": "Skip to content",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Websites",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Automation & integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected work",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Discuss your project",
+            "inMain": true
+          },
+          {
+            "href": "/projects/",
+            "text": "Explore selected work",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": true
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": true
+          },
+          {
+            "href": "https://www.bonitanights.ca/",
+            "text": "Visit Bonita Nights",
+            "inMain": true
+          },
+          {
+            "href": "https://www.wooddustcreations.ca/",
+            "text": "Visit Wood Dust Creations",
+            "inMain": true
+          },
+          {
+            "href": "https://turnory.racing/",
+            "text": "Visit Turnory",
+            "inMain": true
+          },
+          {
+            "href": "/projects/",
+            "text": "More about these projects",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Explore website development",
+            "inMain": true
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Explore custom software",
+            "inMain": true
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Explore automation & integrations",
+            "inMain": true
+          },
+          {
+            "href": "/contact/",
+            "text": "Discuss your project",
+            "inMain": true
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected projects",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About Ternloom",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/privacy/",
+            "text": "Privacy notice",
+            "inMain": false
+          }
+        ],
+        "headings": [
+          {
+            "level": 1,
+            "text": "Built around the way you work.",
+            "id": "home-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Work with a business behind it.",
+            "id": "projects-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Bonita Nights",
+            "id": "bonita-nights-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Wood Dust Creations",
+            "id": "wood-dust-creations-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Turnory",
+            "id": "turnory-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Start with what your business needs.",
+            "id": "services-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Website Development",
+            "id": "website-development-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Custom Business Software",
+            "id": "custom-business-software-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Business Automation & Integrations",
+            "id": "business-automation-integrations-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "A clear starting point.",
+            "id": "process-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Understand the problem",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Agree the scope",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Build and review",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Thoughtful delivery, too.",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Tell us what needs to work better.",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we do",
+            "id": null,
+            "inMain": false
+          },
+          {
+            "level": 2,
+            "text": "Explore",
+            "id": null,
+            "inMain": false
+          }
+        ],
+        "images": [
+          {
+            "src": "/images/projects/bonita-website-preview.jpg",
+            "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+            "width": "1265",
+            "height": "712",
+            "loading": "lazy",
+            "decoding": "async",
+            "data-astro-cid-pdyktxwk": null
+          },
+          {
+            "src": "/images/projects/wooddust-website-preview.jpg",
+            "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+            "width": "1265",
+            "height": "712",
+            "loading": "lazy",
+            "decoding": "async",
+            "data-astro-cid-pdyktxwk": null
+          },
+          {
+            "src": "/images/projects/turnory-website-preview.jpg",
+            "alt": "Turnory product website introducing its sim-racing telemetry application.",
+            "width": "1265",
+            "height": "712",
+            "loading": "lazy",
+            "decoding": "async",
+            "data-astro-cid-pdyktxwk": null
+          }
+        ],
+        "scripts": [
+          {
+            "type": "application/ld+json",
+            "src": null,
+            "defer": false,
+            "async": false,
+            "inlineBytes": 370
+          }
+        ],
+        "iframes": [],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://ternloom.com/#organization",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://ternloom.com/#website",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/",
+                "inLanguage": "en-CA",
+                "publisher": {
+                  "@id": "https://ternloom.com/#organization"
+                }
+              }
+            ]
+          }
+        ],
+        "schemaErrors": [],
+        "ids": [
+          "main-content",
+          "home-title",
+          "weave-dots",
+          "projects-title",
+          "bonita-nights-title",
+          "wood-dust-creations-title",
+          "turnory-title",
+          "services-title",
+          "website-development-title",
+          "custom-business-software-title",
+          "business-automation-integrations-title",
+          "process-title"
+        ],
+        "mainText": "Small-business technology · Ottawa & Canada Built around the way you work. Websites, custom software and connected tools for small businesses in Ottawa and across Canada. Discuss your project Explore selected work Different needs. Thoughtfully connected. Website Development Custom Business Software Business Automation & Integrations Built on more than 15 years of experience in IT and software development. Selected projects Work with a business behind it. Two business technology relationships and a product of our own. Different needs, with useful work at the centre. Bonita Nights — public website. Technology provider Bonita Nights A website for an Ottawa and Gatineau sleepover-rental business, bringing together theme galleries, customer information and a connected booking-request flow. Visit Bonita Nights Wood Dust Creations — public website. Technology provider Wood Dust Creations A woodworking business website combining a product catalogue, Square checkout links, custom-order enquiries, a blog and a portfolio of completed work. Visit Wood Dust Creations Turnory — product website; application in development. Our own product — application in development Turnory Turnory is a Windows sim-racing telemetry application developed by Ternloom Technologies, alongside its product website and launch-notification integration. The application is currently in development. Visit Turnory More about these projects What we can build Start with what your business needs. A clear website, a tool that fits, or a better connection between systems. The right starting point depends on your work. 01 / Be easier to find and contact Website Development When customers need to understand your business, your website should make the next step clear. Bring your services, products and enquiry paths together in one considered place. A project could include a new business website, a redesign, a product catalogue or a clearer route to an enquiry. Explore website development 02 / Make room for the way you work Custom Business Software Sometimes the tools available do not quite fit the job. Custom software starts with the work itself: what people need to do, what information they need and where things get difficult. Potential work includes a focused internal tool, a purpose-built application or a clearer way to manage a business workflow. Explore custom software 03 / Connect the tools you already use Business Automation & Integrations Repeated entry and disconnected systems can make simple tasks harder than they need to be. Start by finding the handoffs that would benefit from a connection. Depending on the tools involved, a project could connect booking requests, checkout services or repeatable information transfers. Explore automation & integrations Working together A clear starting point. Begin with the business problem. Work out the details together before deciding what to build. 01 Understand the problem Talk through your business, the people doing the work and the tools already in place. 02 Agree the scope Define what to build, what it needs to connect with and what a useful result looks like. 03 Build and review Review the work together, test the agreed behaviour and plan the steps needed for delivery. Thoughtful delivery, too. Cloud deployment and hosting can support the work, with simple infrastructure, low maintenance and predictable running costs as design goals. Hosting, costs and any ongoing support are agreed for the project. Start a conversation Tell us what needs to work better. Tell us about your business, the tools you use and what you would like to change. Discuss your project",
+        "mainWordCount": 555
+      }
+    },
+    {
+      "url": "https://ternloom.com/services/website-development/",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/services/website-development/",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.18822,
+      "totalSeconds": 0.188725,
+      "downloadBytes": 5844,
+      "decodedBytes": 27725,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      },
+      "page": {
+        "lang": "en-CA",
+        "title": "Website Development for Small Businesses — Ternloom",
+        "meta": [
+          {
+            "charset": "utf-8"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "description",
+            "content": "A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step."
+          },
+          {
+            "property": "og:type",
+            "content": "website"
+          },
+          {
+            "property": "og:site_name",
+            "content": "Ternloom Technologies"
+          },
+          {
+            "property": "og:title",
+            "content": "Website Development for Small Businesses — Ternloom"
+          },
+          {
+            "property": "og:description",
+            "content": "A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step."
+          },
+          {
+            "property": "og:url",
+            "content": "https://ternloom.com/services/website-development/"
+          },
+          {
+            "property": "og:locale",
+            "content": "en_CA"
+          },
+          {
+            "property": "og:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "property": "og:image:type",
+            "content": "image/png"
+          },
+          {
+            "property": "og:image:width",
+            "content": "1200"
+          },
+          {
+            "property": "og:image:height",
+            "content": "630"
+          },
+          {
+            "property": "og:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "Website Development for Small Businesses — Ternloom"
+          },
+          {
+            "name": "twitter:description",
+            "content": "A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step."
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "name": "twitter:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          }
+        ],
+        "links": [
+          {
+            "rel": "canonical",
+            "href": "https://ternloom.com/services/website-development/"
+          },
+          {
+            "rel": "icon",
+            "type": "image/svg+xml",
+            "href": "/favicon.svg"
+          },
+          {
+            "rel": "preload",
+            "href": "/fonts/dm-sans-latin.woff2",
+            "as": "font",
+            "type": "font/woff2",
+            "crossorigin": null
+          },
+          {
+            "rel": "stylesheet",
+            "href": "/_astro/SiteLayout.BfSyBjXN.css"
+          }
+        ],
+        "anchors": [
+          {
+            "href": "#main-content",
+            "text": "Skip to content",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Websites",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Automation & integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected work",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "Home",
+            "inMain": true
+          },
+          {
+            "href": "/contact/",
+            "text": "Discuss your project",
+            "inMain": true
+          },
+          {
+            "href": "#service-evidence",
+            "text": "Explore relevant work",
+            "inMain": true
+          },
+          {
+            "href": "/projects/",
+            "text": "View all selected projects",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": true
+          },
+          {
+            "href": "https://www.bonitanights.ca/",
+            "text": "Visit Bonita Nights",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": true
+          },
+          {
+            "href": "https://www.wooddustcreations.ca/",
+            "text": "Visit Wood Dust Creations",
+            "inMain": true
+          },
+          {
+            "href": "/contact/",
+            "text": "Discuss your project",
+            "inMain": true
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected projects",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About Ternloom",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/privacy/",
+            "text": "Privacy notice",
+            "inMain": false
+          }
+        ],
+        "headings": [
+          {
+            "level": 1,
+            "text": "Website Development",
+            "id": "service-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "When this service can help",
+            "id": "service-fit",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we can build together",
+            "id": "service-deliverables",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Clear boundaries from the start",
+            "id": "service-boundaries",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "See the work in context",
+            "id": "service-evidence",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Bonita Nights",
+            "id": "bonita-nights-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Wood Dust Creations",
+            "id": "wood-dust-creations-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Start with the problem to solve",
+            "id": "service-process",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Understand the need",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Agree the scope",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Build and review",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Useful questions",
+            "id": "service-questions",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Can you work with an existing website?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "What should I have ready before we start?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Can the site connect to booking or payment tools?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "How are cost, timing and future updates agreed?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What would make your work easier?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we do",
+            "id": null,
+            "inMain": false
+          },
+          {
+            "level": 2,
+            "text": "Explore",
+            "id": null,
+            "inMain": false
+          }
+        ],
+        "images": [
+          {
+            "src": "/images/projects/bonita-website-preview.jpg",
+            "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+            "width": "1265",
+            "height": "712",
+            "loading": "lazy",
+            "decoding": "async",
+            "data-astro-cid-pdyktxwk": null
+          },
+          {
+            "src": "/images/projects/wooddust-website-preview.jpg",
+            "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+            "width": "1265",
+            "height": "712",
+            "loading": "lazy",
+            "decoding": "async",
+            "data-astro-cid-pdyktxwk": null
+          }
+        ],
+        "scripts": [
+          {
+            "type": "application/ld+json",
+            "src": null,
+            "defer": false,
+            "async": false,
+            "inlineBytes": 1091
+          }
+        ],
+        "iframes": [],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://ternloom.com/#organization",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://ternloom.com/#website",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/",
+                "inLanguage": "en-CA",
+                "publisher": {
+                  "@id": "https://ternloom.com/#organization"
+                }
+              },
+              {
+                "@type": "Service",
+                "@id": "https://ternloom.com/services/website-development/#service",
+                "name": "Website Development",
+                "description": "A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step.",
+                "url": "https://ternloom.com/services/website-development/",
+                "provider": {
+                  "@id": "https://ternloom.com/#organization"
+                },
+                "areaServed": "Canada"
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://ternloom.com/services/website-development/#breadcrumbs",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ternloom.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Website Development",
+                    "item": "https://ternloom.com/services/website-development/"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "schemaErrors": [],
+        "ids": [
+          "main-content",
+          "service-title",
+          "service-fit",
+          "service-deliverables",
+          "service-boundaries",
+          "service-evidence",
+          "bonita-nights-title",
+          "wood-dust-creations-title",
+          "service-process",
+          "service-questions"
+        ],
+        "mainText": "Home Website Development For small businesses in Ottawa and across Canada Website Development A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step. Discuss your project Explore relevant work Is this a fit? When this service can help Your business has outgrown a basic page, or needs its first website. Customers struggle to understand your services, browse your work or find the right enquiry route. Your current site is awkward to use on a phone, difficult to keep current or disconnected from the tools you already use. Potential deliverables What we can build together The right scope depends on your business. A project could include: A new business website or a considered redesign, with a structure built around customer questions. Service pages, project galleries or a product catalogue that make your offer easier to explore. Responsive layouts, clear navigation and accessible content that works across screen sizes. Enquiry journeys, booking-request connections or links to an existing checkout provider, where they fit the scope. Page titles, descriptions and a clear content structure to support search discovery. Clear boundaries from the start We agree the pages, content, imagery and connected tools before building. Copywriting, photography and moving existing content are discussed as part of that scope. Cloud deployment and hosting can support the website, with infrastructure suited to its needs. Provider fees, domains, email and paid tools are separate costs to review. Ongoing updates, maintenance and support are agreed separately. A website project does not include an assumed support package. Search foundations help describe your business clearly; they do not guarantee rankings, enquiries or sales. Selected projects See the work in context View all selected projects Bonita Nights — public website. Technology provider Bonita Nights A website for an Ottawa and Gatineau sleepover-rental business, bringing together theme galleries, customer information and a connected booking-request flow. Help families explore rental themes, understand the service and request a preferred night. Theme galleries and service information Setup guidance and answers to common questions A connected booking-request flow Families submit a booking request for their preferred date and theme. Bonita Nights then confirms availability and the reservation with the customer. Website Development Business Automation & Integrations Visit Bonita Nights Wood Dust Creations — public website. Technology provider Wood Dust Creations A woodworking business website combining a product catalogue, Square checkout links, custom-order enquiries, a blog and a portfolio of completed work. Help customers browse handmade pieces, purchase through an existing payment provider and discuss custom work. A product catalogue and portfolio Square-hosted checkout links An entry point for custom-order enquiries A business blog Customers follow product links to Square-hosted checkout to make a purchase. Custom work starts with an enquiry to discuss the piece and its requirements. Website Development Business Automation & Integrations Visit Wood Dust Creations Working together Start with the problem to solve Understand the need Start with your business, the people who will use the work and the problem you want to solve. Existing tools and constraints are part of the conversation. Agree the scope Define the useful first version, responsibilities and costs. Decide what belongs in the project and what can wait before committing to the build. Build and review Review the work against the agreed scope, refine the details and prepare for handover. Deployment and any ongoing support are discussed explicitly. Before you begin Useful questions Can you work with an existing website? Yes. We start by reviewing what is working, what customers need and how the current site is maintained. That helps determine whether focused changes or a rebuild make sense, and which content and connections need to be carried across. What should I have ready before we start? Bring a description of your business, the main action you want customers to take and a link to any existing site. Logos, photos and draft content are useful, but we can first identify what is available and what still needs to be prepared. Can the site connect to booking or payment tools? Connections can be included when the tools and workflow are understood. A booking-request form or a link to a hosted checkout may be enough; live availability, inventory synchronization and more complex automation need their own scope. How are cost, timing and future updates agreed? The number of pages, content readiness, integrations and review needs shape the estimate and schedule. We agree those details before building, including how future content changes will be handled and whether ongoing support is wanted. Start a conversation What would make your work easier? Tell us about your business, the tools you use and what you would like to change. Discuss your project",
+        "mainWordCount": 779
+      }
+    },
+    {
+      "url": "https://ternloom.com/services/custom-business-software/",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/services/custom-business-software/",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.17984,
+      "totalSeconds": 0.183937,
+      "downloadBytes": 5593,
+      "decodedBytes": 25354,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      },
+      "page": {
+        "lang": "en-CA",
+        "title": "Custom Business Software for Small Businesses — Ternloom",
+        "meta": [
+          {
+            "charset": "utf-8"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "description",
+            "content": "Software built around a business's own workflows."
+          },
+          {
+            "property": "og:type",
+            "content": "website"
+          },
+          {
+            "property": "og:site_name",
+            "content": "Ternloom Technologies"
+          },
+          {
+            "property": "og:title",
+            "content": "Custom Business Software for Small Businesses — Ternloom"
+          },
+          {
+            "property": "og:description",
+            "content": "Software built around a business's own workflows."
+          },
+          {
+            "property": "og:url",
+            "content": "https://ternloom.com/services/custom-business-software/"
+          },
+          {
+            "property": "og:locale",
+            "content": "en_CA"
+          },
+          {
+            "property": "og:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "property": "og:image:type",
+            "content": "image/png"
+          },
+          {
+            "property": "og:image:width",
+            "content": "1200"
+          },
+          {
+            "property": "og:image:height",
+            "content": "630"
+          },
+          {
+            "property": "og:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "Custom Business Software for Small Businesses — Ternloom"
+          },
+          {
+            "name": "twitter:description",
+            "content": "Software built around a business's own workflows."
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "name": "twitter:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          }
+        ],
+        "links": [
+          {
+            "rel": "canonical",
+            "href": "https://ternloom.com/services/custom-business-software/"
+          },
+          {
+            "rel": "icon",
+            "type": "image/svg+xml",
+            "href": "/favicon.svg"
+          },
+          {
+            "rel": "preload",
+            "href": "/fonts/dm-sans-latin.woff2",
+            "as": "font",
+            "type": "font/woff2",
+            "crossorigin": null
+          },
+          {
+            "rel": "stylesheet",
+            "href": "/_astro/SiteLayout.BfSyBjXN.css"
+          }
+        ],
+        "anchors": [
+          {
+            "href": "#main-content",
+            "text": "Skip to content",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Websites",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Automation & integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected work",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "Home",
+            "inMain": true
+          },
+          {
+            "href": "/contact/",
+            "text": "Discuss your project",
+            "inMain": true
+          },
+          {
+            "href": "#service-evidence",
+            "text": "Explore relevant work",
+            "inMain": true
+          },
+          {
+            "href": "/projects/",
+            "text": "View all selected projects",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": true
+          },
+          {
+            "href": "https://turnory.racing/",
+            "text": "Visit Turnory",
+            "inMain": true
+          },
+          {
+            "href": "/contact/",
+            "text": "Discuss your project",
+            "inMain": true
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected projects",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About Ternloom",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/privacy/",
+            "text": "Privacy notice",
+            "inMain": false
+          }
+        ],
+        "headings": [
+          {
+            "level": 1,
+            "text": "Custom Business Software",
+            "id": "service-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "When this service can help",
+            "id": "service-fit",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we can build together",
+            "id": "service-deliverables",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Clear boundaries from the start",
+            "id": "service-boundaries",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "See the work in context",
+            "id": "service-evidence",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Turnory",
+            "id": "turnory-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Start with the problem to solve",
+            "id": "service-process",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Understand the need",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Agree the scope",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Build and review",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Useful questions",
+            "id": "service-questions",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Should we use an existing product or build custom software?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Can we start with one part of the workflow?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Can existing spreadsheets and systems be part of the project?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "What should we bring to the first conversation?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What would make your work easier?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we do",
+            "id": null,
+            "inMain": false
+          },
+          {
+            "level": 2,
+            "text": "Explore",
+            "id": null,
+            "inMain": false
+          }
+        ],
+        "images": [
+          {
+            "src": "/images/projects/turnory-website-preview.jpg",
+            "alt": "Turnory product website introducing its sim-racing telemetry application.",
+            "width": "1265",
+            "height": "712",
+            "loading": "lazy",
+            "decoding": "async",
+            "data-astro-cid-pdyktxwk": null
+          }
+        ],
+        "scripts": [
+          {
+            "type": "application/ld+json",
+            "src": null,
+            "defer": false,
+            "async": false,
+            "inlineBytes": 1039
+          }
+        ],
+        "iframes": [],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://ternloom.com/#organization",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://ternloom.com/#website",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/",
+                "inLanguage": "en-CA",
+                "publisher": {
+                  "@id": "https://ternloom.com/#organization"
+                }
+              },
+              {
+                "@type": "Service",
+                "@id": "https://ternloom.com/services/custom-business-software/#service",
+                "name": "Custom Business Software",
+                "description": "Software built around a business's own workflows.",
+                "url": "https://ternloom.com/services/custom-business-software/",
+                "provider": {
+                  "@id": "https://ternloom.com/#organization"
+                },
+                "areaServed": "Canada"
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://ternloom.com/services/custom-business-software/#breadcrumbs",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ternloom.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Custom Business Software",
+                    "item": "https://ternloom.com/services/custom-business-software/"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "schemaErrors": [],
+        "ids": [
+          "main-content",
+          "service-title",
+          "service-fit",
+          "service-deliverables",
+          "service-boundaries",
+          "service-evidence",
+          "turnory-title",
+          "service-process",
+          "service-questions"
+        ],
+        "mainText": "Home Custom Business Software For small businesses in Ottawa and across Canada Custom Business Software Software built around a business's own workflows. Discuss your project Explore relevant work Is this a fit? When this service can help Important work is spread across spreadsheets, email and handwritten notes, making it hard to see what needs attention. An off-the-shelf product forces awkward workarounds or cannot represent the way your business handles a job. Staff or customers need a clearer way to submit information, follow progress or find the records relevant to them. Potential deliverables What we can build together The right scope depends on your business. A project could include: An internal tool for tracking jobs, requests or approvals through the steps your business actually uses. A customer or staff portal with access to the information and actions each person needs. A dashboard that brings agreed business information into one place for review. A quoting tool built around your pricing rules, review steps and required inputs. Connections to existing systems where their access, data and integration options support the workflow. Clear boundaries from the start These are examples of possible tools, not a list of completed client projects. The first version is defined around a specific business need and the people who will use it. Data access, permissions, privacy needs and any migration from existing records are agreed before building. Connections depend on what each existing system permits. Hosting, backups, third-party fees and ongoing maintenance need their own scope. Running a business application has different requirements from hosting a static website. Ownership, handover, documentation and future changes are discussed explicitly. Cost and timing depend on the agreed workflow and technical requirements. Selected projects See the work in context View all selected projects Turnory — product website; application in development. Our own product — application in development Turnory Turnory is a Windows sim-racing telemetry application developed by Ternloom Technologies, alongside its product website and launch-notification integration. The application is currently in development. Help sim racers understand a specialist software product, explore its capabilities and request a launch notification. A Windows sim-racing telemetry application in development A product website with interface examples and game-specific information A launch-notification integration Turnory is Ternloom’s own product, with the application still in development. The product website describes game-specific capabilities and provides a way to request a launch notification. Website Development Custom Business Software Visit Turnory Working together Start with the problem to solve Understand the need Start with your business, the people who will use the work and the problem you want to solve. Existing tools and constraints are part of the conversation. Agree the scope Define the useful first version, responsibilities and costs. Decide what belongs in the project and what can wait before committing to the build. Build and review Review the work against the agreed scope, refine the details and prepare for handover. Deployment and any ongoing support are discussed explicitly. Before you begin Useful questions Should we use an existing product or build custom software? We first consider whether an existing tool can meet the need with reasonable configuration. Custom software may make sense when the workflow has requirements that available products cannot accommodate well. The decision includes ongoing running and maintenance costs, not just the initial build. Can we start with one part of the workflow? Yes. A useful first version can focus on one process, a defined group of users and a small set of tasks. We agree what success looks like and review that version before deciding whether to extend it. Can existing spreadsheets and systems be part of the project? They can be a starting point for understanding the work. We review the structure and quality of the records, the rules behind them and the access each system allows. Data cleanup, migration and integrations are included only when agreed in the scope. What should we bring to the first conversation? Describe one task that is difficult today: who does it, what information they use, where it gets stuck and what a better outcome would look like. A sample workflow with sensitive information removed is enough to begin; a full technical specification is not required. Start a conversation What would make your work easier? Tell us about your business, the tools you use and what you would like to change. Discuss your project",
+        "mainWordCount": 722
+      }
+    },
+    {
+      "url": "https://ternloom.com/services/business-automation-integrations/",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/services/business-automation-integrations/",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.181464,
+      "totalSeconds": 0.182034,
+      "downloadBytes": 5886,
+      "decodedBytes": 27657,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      },
+      "page": {
+        "lang": "en-CA",
+        "title": "Business Automation & Integrations for Small Businesses — Ternloom",
+        "meta": [
+          {
+            "charset": "utf-8"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "description",
+            "content": "Connected tools and automated workflows that reduce repetitive work."
+          },
+          {
+            "property": "og:type",
+            "content": "website"
+          },
+          {
+            "property": "og:site_name",
+            "content": "Ternloom Technologies"
+          },
+          {
+            "property": "og:title",
+            "content": "Business Automation & Integrations for Small Businesses — Ternloom"
+          },
+          {
+            "property": "og:description",
+            "content": "Connected tools and automated workflows that reduce repetitive work."
+          },
+          {
+            "property": "og:url",
+            "content": "https://ternloom.com/services/business-automation-integrations/"
+          },
+          {
+            "property": "og:locale",
+            "content": "en_CA"
+          },
+          {
+            "property": "og:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "property": "og:image:type",
+            "content": "image/png"
+          },
+          {
+            "property": "og:image:width",
+            "content": "1200"
+          },
+          {
+            "property": "og:image:height",
+            "content": "630"
+          },
+          {
+            "property": "og:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "Business Automation & Integrations for Small Businesses — Ternloom"
+          },
+          {
+            "name": "twitter:description",
+            "content": "Connected tools and automated workflows that reduce repetitive work."
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "name": "twitter:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          }
+        ],
+        "links": [
+          {
+            "rel": "canonical",
+            "href": "https://ternloom.com/services/business-automation-integrations/"
+          },
+          {
+            "rel": "icon",
+            "type": "image/svg+xml",
+            "href": "/favicon.svg"
+          },
+          {
+            "rel": "preload",
+            "href": "/fonts/dm-sans-latin.woff2",
+            "as": "font",
+            "type": "font/woff2",
+            "crossorigin": null
+          },
+          {
+            "rel": "stylesheet",
+            "href": "/_astro/SiteLayout.BfSyBjXN.css"
+          }
+        ],
+        "anchors": [
+          {
+            "href": "#main-content",
+            "text": "Skip to content",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Websites",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Automation & integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected work",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "Home",
+            "inMain": true
+          },
+          {
+            "href": "/contact/",
+            "text": "Discuss your project",
+            "inMain": true
+          },
+          {
+            "href": "#service-evidence",
+            "text": "Explore relevant work",
+            "inMain": true
+          },
+          {
+            "href": "/projects/",
+            "text": "View all selected projects",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": true
+          },
+          {
+            "href": "https://www.bonitanights.ca/",
+            "text": "Visit Bonita Nights",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": true
+          },
+          {
+            "href": "https://www.wooddustcreations.ca/",
+            "text": "Visit Wood Dust Creations",
+            "inMain": true
+          },
+          {
+            "href": "/contact/",
+            "text": "Discuss your project",
+            "inMain": true
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected projects",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About Ternloom",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/privacy/",
+            "text": "Privacy notice",
+            "inMain": false
+          }
+        ],
+        "headings": [
+          {
+            "level": 1,
+            "text": "Business Automation & Integrations",
+            "id": "service-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "When this service can help",
+            "id": "service-fit",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we can build together",
+            "id": "service-deliverables",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Clear boundaries from the start",
+            "id": "service-boundaries",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "See the work in context",
+            "id": "service-evidence",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Bonita Nights",
+            "id": "bonita-nights-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Wood Dust Creations",
+            "id": "wood-dust-creations-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Start with the problem to solve",
+            "id": "service-process",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Understand the need",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Agree the scope",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Build and review",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Useful questions",
+            "id": "service-questions",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Can we keep the tools we already use?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Does every step need to be automated?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "What happens if a connection fails?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "What should we bring to the first conversation?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What would make your work easier?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we do",
+            "id": null,
+            "inMain": false
+          },
+          {
+            "level": 2,
+            "text": "Explore",
+            "id": null,
+            "inMain": false
+          }
+        ],
+        "images": [
+          {
+            "src": "/images/projects/bonita-website-preview.jpg",
+            "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+            "width": "1265",
+            "height": "712",
+            "loading": "lazy",
+            "decoding": "async",
+            "data-astro-cid-pdyktxwk": null
+          },
+          {
+            "src": "/images/projects/wooddust-website-preview.jpg",
+            "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+            "width": "1265",
+            "height": "712",
+            "loading": "lazy",
+            "decoding": "async",
+            "data-astro-cid-pdyktxwk": null
+          }
+        ],
+        "scripts": [
+          {
+            "type": "application/ld+json",
+            "src": null,
+            "defer": false,
+            "async": false,
+            "inlineBytes": 1120
+          }
+        ],
+        "iframes": [],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://ternloom.com/#organization",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://ternloom.com/#website",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/",
+                "inLanguage": "en-CA",
+                "publisher": {
+                  "@id": "https://ternloom.com/#organization"
+                }
+              },
+              {
+                "@type": "Service",
+                "@id": "https://ternloom.com/services/business-automation-integrations/#service",
+                "name": "Business Automation & Integrations",
+                "description": "Connected tools and automated workflows that reduce repetitive work.",
+                "url": "https://ternloom.com/services/business-automation-integrations/",
+                "provider": {
+                  "@id": "https://ternloom.com/#organization"
+                },
+                "areaServed": "Canada"
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://ternloom.com/services/business-automation-integrations/#breadcrumbs",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ternloom.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Business Automation & Integrations",
+                    "item": "https://ternloom.com/services/business-automation-integrations/"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "schemaErrors": [],
+        "ids": [
+          "main-content",
+          "service-title",
+          "service-fit",
+          "service-deliverables",
+          "service-boundaries",
+          "service-evidence",
+          "bonita-nights-title",
+          "wood-dust-creations-title",
+          "service-process",
+          "service-questions"
+        ],
+        "mainText": "Home Business Automation & Integrations For small businesses in Ottawa and across Canada Business Automation & Integrations Connected tools and automated workflows that reduce repetitive work. Discuss your project Explore relevant work Is this a fit? When this service can help Staff copy the same information between forms, spreadsheets and business tools. Enquiries or requests arrive in one place, but the next person needs to be told manually. Existing tools cover individual tasks, yet the handoffs between them are unclear or easy to miss. Potential deliverables What we can build together The right scope depends on your business. A project could include: A map of the current workflow, including where information moves and where a person needs to review it. A connection that passes agreed information from an enquiry or request into an existing business tool. Notifications or reminders that help the right person see what needs attention. A repeatable transfer of selected records between tools, where their integration options allow it. Clear review steps, error handling and a manual fallback for work that cannot safely proceed on its own. Clear boundaries from the start These are possible workflows, not claims of completed automation projects. We start with one specific handoff and agree what should remain under human review. Connections depend on the access and integration options each tool provides. Permissions, data quality, privacy needs and limits on usage are reviewed before choosing an approach. Subscriptions, usage charges, hosting and ongoing monitoring or maintenance are scoped separately. Changes to a connected provider can require updates after handover. The selected projects below show booking-request and hosted-checkout connections. They do not establish fully automated business operations or a custom payment-processing system. Selected projects See the work in context View all selected projects Bonita Nights — public website. Technology provider Bonita Nights A website for an Ottawa and Gatineau sleepover-rental business, bringing together theme galleries, customer information and a connected booking-request flow. Help families explore rental themes, understand the service and request a preferred night. Theme galleries and service information Setup guidance and answers to common questions A connected booking-request flow Families submit a booking request for their preferred date and theme. Bonita Nights then confirms availability and the reservation with the customer. Website Development Business Automation & Integrations Visit Bonita Nights Wood Dust Creations — public website. Technology provider Wood Dust Creations A woodworking business website combining a product catalogue, Square checkout links, custom-order enquiries, a blog and a portfolio of completed work. Help customers browse handmade pieces, purchase through an existing payment provider and discuss custom work. A product catalogue and portfolio Square-hosted checkout links An entry point for custom-order enquiries A business blog Customers follow product links to Square-hosted checkout to make a purchase. Custom work starts with an enquiry to discuss the piece and its requirements. Website Development Business Automation & Integrations Visit Wood Dust Creations Working together Start with the problem to solve Understand the need Start with your business, the people who will use the work and the problem you want to solve. Existing tools and constraints are part of the conversation. Agree the scope Define the useful first version, responsibilities and costs. Decide what belongs in the project and what can wait before committing to the build. Build and review Review the work against the agreed scope, refine the details and prepare for handover. Deployment and any ongoing support are discussed explicitly. Before you begin Useful questions Can we keep the tools we already use? That is the starting point. We review the tools, the information that needs to move and the access each provider offers. A supported connection or a small change to the workflow may be enough; some tools cannot support the requested handoff. Does every step need to be automated? No. Approvals, exceptions and decisions that need judgement can stay with a person. We define where automation stops, who reviews the result and how the next step is confirmed. What happens if a connection fails? Error handling is part of the scope: how a failure becomes visible, who responds and how work can continue through a manual fallback. Monitoring, retries and ongoing support need to be agreed for the particular workflow. What should we bring to the first conversation? Choose one repetitive task and describe its trigger, the tools involved, the information being copied and the person responsible for the result. Examples with sensitive details removed help us identify a useful first connection and any limits to investigate. Start a conversation What would make your work easier? Tell us about your business, the tools you use and what you would like to change. Discuss your project",
+        "mainWordCount": 773
+      }
+    },
+    {
+      "url": "https://ternloom.com/projects/",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/projects/",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.115392,
+      "totalSeconds": 0.115855,
+      "downloadBytes": 4089,
+      "decodedBytes": 19455,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      },
+      "page": {
+        "lang": "en-CA",
+        "title": "Selected Projects — Ternloom Technologies",
+        "meta": [
+          {
+            "charset": "utf-8"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "description",
+            "content": "Explore business websites for Bonita Nights and Wood Dust Creations, alongside Turnory, Ternloom’s own software product in development."
+          },
+          {
+            "property": "og:type",
+            "content": "website"
+          },
+          {
+            "property": "og:site_name",
+            "content": "Ternloom Technologies"
+          },
+          {
+            "property": "og:title",
+            "content": "Selected Projects — Ternloom Technologies"
+          },
+          {
+            "property": "og:description",
+            "content": "Explore business websites for Bonita Nights and Wood Dust Creations, alongside Turnory, Ternloom’s own software product in development."
+          },
+          {
+            "property": "og:url",
+            "content": "https://ternloom.com/projects/"
+          },
+          {
+            "property": "og:locale",
+            "content": "en_CA"
+          },
+          {
+            "property": "og:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "property": "og:image:type",
+            "content": "image/png"
+          },
+          {
+            "property": "og:image:width",
+            "content": "1200"
+          },
+          {
+            "property": "og:image:height",
+            "content": "630"
+          },
+          {
+            "property": "og:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "Selected Projects — Ternloom Technologies"
+          },
+          {
+            "name": "twitter:description",
+            "content": "Explore business websites for Bonita Nights and Wood Dust Creations, alongside Turnory, Ternloom’s own software product in development."
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "name": "twitter:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          }
+        ],
+        "links": [
+          {
+            "rel": "canonical",
+            "href": "https://ternloom.com/projects/"
+          },
+          {
+            "rel": "icon",
+            "type": "image/svg+xml",
+            "href": "/favicon.svg"
+          },
+          {
+            "rel": "preload",
+            "href": "/fonts/dm-sans-latin.woff2",
+            "as": "font",
+            "type": "font/woff2",
+            "crossorigin": null
+          },
+          {
+            "rel": "stylesheet",
+            "href": "/_astro/SiteLayout.BfSyBjXN.css"
+          }
+        ],
+        "anchors": [
+          {
+            "href": "#main-content",
+            "text": "Skip to content",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Websites",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Automation & integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected work",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "Home",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": true
+          },
+          {
+            "href": "https://www.bonitanights.ca/",
+            "text": "Visit Bonita Nights",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": true
+          },
+          {
+            "href": "https://www.wooddustcreations.ca/",
+            "text": "Visit Wood Dust Creations",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": true
+          },
+          {
+            "href": "https://turnory.racing/",
+            "text": "Visit Turnory",
+            "inMain": true
+          },
+          {
+            "href": "/contact/",
+            "text": "Discuss your project",
+            "inMain": true
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected projects",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About Ternloom",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/privacy/",
+            "text": "Privacy notice",
+            "inMain": false
+          }
+        ],
+        "headings": [
+          {
+            "level": 1,
+            "text": "Selected projects",
+            "id": "projects-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Bonita Nights",
+            "id": "bonita-nights-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Wood Dust Creations",
+            "id": "wood-dust-creations-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Turnory",
+            "id": "turnory-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Have a project in mind?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we do",
+            "id": null,
+            "inMain": false
+          },
+          {
+            "level": 2,
+            "text": "Explore",
+            "id": null,
+            "inMain": false
+          }
+        ],
+        "images": [
+          {
+            "src": "/images/projects/bonita-website-preview.jpg",
+            "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+            "width": "1265",
+            "height": "712",
+            "loading": "lazy",
+            "decoding": "async",
+            "data-astro-cid-pdyktxwk": null
+          },
+          {
+            "src": "/images/projects/wooddust-website-preview.jpg",
+            "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+            "width": "1265",
+            "height": "712",
+            "loading": "lazy",
+            "decoding": "async",
+            "data-astro-cid-pdyktxwk": null
+          },
+          {
+            "src": "/images/projects/turnory-website-preview.jpg",
+            "alt": "Turnory product website introducing its sim-racing telemetry application.",
+            "width": "1265",
+            "height": "712",
+            "loading": "lazy",
+            "decoding": "async",
+            "data-astro-cid-pdyktxwk": null
+          }
+        ],
+        "scripts": [
+          {
+            "type": "application/ld+json",
+            "src": null,
+            "defer": false,
+            "async": false,
+            "inlineBytes": 648
+          }
+        ],
+        "iframes": [],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://ternloom.com/#organization",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://ternloom.com/#website",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/",
+                "inLanguage": "en-CA",
+                "publisher": {
+                  "@id": "https://ternloom.com/#organization"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://ternloom.com/projects/#breadcrumbs",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ternloom.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Selected projects",
+                    "item": "https://ternloom.com/projects/"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "schemaErrors": [],
+        "ids": [
+          "main-content",
+          "projects-title",
+          "bonita-nights-title",
+          "wood-dust-creations-title",
+          "turnory-title"
+        ],
+        "mainText": "Home Selected projects Websites, connected tools and product development Selected projects Different businesses. Different needs. Technology shaped around the work. Ternloom is the technology provider for Bonita Nights and Wood Dust Creations. Turnory is our own software product, currently in development. These projects show how business information, customer actions and specialist software come together. Bonita Nights — public website. Technology provider Bonita Nights A website for an Ottawa and Gatineau sleepover-rental business, bringing together theme galleries, customer information and a connected booking-request flow. Help families explore rental themes, understand the service and request a preferred night. Theme galleries and service information Setup guidance and answers to common questions A connected booking-request flow Families submit a booking request for their preferred date and theme. Bonita Nights then confirms availability and the reservation with the customer. Website Development Business Automation & Integrations Visit Bonita Nights Wood Dust Creations — public website. Technology provider Wood Dust Creations A woodworking business website combining a product catalogue, Square checkout links, custom-order enquiries, a blog and a portfolio of completed work. Help customers browse handmade pieces, purchase through an existing payment provider and discuss custom work. A product catalogue and portfolio Square-hosted checkout links An entry point for custom-order enquiries A business blog Customers follow product links to Square-hosted checkout to make a purchase. Custom work starts with an enquiry to discuss the piece and its requirements. Website Development Business Automation & Integrations Visit Wood Dust Creations Turnory — product website; application in development. Our own product — application in development Turnory Turnory is a Windows sim-racing telemetry application developed by Ternloom Technologies, alongside its product website and launch-notification integration. The application is currently in development. Help sim racers understand a specialist software product, explore its capabilities and request a launch notification. A Windows sim-racing telemetry application in development A product website with interface examples and game-specific information A launch-notification integration Turnory is Ternloom’s own product, with the application still in development. The product website describes game-specific capabilities and provides a way to request a launch notification. Website Development Custom Business Software Visit Turnory Start a conversation Have a project in mind? Tell us about your business, the tools you use and what you would like to change. Discuss your project",
+        "mainWordCount": 375
+      }
+    },
+    {
+      "url": "https://ternloom.com/about/",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/about/",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.155876,
+      "totalSeconds": 0.156374,
+      "downloadBytes": 3513,
+      "decodedBytes": 15300,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      },
+      "page": {
+        "lang": "en-CA",
+        "title": "About Ternloom Technologies",
+        "meta": [
+          {
+            "charset": "utf-8"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "description",
+            "content": "Websites, custom software and business integrations for small businesses in Ottawa and across Canada, built on more than 15 years of IT and software experience."
+          },
+          {
+            "property": "og:type",
+            "content": "website"
+          },
+          {
+            "property": "og:site_name",
+            "content": "Ternloom Technologies"
+          },
+          {
+            "property": "og:title",
+            "content": "About Ternloom Technologies"
+          },
+          {
+            "property": "og:description",
+            "content": "Websites, custom software and business integrations for small businesses in Ottawa and across Canada, built on more than 15 years of IT and software experience."
+          },
+          {
+            "property": "og:url",
+            "content": "https://ternloom.com/about/"
+          },
+          {
+            "property": "og:locale",
+            "content": "en_CA"
+          },
+          {
+            "property": "og:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "property": "og:image:type",
+            "content": "image/png"
+          },
+          {
+            "property": "og:image:width",
+            "content": "1200"
+          },
+          {
+            "property": "og:image:height",
+            "content": "630"
+          },
+          {
+            "property": "og:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "About Ternloom Technologies"
+          },
+          {
+            "name": "twitter:description",
+            "content": "Websites, custom software and business integrations for small businesses in Ottawa and across Canada, built on more than 15 years of IT and software experience."
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "name": "twitter:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          }
+        ],
+        "links": [
+          {
+            "rel": "canonical",
+            "href": "https://ternloom.com/about/"
+          },
+          {
+            "rel": "icon",
+            "type": "image/svg+xml",
+            "href": "/favicon.svg"
+          },
+          {
+            "rel": "preload",
+            "href": "/fonts/dm-sans-latin.woff2",
+            "as": "font",
+            "type": "font/woff2",
+            "crossorigin": null
+          },
+          {
+            "rel": "stylesheet",
+            "href": "/_astro/SiteLayout.BfSyBjXN.css"
+          }
+        ],
+        "anchors": [
+          {
+            "href": "#main-content",
+            "text": "Skip to content",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Websites",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Automation & integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected work",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "Home",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": true
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": true
+          },
+          {
+            "href": "/projects/",
+            "text": "Explore selected work",
+            "inMain": true
+          },
+          {
+            "href": "/contact/",
+            "text": "Discuss your project",
+            "inMain": true
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected projects",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About Ternloom",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/privacy/",
+            "text": "Privacy notice",
+            "inMain": false
+          }
+        ],
+        "headings": [
+          {
+            "level": 1,
+            "text": "About Ternloom Technologies",
+            "id": "about-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What does your business need?",
+            "id": "services-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Website Development",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Custom Business Software",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Business Automation & Integrations",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Understand the work. Agree the scope. Build and review.",
+            "id": "approach-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Start with the everyday problem",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Make the scope clear",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Review against real needs",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "From business websites to a software product.",
+            "id": "work-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What would make your work easier?",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we do",
+            "id": null,
+            "inMain": false
+          },
+          {
+            "level": 2,
+            "text": "Explore",
+            "id": null,
+            "inMain": false
+          }
+        ],
+        "images": [],
+        "scripts": [
+          {
+            "type": "application/ld+json",
+            "src": null,
+            "defer": false,
+            "async": false,
+            "inlineBytes": 630
+          }
+        ],
+        "iframes": [],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://ternloom.com/#organization",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://ternloom.com/#website",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/",
+                "inLanguage": "en-CA",
+                "publisher": {
+                  "@id": "https://ternloom.com/#organization"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://ternloom.com/about/#breadcrumbs",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ternloom.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "About",
+                    "item": "https://ternloom.com/about/"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "schemaErrors": [],
+        "ids": [
+          "main-content",
+          "about-title",
+          "services-title",
+          "approach-title",
+          "work-title"
+        ],
+        "mainText": "Home About Technology shaped around your business About Ternloom Technologies Ternloom Technologies builds websites, custom software and business automations for small businesses in Ottawa and across Canada. Built on more than 15 years of experience in IT and software development. The starting point is the work you need to do: helping customers understand your business, giving a process a better tool, or connecting the systems you already use. Three ways to help What does your business need? Website Development A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step. Custom Business Software Software built around a business's own workflows. Business Automation & Integrations Connected tools and automated workflows that reduce repetitive work. Working together Understand the work. Agree the scope. Build and review. Our approach keeps the business problem in view, from the first conversation through the details of the build. Start with the everyday problem Discuss who will use the website or software, how the work happens now, and where the current tools get in the way. Make the scope clear Agree what the project needs to do, what it depends on and what sits outside the work. Hosting, paid tools and ongoing support need their own scope. Review against real needs Use concrete examples to review the work together, so decisions stay connected to the people and processes the project is meant to help. See the work From business websites to a software product. Explore selected projects, with the role, scope and current status of each explained. Explore selected work Start a conversation What would make your work easier? Tell us about your business, the tools you use and what you would like to change. Discuss your project",
+        "mainWordCount": 291
+      }
+    },
+    {
+      "url": "https://ternloom.com/contact/",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/contact/",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.184518,
+      "totalSeconds": 0.184846,
+      "downloadBytes": 3158,
+      "decodedBytes": 12512,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      },
+      "page": {
+        "lang": "en-CA",
+        "title": "Discuss Your Project — Ternloom Technologies",
+        "meta": [
+          {
+            "charset": "utf-8"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "description",
+            "content": "Plan a website, custom software or business automation project. Tell Ternloom about your business, your current tools and what you want to change."
+          },
+          {
+            "property": "og:type",
+            "content": "website"
+          },
+          {
+            "property": "og:site_name",
+            "content": "Ternloom Technologies"
+          },
+          {
+            "property": "og:title",
+            "content": "Discuss Your Project — Ternloom Technologies"
+          },
+          {
+            "property": "og:description",
+            "content": "Plan a website, custom software or business automation project. Tell Ternloom about your business, your current tools and what you want to change."
+          },
+          {
+            "property": "og:url",
+            "content": "https://ternloom.com/contact/"
+          },
+          {
+            "property": "og:locale",
+            "content": "en_CA"
+          },
+          {
+            "property": "og:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "property": "og:image:type",
+            "content": "image/png"
+          },
+          {
+            "property": "og:image:width",
+            "content": "1200"
+          },
+          {
+            "property": "og:image:height",
+            "content": "630"
+          },
+          {
+            "property": "og:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "Discuss Your Project — Ternloom Technologies"
+          },
+          {
+            "name": "twitter:description",
+            "content": "Plan a website, custom software or business automation project. Tell Ternloom about your business, your current tools and what you want to change."
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "name": "twitter:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          }
+        ],
+        "links": [
+          {
+            "rel": "canonical",
+            "href": "https://ternloom.com/contact/"
+          },
+          {
+            "rel": "icon",
+            "type": "image/svg+xml",
+            "href": "/favicon.svg"
+          },
+          {
+            "rel": "preload",
+            "href": "/fonts/dm-sans-latin.woff2",
+            "as": "font",
+            "type": "font/woff2",
+            "crossorigin": null
+          },
+          {
+            "rel": "stylesheet",
+            "href": "/_astro/SiteLayout.BfSyBjXN.css"
+          },
+          {
+            "rel": "stylesheet",
+            "href": "/_astro/contact.DpBJfv4q.css"
+          }
+        ],
+        "anchors": [
+          {
+            "href": "#main-content",
+            "text": "Skip to content",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Websites",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Automation & integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected work",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "Home",
+            "inMain": true
+          },
+          {
+            "href": "mailto:info@ternloom.com",
+            "text": "info@ternloom.com",
+            "inMain": true
+          },
+          {
+            "href": "/privacy/",
+            "text": "privacy notice",
+            "inMain": true
+          },
+          {
+            "href": "https://tally.so/r/dbEbrd?source=ternloom-website&environment=production",
+            "text": "Open the enquiry form in Tally",
+            "inMain": true
+          },
+          {
+            "href": "mailto:info@ternloom.com",
+            "text": "info@ternloom.com",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": true
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": true
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected projects",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About Ternloom",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/privacy/",
+            "text": "Privacy notice",
+            "inMain": false
+          }
+        ],
+        "headings": [
+          {
+            "level": 1,
+            "text": "Discuss your project",
+            "id": "contact-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Tell us about your project",
+            "id": "form-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Email us about your project",
+            "id": "contact-details-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What to include",
+            "id": "include-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Your business",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Your current tools",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "What you want to change",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What happens next",
+            "id": "next-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Find the service that fits",
+            "id": "services-title",
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Website Development",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Custom Business Software",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 3,
+            "text": "Business Automation & Integrations",
+            "id": null,
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we do",
+            "id": null,
+            "inMain": false
+          },
+          {
+            "level": 2,
+            "text": "Explore",
+            "id": null,
+            "inMain": false
+          }
+        ],
+        "images": [],
+        "scripts": [
+          {
+            "type": "application/ld+json",
+            "src": null,
+            "defer": false,
+            "async": false,
+            "inlineBytes": 636
+          },
+          {
+            "type": null,
+            "src": "https://tally.so/widgets/embed.js",
+            "defer": true,
+            "async": false,
+            "inlineBytes": 0
+          }
+        ],
+        "iframes": [
+          {
+            "src": "https://tally.so/embed/dbEbrd?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&source=ternloom-website&environment=production",
+            "title": "Ternloom project enquiry",
+            "data-astro-cid-vekgkm42": null
+          }
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://ternloom.com/#organization",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://ternloom.com/#website",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/",
+                "inLanguage": "en-CA",
+                "publisher": {
+                  "@id": "https://ternloom.com/#organization"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://ternloom.com/contact/#breadcrumbs",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ternloom.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Contact",
+                    "item": "https://ternloom.com/contact/"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "schemaErrors": [],
+        "ids": [
+          "main-content",
+          "contact-title",
+          "form-title",
+          "contact-details-title",
+          "include-title",
+          "next-title",
+          "services-title"
+        ],
+        "mainText": "Home Contact Discuss your project Prefer email? info@ternloom.com Tell us about your project We use your details to respond. Read our privacy notice . Open the enquiry form in Tally if the embedded form does not load or is difficult to use. Start a conversation Email us about your project A few sentences about your business and what you need are enough to begin. info@ternloom.com Open the link in your email app, or select the address to use it in your preferred email service. Before the conversation What to include You do not need a technical specification. A little context helps identify the right questions. Your business What does your business do, who are your customers, and who will use the website or software? Your current tools Describe your website, spreadsheets, software or manual process, and where they make the work difficult. What you want to change Explain the outcome you need. Include any timing, budget or existing-system constraints that will shape the project. Working together What happens next An initial conversation can clarify the problem, the people involved and whether the work is a fit. Scope, deliverables and next steps are agreed before a project begins. Explore the possibilities Find the service that fits Website Development A clear, practical website that explains what your business offers and gives customers a straightforward way to take the next step. Custom Business Software Software built around a business's own workflows. Business Automation & Integrations Connected tools and automated workflows that reduce repetitive work.",
+        "mainWordCount": 251
+      }
+    },
+    {
+      "url": "https://ternloom.com/privacy/",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/privacy/",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.098396,
+      "totalSeconds": 0.098672,
+      "downloadBytes": 3314,
+      "decodedBytes": 11701,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      },
+      "page": {
+        "lang": "en-CA",
+        "title": "Privacy Notice — Ternloom Technologies",
+        "meta": [
+          {
+            "charset": "utf-8"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "description",
+            "content": "How Ternloom Technologies handles project enquiries, including form providers, retention and privacy requests."
+          },
+          {
+            "property": "og:type",
+            "content": "website"
+          },
+          {
+            "property": "og:site_name",
+            "content": "Ternloom Technologies"
+          },
+          {
+            "property": "og:title",
+            "content": "Privacy Notice — Ternloom Technologies"
+          },
+          {
+            "property": "og:description",
+            "content": "How Ternloom Technologies handles project enquiries, including form providers, retention and privacy requests."
+          },
+          {
+            "property": "og:url",
+            "content": "https://ternloom.com/privacy/"
+          },
+          {
+            "property": "og:locale",
+            "content": "en_CA"
+          },
+          {
+            "property": "og:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "property": "og:image:type",
+            "content": "image/png"
+          },
+          {
+            "property": "og:image:width",
+            "content": "1200"
+          },
+          {
+            "property": "og:image:height",
+            "content": "630"
+          },
+          {
+            "property": "og:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "Privacy Notice — Ternloom Technologies"
+          },
+          {
+            "name": "twitter:description",
+            "content": "How Ternloom Technologies handles project enquiries, including form providers, retention and privacy requests."
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "name": "twitter:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          }
+        ],
+        "links": [
+          {
+            "rel": "canonical",
+            "href": "https://ternloom.com/privacy/"
+          },
+          {
+            "rel": "icon",
+            "type": "image/svg+xml",
+            "href": "/favicon.svg"
+          },
+          {
+            "rel": "preload",
+            "href": "/fonts/dm-sans-latin.woff2",
+            "as": "font",
+            "type": "font/woff2",
+            "crossorigin": null
+          },
+          {
+            "rel": "stylesheet",
+            "href": "/_astro/SiteLayout.BfSyBjXN.css"
+          }
+        ],
+        "anchors": [
+          {
+            "href": "#main-content",
+            "text": "Skip to content",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Websites",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Automation & integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected work",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "Home",
+            "inMain": true
+          },
+          {
+            "href": "https://tally.so/help/gdpr",
+            "text": "Tally's data processing information",
+            "inMain": true
+          },
+          {
+            "href": "https://policies.google.com/privacy",
+            "text": "Google's Privacy Policy",
+            "inMain": true
+          },
+          {
+            "href": "https://policies.google.com/terms",
+            "text": "Google's Terms of Service",
+            "inMain": true
+          },
+          {
+            "href": "mailto:info@ternloom.com",
+            "text": "info@ternloom.com",
+            "inMain": true
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected projects",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About Ternloom",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/privacy/",
+            "text": "Privacy notice",
+            "inMain": false
+          }
+        ],
+        "headings": [
+          {
+            "level": 1,
+            "text": "Privacy notice",
+            "id": "privacy-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Information you share",
+            "id": "information-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "How we use enquiry information",
+            "id": "purpose-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Form and security providers",
+            "id": "providers-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "How long we keep enquiries",
+            "id": "retention-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Cookies and website measurement",
+            "id": "cookies-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Privacy questions and requests",
+            "id": "requests-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we do",
+            "id": null,
+            "inMain": false
+          },
+          {
+            "level": 2,
+            "text": "Explore",
+            "id": null,
+            "inMain": false
+          }
+        ],
+        "images": [],
+        "scripts": [
+          {
+            "type": "application/ld+json",
+            "src": null,
+            "defer": false,
+            "async": false,
+            "inlineBytes": 636
+          }
+        ],
+        "iframes": [],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://ternloom.com/#organization",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://ternloom.com/#website",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/",
+                "inLanguage": "en-CA",
+                "publisher": {
+                  "@id": "https://ternloom.com/#organization"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://ternloom.com/privacy/#breadcrumbs",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ternloom.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Privacy",
+                    "item": "https://ternloom.com/privacy/"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "schemaErrors": [],
+        "ids": [
+          "main-content",
+          "privacy-title",
+          "information-title",
+          "purpose-title",
+          "providers-title",
+          "retention-title",
+          "cookies-title",
+          "requests-title"
+        ],
+        "mainText": "Home Privacy Privacy notice Last updated: October 30, 2026 . This notice explains how Ternloom Technologies handles the information you share when you contact us about a project, and how the embedded contact form processes information. Information you share The contact form asks for your name, email address, service choice and project message. You can also provide your business name and website URL; these fields are optional. If you email us, we receive your email address, message and any other information you choose to include. The form also records where an enquiry came from and whether it was sent through a test or public version of the form. The form and security providers may process device, browser and connection information, such as an IP address, to operate their services and help prevent abuse. Please avoid including passwords, payment details or sensitive personal information in your enquiry. How we use enquiry information We use your information to respond to you, assess and discuss your project, and maintain relevant enquiry and project records. Sending an enquiry does not subscribe you to a newsletter or give consent to advertising. Form and security providers Our contact form uses Tally. Tally stores submitted responses and sends email notifications, so enquiry information can also be held in our email account. The form uses Google reCAPTCHA to help prevent automated abuse. These providers may process information outside Canada. Their services and processing practices are described in Tally's data processing information and Google's Privacy Policy . Google reCAPTCHA is also subject to Google's Terms of Service . How long we keep enquiries Our policy is to delete active enquiry copies within 12 months of submission, unless they are needed for an ongoing project or required records. This includes responses held in Tally, enquiry emails and any exported copies we retain. We delete these records manually. Copies in providers' trash and backup systems may remain for their normal deletion cycles after an active copy is deleted. Cookies and website measurement We have not added first-party visitor analytics or advertising tracking to this website. Embedded services, including Tally and Google reCAPTCHA on the contact page, may process device and connection information and use cookies to provide their services and security checks. You can email us directly using the address below if you prefer not to use the embedded form. Privacy questions and requests For privacy questions, or to request access to, correction of or deletion of your enquiry information, email info@ternloom.com . You can also use this address to send a project enquiry directly. Include enough detail to help us locate your enquiry. We may ask for information to verify your identity before sharing or changing records. We will review your request and explain any information that needs to be retained for an ongoing project or required records.",
+        "mainWordCount": 468
+      }
+    },
+    {
+      "url": "https://ternloom.com/a-deliberately-missing-seo-page/",
+      "status": 404,
+      "effectiveUrl": "https://ternloom.com/a-deliberately-missing-seo-page/",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.173285,
+      "totalSeconds": 0.173671,
+      "downloadBytes": 2250,
+      "decodedBytes": 9880,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 404 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      },
+      "page": {
+        "lang": "en-CA",
+        "title": "Page Not Found — Ternloom Technologies",
+        "meta": [
+          {
+            "charset": "utf-8"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "description",
+            "content": "This page could not be found. Return to Ternloom's homepage or explore website development, custom software and business automation services."
+          },
+          {
+            "name": "robots",
+            "content": "noindex, nofollow"
+          },
+          {
+            "property": "og:type",
+            "content": "website"
+          },
+          {
+            "property": "og:site_name",
+            "content": "Ternloom Technologies"
+          },
+          {
+            "property": "og:title",
+            "content": "Page Not Found — Ternloom Technologies"
+          },
+          {
+            "property": "og:description",
+            "content": "This page could not be found. Return to Ternloom's homepage or explore website development, custom software and business automation services."
+          },
+          {
+            "property": "og:url",
+            "content": "https://ternloom.com/404/"
+          },
+          {
+            "property": "og:locale",
+            "content": "en_CA"
+          },
+          {
+            "property": "og:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "property": "og:image:type",
+            "content": "image/png"
+          },
+          {
+            "property": "og:image:width",
+            "content": "1200"
+          },
+          {
+            "property": "og:image:height",
+            "content": "630"
+          },
+          {
+            "property": "og:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "Page Not Found — Ternloom Technologies"
+          },
+          {
+            "name": "twitter:description",
+            "content": "This page could not be found. Return to Ternloom's homepage or explore website development, custom software and business automation services."
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://ternloom.com/social-preview.png"
+          },
+          {
+            "name": "twitter:image:alt",
+            "content": "Ternloom Technologies — Built around the way you work."
+          }
+        ],
+        "links": [
+          {
+            "rel": "canonical",
+            "href": "https://ternloom.com/404/"
+          },
+          {
+            "rel": "icon",
+            "type": "image/svg+xml",
+            "href": "/favicon.svg"
+          },
+          {
+            "rel": "preload",
+            "href": "/fonts/dm-sans-latin.woff2",
+            "as": "font",
+            "type": "font/woff2",
+            "crossorigin": null
+          },
+          {
+            "rel": "stylesheet",
+            "href": "/_astro/SiteLayout.BfSyBjXN.css"
+          }
+        ],
+        "anchors": [
+          {
+            "href": "#main-content",
+            "text": "Skip to content",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Websites",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Automation & integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected work",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/",
+            "text": "Return to home",
+            "inMain": true
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": true
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": true
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": true
+          },
+          {
+            "href": "/",
+            "text": "ternloomTECHNOLOGIES",
+            "inMain": false
+          },
+          {
+            "href": "/services/website-development/",
+            "text": "Website Development",
+            "inMain": false
+          },
+          {
+            "href": "/services/custom-business-software/",
+            "text": "Custom Business Software",
+            "inMain": false
+          },
+          {
+            "href": "/services/business-automation-integrations/",
+            "text": "Business Automation & Integrations",
+            "inMain": false
+          },
+          {
+            "href": "/projects/",
+            "text": "Selected projects",
+            "inMain": false
+          },
+          {
+            "href": "/about/",
+            "text": "About Ternloom",
+            "inMain": false
+          },
+          {
+            "href": "/contact/",
+            "text": "Contact",
+            "inMain": false
+          },
+          {
+            "href": "/privacy/",
+            "text": "Privacy notice",
+            "inMain": false
+          }
+        ],
+        "headings": [
+          {
+            "level": 1,
+            "text": "Page not found",
+            "id": "missing-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "Explore our services",
+            "id": "recovery-title",
+            "inMain": true
+          },
+          {
+            "level": 2,
+            "text": "What we do",
+            "id": null,
+            "inMain": false
+          },
+          {
+            "level": 2,
+            "text": "Explore",
+            "id": null,
+            "inMain": false
+          }
+        ],
+        "images": [],
+        "scripts": [
+          {
+            "type": "application/ld+json",
+            "src": null,
+            "defer": false,
+            "async": false,
+            "inlineBytes": 370
+          }
+        ],
+        "iframes": [],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://ternloom.com/#organization",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://ternloom.com/#website",
+                "name": "Ternloom Technologies",
+                "url": "https://ternloom.com/",
+                "inLanguage": "en-CA",
+                "publisher": {
+                  "@id": "https://ternloom.com/#organization"
+                }
+              }
+            ]
+          }
+        ],
+        "schemaErrors": [],
+        "ids": [
+          "main-content",
+          "missing-title",
+          "recovery-title"
+        ],
+        "mainText": "Error 404 Page not found We couldn’t find a page at this address. The link may be out of date, or the address may have been typed incorrectly. Return to home Explore our services Find help with your website, business software or everyday workflows. Website Development Custom Business Software Business Automation & Integrations",
+        "mainWordCount": 53
+      }
+    }
+  ],
+  "resources": [
+    {
+      "url": "https://ternloom.com/robots.txt",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/robots.txt",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.173558,
+      "totalSeconds": 0.173899,
+      "downloadBytes": 82,
+      "decodedBytes": 66,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/plain",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "etag": "W/\"e92954463da285d324747de2b0b5fec8\"",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "etag": "W/\"e92954463da285d324747de2b0b5fec8\"",
+        "content-encoding": "gzip"
+      },
+      "text": "User-agent: *\nAllow: /\n\nSitemap: https://ternloom.com/sitemap.xml\n"
+    },
+    {
+      "url": "https://ternloom.com/sitemap.xml",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/sitemap.xml",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.180662,
+      "totalSeconds": 0.182555,
+      "downloadBytes": 234,
+      "decodedBytes": 614,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "application/xml",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "etag": "W/\"08eb48204c51bfb105d8db3f73f783c3\"",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "application/xml",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "etag": "W/\"08eb48204c51bfb105d8db3f73f783c3\"",
+        "content-encoding": "gzip"
+      },
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url><loc>https://ternloom.com/</loc></url>\n  <url><loc>https://ternloom.com/services/website-development/</loc></url>\n  <url><loc>https://ternloom.com/services/custom-business-software/</loc></url>\n  <url><loc>https://ternloom.com/services/business-automation-integrations/</loc></url>\n  <url><loc>https://ternloom.com/projects/</loc></url>\n  <url><loc>https://ternloom.com/about/</loc></url>\n  <url><loc>https://ternloom.com/contact/</loc></url>\n  <url><loc>https://ternloom.com/privacy/</loc></url>\n</urlset>\n"
+    },
+    {
+      "url": "https://ternloom.com/llms.txt",
+      "status": 404,
+      "effectiveUrl": "https://ternloom.com/llms.txt",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.147449,
+      "totalSeconds": 0.147738,
+      "downloadBytes": 2250,
+      "decodedBytes": 9880,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 404 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      },
+      "text": "<!DOCTYPE html><html lang=\"en-CA\" data-astro-cid-tq46r5sz><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Page Not Found — Ternloom Technologies</title><meta name=\"description\" content=\"This page could not be found. Return to Ternloom's homepage or explore website development, custom software and business automation services.\"><meta name=\"robots\" content=\"noindex, nofollow\"><link rel=\"canonical\" href=\"https://ternloom.com/404/\"><link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\"><link rel=\"preload\" href=\"/fonts/dm-sans-latin.woff2\" as=\"font\" type=\"font/woff2\" crossorigin><meta property=\"og:type\" content=\"website\"><meta property=\"og:site_name\" content=\"Ternloom Technologies\"><meta property=\"og:title\" content=\"Page Not Found — Ternloom Technologies\"><meta property=\"og:description\" content=\"This page could not be found. Return to Ternloom's homepage or explore website development, custom software and business automation services.\"><meta property=\"og:url\" content=\"https://ternloom.com/404/\"><meta property=\"og:locale\" content=\"en_CA\"><meta property=\"og:image\" content=\"https://ternloom.com/social-preview.png\"><meta property=\"og:image:type\" content=\"image/png\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\"><meta property=\"og:image:alt\" content=\"Ternloom Technologies — Built around the way you work.\"><meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:title\" content=\"Page Not Found — Ternloom Technologies\"><meta name=\"twitter:description\" content=\"This page could not be found. Return to Ternloom's homepage or explore website development, custom software and business automation services.\"><meta name=\"twitter:image\" content=\"https://ternloom.com/social-preview.png\"><meta name=\"twitter:image:alt\" content=\"Ternloom Technologies — Built around the way you work.\"><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://ternloom.com/#organization\",\"name\":\"Ternloom Technologies\",\"url\":\"https://ternloom.com/\"},{\"@type\":\"WebSite\",\"@id\":\"https://ternloom.com/#website\",\"name\":\"Ternloom Technologies\",\"url\":\"https://ternloom.com/\",\"inLanguage\":\"en-CA\",\"publisher\":{\"@id\":\"https://ternloom.com/#organization\"}}]}</script><link rel=\"stylesheet\" href=\"/_astro/SiteLayout.BfSyBjXN.css\"><style>.missing-page[data-astro-cid-ibpinaeu]{align-items:start;gap:var(--space-6);padding-block:var(--section-space);grid-template-columns:1.15fr 1fr;display:grid}h1[data-astro-cid-ibpinaeu]{margin-block:var(--space-3)}.explanation[data-astro-cid-ibpinaeu]{max-width:var(--reading-width);color:var(--color-muted);margin-block-end:var(--space-4)}.recovery[data-astro-cid-ibpinaeu]{border-block-start:var(--border-width) solid var(--color-line);padding-block-start:var(--space-4)}.recovery[data-astro-cid-ibpinaeu]>p[data-astro-cid-ibpinaeu]{color:var(--color-muted);margin-block:var(--space-3) var(--space-4)}.recovery[data-astro-cid-ibpinaeu] ul[data-astro-cid-ibpinaeu]{padding:0;list-style:none}.recovery[data-astro-cid-ibpinaeu] li[data-astro-cid-ibpinaeu]{border-block-start:var(--border-width) solid var(--color-line);padding-block:var(--space-2)}@media (width<=48rem){.missing-page[data-astro-cid-ibpinaeu]{grid-template-columns:1fr}}\n</style></head><body data-astro-cid-tq46r5sz><a class=\"skip-link\" href=\"#main-content\" data-astro-cid-tq46r5sz>Skip to content</a><header class=\"site-header\" data-astro-cid-fzpbxy5g><div class=\"container header-inner\" data-astro-cid-fzpbxy5g><a class=\"home-link\" href=\"/\" aria-label=\"Ternloom Technologies — home\" data-astro-cid-fzpbxy5g><span class=\"brand\" data-astro-cid-6bctqxxv><svg viewBox=\"0 0 40 40\" width=\"34\" height=\"34\" aria-hidden=\"true\" focusable=\"false\" data-astro-cid-6bctqxxv><path d=\"M4 7h23v8H13v18H5V7Z\" fill=\"currentColor\" data-astro-cid-6bctqxxv></path><path d=\"M18 7h17v27H18v-8h9V15h-9Z\" fill=\"currentColor\" opacity=\".45\" data-astro-cid-6bctqxxv></path></svg><span class=\"brand-text\" data-astro-cid-6bctqxxv><span class=\"brand-name\" data-astro-cid-6bctqxxv>ternloom</span><span class=\"brand-descriptor\" data-astro-cid-6bctqxxv>TECHNOLOGIES</span></span></span></a><nav aria-label=\"Primary\" data-astro-cid-fzpbxy5g><ul data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href=\"/services/website-development/\" data-astro-cid-fzpbxy5g>Websites</a></li><li data-astro-cid-fzpbxy5g><a href=\"/services/custom-business-software/\" data-astro-cid-fzpbxy5g>Custom software</a></li><li data-astro-cid-fzpbxy5g><a href=\"/services/business-automation-integrations/\" data-astro-cid-fzpbxy5g>Automation &amp; integrations</a></li><li data-astro-cid-fzpbxy5g><a href=\"/projects/\" data-astro-cid-fzpbxy5g>Selected work</a></li><li data-astro-cid-fzpbxy5g><a href=\"/about/\" data-astro-cid-fzpbxy5g>About</a></li></ul></nav><div class=\"header-contact\" data-astro-cid-fzpbxy5g><a href=\"/contact/\" class=\"action-link action-link--primary\" data-astro-cid-dyks4r25><span data-astro-cid-dyks4r25>Contact</span><svg viewBox=\"0 0 20 20\" width=\"18\" height=\"18\" aria-hidden=\"true\" data-astro-cid-dyks4r25><path d=\"M3 10h13m-5-5 5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" data-astro-cid-dyks4r25></path></svg></a></div></div></header><main id=\"main-content\" tabindex=\"-1\" data-astro-cid-tq46r5sz><section class=\"container missing-page\" aria-labelledby=\"missing-title\" data-astro-cid-ibpinaeu><div class=\"missing-copy\" data-astro-cid-ibpinaeu><p class=\"eyebrow\" data-astro-cid-ibpinaeu>Error 404</p><h1 id=\"missing-title\" data-astro-cid-ibpinaeu>Page not found</h1><p class=\"explanation\" data-astro-cid-ibpinaeu>We couldn’t find a page at this address. The link may be out of date, or the address may have been typed incorrectly.</p><a href=\"/\" class=\"action-link action-link--primary\" data-astro-cid-dyks4r25><span data-astro-cid-dyks4r25>Return to home</span><svg viewBox=\"0 0 20 20\" width=\"18\" height=\"18\" aria-hidden=\"true\" data-astro-cid-dyks4r25><path d=\"M3 10h13m-5-5 5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" data-astro-cid-dyks4r25></path></svg></a></div><nav class=\"recovery\" aria-labelledby=\"recovery-title\" data-astro-cid-ibpinaeu><h2 id=\"recovery-title\" data-astro-cid-ibpinaeu>Explore our services</h2><p data-astro-cid-ibpinaeu>Find help with your website, business software or everyday workflows.</p><ul data-astro-cid-ibpinaeu><li data-astro-cid-ibpinaeu><a href=\"/services/website-development/\" class=\"action-link action-link--text\" data-astro-cid-dyks4r25><span data-astro-cid-dyks4r25>Website Development</span><svg viewBox=\"0 0 20 20\" width=\"18\" height=\"18\" aria-hidden=\"true\" data-astro-cid-dyks4r25><path d=\"M3 10h13m-5-5 5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" data-astro-cid-dyks4r25></path></svg></a></li><li data-astro-cid-ibpinaeu><a href=\"/services/custom-business-software/\" class=\"action-link action-link--text\" data-astro-cid-dyks4r25><span data-astro-cid-dyks4r25>Custom Business Software</span><svg viewBox=\"0 0 20 20\" width=\"18\" height=\"18\" aria-hidden=\"true\" data-astro-cid-dyks4r25><path d=\"M3 10h13m-5-5 5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" data-astro-cid-dyks4r25></path></svg></a></li><li data-astro-cid-ibpinaeu><a href=\"/services/business-automation-integrations/\" class=\"action-link action-link--text\" data-astro-cid-dyks4r25><span data-astro-cid-dyks4r25>Business Automation &amp; Integrations</span><svg viewBox=\"0 0 20 20\" width=\"18\" height=\"18\" aria-hidden=\"true\" data-astro-cid-dyks4r25><path d=\"M3 10h13m-5-5 5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" data-astro-cid-dyks4r25></path></svg></a></li></ul></nav></section></main><footer class=\"site-footer\" data-astro-cid-nns7i3if><div class=\"container footer-grid\" data-astro-cid-nns7i3if><div class=\"footer-intro\" data-astro-cid-nns7i3if><a class=\"home-link\" href=\"/\" aria-label=\"Ternloom Technologies — home\" data-astro-cid-nns7i3if><span class=\"brand\" data-astro-cid-6bctqxxv><svg viewBox=\"0 0 40 40\" width=\"34\" height=\"34\" aria-hidden=\"true\" focusable=\"false\" data-astro-cid-6bctqxxv><path d=\"M4 7h23v8H13v18H5V7Z\" fill=\"currentColor\" data-astro-cid-6bctqxxv></path><path d=\"M18 7h17v27H18v-8h9V15h-9Z\" fill=\"currentColor\" opacity=\".45\" data-astro-cid-6bctqxxv></path></svg><span class=\"brand-text\" data-astro-cid-6bctqxxv><span class=\"brand-name\" data-astro-cid-6bctqxxv>ternloom</span><span class=\"brand-descriptor\" data-astro-cid-6bctqxxv>TECHNOLOGIES</span></span></span></a><p data-astro-cid-nns7i3if>Websites, software and connected tools for small businesses in Ottawa and across Canada.</p></div><nav aria-label=\"Services\" data-astro-cid-nns7i3if><h2 data-astro-cid-nns7i3if>What we do</h2><ul data-astro-cid-nns7i3if><li data-astro-cid-nns7i3if><a href=\"/services/website-development/\" data-astro-cid-nns7i3if>Website Development</a></li><li data-astro-cid-nns7i3if><a href=\"/services/custom-business-software/\" data-astro-cid-nns7i3if>Custom Business Software</a></li><li data-astro-cid-nns7i3if><a href=\"/services/business-automation-integrations/\" data-astro-cid-nns7i3if>Business Automation &amp; Integrations</a></li></ul></nav><nav aria-label=\"Explore\" data-astro-cid-nns7i3if><h2 data-astro-cid-nns7i3if>Explore</h2><ul data-astro-cid-nns7i3if><li data-astro-cid-nns7i3if><a href=\"/projects/\" data-astro-cid-nns7i3if>Selected projects</a></li><li data-astro-cid-nns7i3if><a href=\"/about/\" data-astro-cid-nns7i3if>About Ternloom</a></li><li data-astro-cid-nns7i3if><a href=\"/contact/\" data-astro-cid-nns7i3if>Contact</a></li></ul></nav></div><div class=\"container footer-bottom\" data-astro-cid-nns7i3if><p data-astro-cid-nns7i3if>© 2026 Ternloom Technologies</p><p data-astro-cid-nns7i3if>Ottawa, Ontario · Serving Canada</p><a href=\"/privacy/\" data-astro-cid-nns7i3if>Privacy notice</a></div></footer></body></html>"
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://ternloom.com/_astro/SiteLayout.BfSyBjXN.css",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/_astro/SiteLayout.BfSyBjXN.css",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.186096,
+      "totalSeconds": 0.186965,
+      "downloadBytes": 2260,
+      "decodedBytes": 8698,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/css",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "etag": "W/\"858cbd21d188cca1daf1248d44024143\"",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/css",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "etag": "W/\"858cbd21d188cca1daf1248d44024143\"",
+        "content-encoding": "gzip"
+      }
+    },
+    {
+      "url": "https://ternloom.com/_astro/contact.DpBJfv4q.css",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/_astro/contact.DpBJfv4q.css",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.195938,
+      "totalSeconds": 0.196222,
+      "downloadBytes": 945,
+      "decodedBytes": 4568,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/css",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "etag": "W/\"31e8f972ded8d82cb4e0683be0cdcd47\"",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/css",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "etag": "W/\"31e8f972ded8d82cb4e0683be0cdcd47\"",
+        "content-encoding": "gzip"
+      }
+    },
+    {
+      "url": "https://ternloom.com/_astro/index.BTySDOOe.css",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/_astro/index.BTySDOOe.css",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.208657,
+      "totalSeconds": 0.208976,
+      "downloadBytes": 1126,
+      "decodedBytes": 6004,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/css",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "etag": "W/\"da34945e6f1165abab5e8beaa039da52\"",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/css",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "etag": "W/\"da34945e6f1165abab5e8beaa039da52\"",
+        "content-encoding": "gzip"
+      }
+    },
+    {
+      "url": "https://ternloom.com/favicon.svg",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/favicon.svg",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.196044,
+      "totalSeconds": 0.196328,
+      "downloadBytes": 243,
+      "decodedBytes": 299,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "image/svg+xml",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "etag": "W/\"8730b0e51513247481a24629c26264d8\"",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "image/svg+xml",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "etag": "W/\"8730b0e51513247481a24629c26264d8\"",
+        "content-encoding": "gzip"
+      }
+    },
+    {
+      "url": "https://ternloom.com/fonts/dm-sans-latin.woff2",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/fonts/dm-sans-latin.woff2",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.132337,
+      "totalSeconds": 0.134864,
+      "downloadBytes": 36980,
+      "decodedBytes": 36980,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "font/woff2",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "etag": "\"b83efde8605ec3fd423fcc4d7fb8336d\"",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "font/woff2",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"b83efde8605ec3fd423fcc4d7fb8336d\"",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "url": "https://ternloom.com/images/projects/bonita-website-preview.jpg",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/images/projects/bonita-website-preview.jpg",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.153565,
+      "totalSeconds": 0.181179,
+      "downloadBytes": 84409,
+      "decodedBytes": 84409,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "image/jpeg",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "etag": "\"0c9217a11acfea4b1014220920622b5b\"",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"0c9217a11acfea4b1014220920622b5b\"",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "url": "https://ternloom.com/images/projects/turnory-website-preview.jpg",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/images/projects/turnory-website-preview.jpg",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.184069,
+      "totalSeconds": 0.193105,
+      "downloadBytes": 51143,
+      "decodedBytes": 51143,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "image/jpeg",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "etag": "\"9f58e3e27fa90308628b2d9cdd75c9c0\"",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"9f58e3e27fa90308628b2d9cdd75c9c0\"",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "url": "https://ternloom.com/images/projects/wooddust-website-preview.jpg",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/images/projects/wooddust-website-preview.jpg",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.135306,
+      "totalSeconds": 0.169312,
+      "downloadBytes": 72045,
+      "decodedBytes": 72045,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "image/jpeg",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "etag": "\"48c50d60237999e334af9c96c5f0c441\"",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"48c50d60237999e334af9c96c5f0c441\"",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "url": "https://ternloom.com/social-preview.png",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/social-preview.png",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.139438,
+      "totalSeconds": 0.150708,
+      "downloadBytes": 59723,
+      "decodedBytes": 59723,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "image/png",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "etag": "\"7546e0ab2a3a4de37a37dd648116f93b\"",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"7546e0ab2a3a4de37a37dd648116f93b\"",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    }
+  ],
+  "variants": [
+    {
+      "url": "https://www.ternloom.com/contact/?test=seo-audit",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/contact/?test=seo-audit",
+      "redirectCount": 1,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.287401,
+      "totalSeconds": 0.288032,
+      "downloadBytes": 3158,
+      "decodedBytes": 12512,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 301 ",
+          "headers": {
+            "content-type": "text/html; charset=UTF-8",
+            "location": "https://ternloom.com/contact/?test=seo-audit"
+          }
+        },
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      }
+    },
+    {
+      "url": "http://www.ternloom.com/contact/?test=seo-audit",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/contact/?test=seo-audit",
+      "redirectCount": 2,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.369373,
+      "totalSeconds": 0.371937,
+      "downloadBytes": 3158,
+      "decodedBytes": 12512,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/1.1 301 Moved Permanently",
+          "headers": {
+            "content-type": "text/html; charset=UTF-8",
+            "location": "https://www.ternloom.com/contact/?test=seo-audit"
+          }
+        },
+        {
+          "statusLine": "HTTP/2 301 ",
+          "headers": {
+            "content-type": "text/html; charset=UTF-8",
+            "location": "https://ternloom.com/contact/?test=seo-audit"
+          }
+        },
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      }
+    },
+    {
+      "url": "http://ternloom.com/contact/?test=seo-audit",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/contact/?test=seo-audit",
+      "redirectCount": 1,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.222804,
+      "totalSeconds": 0.223785,
+      "downloadBytes": 3158,
+      "decodedBytes": 12512,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/1.1 301 Moved Permanently",
+          "headers": {
+            "content-type": "text/html; charset=UTF-8",
+            "location": "https://ternloom.com/contact/?test=seo-audit"
+          }
+        },
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      }
+    },
+    {
+      "url": "https://ternloom.com/about",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/about/",
+      "redirectCount": 1,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.210837,
+      "totalSeconds": 0.21138,
+      "downloadBytes": 3513,
+      "decodedBytes": 15300,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 307 ",
+          "headers": {
+            "location": "/about/",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY"
+          }
+        },
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      }
+    },
+    {
+      "url": "https://ternloom.com/about/index.html",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/about/",
+      "redirectCount": 1,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.162144,
+      "totalSeconds": 0.162658,
+      "downloadBytes": 3513,
+      "decodedBytes": 15300,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 307 ",
+          "headers": {
+            "location": "/about/",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY"
+          }
+        },
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      }
+    },
+    {
+      "url": "https://ternloom.com/contact/?utm_source=seo-audit",
+      "status": 200,
+      "effectiveUrl": "https://ternloom.com/contact/?utm_source=seo-audit",
+      "redirectCount": 0,
+      "httpVersion": "2",
+      "ttfbSeconds": 0.114217,
+      "totalSeconds": 0.114703,
+      "downloadBytes": 3158,
+      "decodedBytes": 12512,
+      "responseChain": [
+        {
+          "statusLine": "HTTP/2 200 ",
+          "headers": {
+            "content-type": "text/html",
+            "cache-control": "public, max-age=0, must-revalidate",
+            "permissions-policy": "camera=(), microphone=(), geolocation=()",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip"
+          }
+        }
+      ],
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip"
+      }
+    }
+  ]
+}

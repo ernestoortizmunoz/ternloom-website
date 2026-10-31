@@ -1,0 +1,539 @@
+{
+  "note": "Live Cua DOM measurements at three viewport widths; no form data entered. This is not a full accessibility or CWV audit. Below-fold lazy images may remain unloaded until scrolled into view.",
+  "measurements": [
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 360,
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "complete": true,
+          "loading": "lazy",
+          "naturalWidth": 1265,
+          "renderedWidth": 312
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "complete": true,
+          "loading": "lazy",
+          "naturalWidth": 1265,
+          "renderedWidth": 312
+        },
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "complete": true,
+          "loading": "lazy",
+          "naturalWidth": 1265,
+          "renderedWidth": 312
+        }
+      ],
+      "main": 1,
+      "smallAnchors": [
+        {
+          "height": 19.5,
+          "text": "Privacy notice",
+          "width": 85.140625
+        }
+      ],
+      "url": "https://ternloom.com/",
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 360,
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "complete": false,
+          "loading": "lazy",
+          "naturalWidth": 0,
+          "renderedWidth": 312
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "complete": false,
+          "loading": "lazy",
+          "naturalWidth": 0,
+          "renderedWidth": 312
+        }
+      ],
+      "main": 1,
+      "smallAnchors": [
+        {
+          "height": 21,
+          "text": "Home",
+          "width": 38.265625
+        },
+        {
+          "height": 19.5,
+          "text": "Privacy notice",
+          "width": 85.140625
+        }
+      ],
+      "url": "https://ternloom.com/services/website-development/",
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 360,
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "images": [
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "complete": false,
+          "loading": "lazy",
+          "naturalWidth": 0,
+          "renderedWidth": 312
+        }
+      ],
+      "main": 1,
+      "smallAnchors": [
+        {
+          "height": 21,
+          "text": "Home",
+          "width": 38.265625
+        },
+        {
+          "height": 19.5,
+          "text": "Privacy notice",
+          "width": 85.140625
+        }
+      ],
+      "url": "https://ternloom.com/services/custom-business-software/",
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 360,
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "complete": false,
+          "loading": "lazy",
+          "naturalWidth": 0,
+          "renderedWidth": 312
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "complete": false,
+          "loading": "lazy",
+          "naturalWidth": 0,
+          "renderedWidth": 312
+        }
+      ],
+      "main": 1,
+      "smallAnchors": [
+        {
+          "height": 21,
+          "text": "Home",
+          "width": 38.265625
+        },
+        {
+          "height": 19.5,
+          "text": "Privacy notice",
+          "width": 85.140625
+        }
+      ],
+      "url": "https://ternloom.com/services/business-automation-integrations/",
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 360,
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "images": [
+        {
+          "alt": "Bonita Nights website introducing its indoor sleepover rentals.",
+          "complete": true,
+          "loading": "lazy",
+          "naturalWidth": 1265,
+          "renderedWidth": 312
+        },
+        {
+          "alt": "Wood Dust Creations website introducing its handmade woodworking.",
+          "complete": false,
+          "loading": "lazy",
+          "naturalWidth": 0,
+          "renderedWidth": 312
+        },
+        {
+          "alt": "Turnory product website introducing its sim-racing telemetry application.",
+          "complete": false,
+          "loading": "lazy",
+          "naturalWidth": 0,
+          "renderedWidth": 312
+        }
+      ],
+      "main": 1,
+      "smallAnchors": [
+        {
+          "height": 21,
+          "text": "Home",
+          "width": 38.265625
+        },
+        {
+          "height": 19.5,
+          "text": "Privacy notice",
+          "width": 85.140625
+        }
+      ],
+      "url": "https://ternloom.com/projects/",
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 360,
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "images": [],
+      "main": 1,
+      "smallAnchors": [
+        {
+          "height": 21,
+          "text": "Home",
+          "width": 38.265625
+        },
+        {
+          "height": 19.5,
+          "text": "Privacy notice",
+          "width": 85.140625
+        }
+      ],
+      "url": "https://ternloom.com/about/",
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 360,
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 1,
+      "images": [],
+      "main": 1,
+      "smallAnchors": [
+        {
+          "height": 21,
+          "text": "Home",
+          "width": 38.265625
+        },
+        {
+          "height": 18,
+          "text": "privacy notice",
+          "width": 92.34375
+        },
+        {
+          "height": 22,
+          "text": "Open the enquiry form in Tally",
+          "width": 236.921875
+        },
+        {
+          "height": 19.5,
+          "text": "Privacy notice",
+          "width": 85.140625
+        }
+      ],
+      "url": "https://ternloom.com/contact/",
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 360,
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "images": [],
+      "main": 1,
+      "smallAnchors": [
+        {
+          "height": 21,
+          "text": "Home",
+          "width": 38.265625
+        },
+        {
+          "height": 22,
+          "text": "Google's Privacy Policy",
+          "width": 177.65625
+        },
+        {
+          "height": 22,
+          "text": "Google's Terms of Service",
+          "width": 201.421875
+        },
+        {
+          "height": 22,
+          "text": "info@ternloom.com",
+          "width": 156
+        },
+        {
+          "height": 19.5,
+          "text": "Privacy notice",
+          "width": 85.140625
+        }
+      ],
+      "url": "https://ternloom.com/privacy/",
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 753,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 753,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/services/website-development/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 753,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/services/custom-business-software/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 753,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/services/business-automation-integrations/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 753,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/projects/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 753,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/about/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 753,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 1,
+      "main": 1,
+      "url": "https://ternloom.com/contact/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 753,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/privacy/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 1425,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 1425,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/services/website-development/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 1425,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/services/custom-business-software/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 1425,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/services/business-automation-integrations/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 1425,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/projects/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 1425,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/about/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 1425,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 1,
+      "main": 1,
+      "url": "https://ternloom.com/contact/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "bodyFontPx": "17px",
+      "documentWidth": 1425,
+      "fontsStatus": "loaded",
+      "h1": 1,
+      "horizontalOverflow": false,
+      "iframeCount": 0,
+      "main": 1,
+      "url": "https://ternloom.com/privacy/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    }
+  ]
+}
