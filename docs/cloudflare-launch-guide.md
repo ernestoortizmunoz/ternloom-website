@@ -142,18 +142,17 @@ Save the complete current DNS zone and old website targets privately. Preserve M
 
 Workers Custom Domains require an active Cloudflare zone. If `ternloom.com` already uses the intended Cloudflare account/nameservers, keep them. Otherwise import and reconcile all existing records before a nameserver change; automatic scans may miss records. Handle existing DNSSEC at the registrar before changing nameservers, then re-enable it after activation with Cloudflare's supplied values. Follow [Cloudflare DNS setup](https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/); never guess nameservers or DS values.
 
-In **Workers & Pages → your Worker → Settings → Domains & Routes → Add → Custom Domain**, add `ternloom.com`. Review conflicting existing web records individually. Workers cannot attach a Custom Domain over an existing CNAME; preserve its old value before replacing that specific web record. Add `www.ternloom.com` as well for the redirect below. Wait for the domains and certificates to become active. See [Workers Custom Domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/).
+For an initial setup, use **Workers & Pages → your Worker → Settings → Domains & Routes → Add → Custom Domain** to add `ternloom.com`. Review conflicting existing web records individually. Workers cannot attach a Custom Domain over an existing CNAME; preserve its old value before replacing that specific web record. Wait for the domain and certificate to become active. See [Workers Custom Domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/).
 
-Account identifiers and domain bindings are deliberately absent from the current local configuration. After the authorized domain cutover, record the attached hosts in `wrangler.jsonc` before another production deployment, keeping the existing asset settings and development/version URL options:
+On October 31 the owner confirmed, with a dashboard screenshot, that only `ternloom.com` is attached to this Worker and both production `workers.dev` and preview URLs are enabled. The local `wrangler.jsonc` now records that exact domain and retains `workers_dev: true`, `preview_urls: true` and the existing asset settings. No account identifiers are stored. Its domain configuration is:
 
 ```json
 "routes": [
-  { "pattern": "ternloom.com", "custom_domain": true },
-  { "pattern": "www.ternloom.com", "custom_domain": true }
+  { "pattern": "ternloom.com", "custom_domain": true }
 ]
 ```
 
-Review this local change, validate with a dry run and commit it so future deployments agree with dashboard domain ownership. Test incoming and outgoing `info@ternloom.com` email after DNS migration; website hosting does not require changing email providers.
+Keep future domain and URL-setting changes consistent between this file and the dashboard before deploying. The existing www redirect is an edge rule, not a second Worker Custom Domain. Do not add a www binding merely to match an older example. Test incoming and outgoing `info@ternloom.com` email after any separately authorized DNS migration; website hosting does not require changing email providers.
 
 ## 8. Redirect www and confirm HTTPS
 
@@ -163,7 +162,7 @@ Once `https://ternloom.com` works, create an account-level **Bulk Redirect list*
 | --- | --- | --- |
 | `www.ternloom.com` | `https://ternloom.com` | 301 |
 
-Enable **Preserve query string**, **Subpath matching** and **Preserve path suffix**. Scope it to the www host, and ensure its DNS is proxied. Cloudflare's [www redirect procedure](https://developers.cloudflare.com/pages/how-to/www-redirect/) describes the edge rule; here the hostname is already attached to the Worker, so do not replace it with the example's dummy DNS target.
+Enable **Preserve query string**, **Subpath matching** and **Preserve path suffix**. Scope it to the www host, and ensure its DNS is proxied. Cloudflare's [www redirect procedure](https://developers.cloudflare.com/pages/how-to/www-redirect/) describes the edge rule. The existing www redirect has already passed public checks; retain its current rule and DNS configuration. It does not require a www Custom Domain on this Worker.
 
 Workers development/version hosts remain noindex; do not redirect all of them to production because that would hide previews. Confirm HTTP requests reach the HTTPS canonical domain without a loop. If a zone-wide HTTPS redirect is needed, first review its effect on other web subdomains. No global canonical-domain noindex header should be present.
 
